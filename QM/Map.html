@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"><!--BANGERS font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"><!--IM Fell english font-->
+        <title>Queens Museum</title>
+    </head>
+    <body><nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="logo" width="60" height="50">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="exhibition.html">Exhibition</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Documentation</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a> </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1500-1800</a></li>
+                <li><a class="dropdown-item" href="#">1900-1950</a></li>
+                <li><a class="dropdown-item" href="#">1950-2000</a></li>
+                <li><a class="dropdown-item" href="#">2035</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <div id="map" class="container-fluid">
+            <div class="title-container">
+                <h1>Queens Museum Map</h1>
+            </div>
+            <!--colonna con mappa-->
+            <div class="row">
+                <div class="svg-container col-8">
+                    <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+                        <!-- Stanze sopra il corridoio -->
+                        <rect x="30" y="60" width="270" height="120" class="room" data-name="room1"/>
+                        <rect x="300" y="60" width="260" height="120" class="room" data-name="room2"/>
+                        <text x="90" y="130" class="label">Queen Elizabeth I's Room</text>
+                        <text x="355" y="130" class="label">Queen Victoria's Room</text>
+
+                            
+                        <!-- Porte stanze sopra -->
+                        <rect x="140" y="200" width="40" height="10" class="door"/>
+                        <rect x="440" y="200" width="40" height="10" class="door"/>
+
+                        <!-- Stanze sotto il corridoio -->
+                        <rect x="30" y="220" width="270" height="120" class="room" data-name="room3"/>
+                        <rect x="300" y="220" width="260" height="120" class="room" data-name="room4"/>
+                        <text x="100" y="285" class="label">Princess Diana's Room</text>
+                        <text x="340" y="285" class="label">Queen Elizabeth II's Room</text>
+
+                        <!-- Corridoio centrale -->
+                        <rect x="30" y="180" width="530" height="40" class="corridor"/> 
+                        <!--porte -->
+                        <line x1="150" y1="180" x2="190" y2="180" class="door"/>
+                        <line x1="430" y1="180" x2="470" y2="180" class="door"/>
+                            
+                        <!-- Porte corridoio -> stanze sotto -->
+                        <line x1="150" y1="220" x2="190" y2="220" class="door"/>
+                        <line x1="430" y1="220" x2="470" y2="220" class="door"/>
+
+                        <!-- Porta sopra tra stanze -->
+                        <line x1="300" y1="100" x2="300" y2="140" class="door"/>
+
+                        <!-- Porta sotto tra stanze -->
+                        <line x1="300" y1="260" x2="300" y2="300" class="door"/>
+                            
+                        <!-- Porta ingresso corridoio -->
+                        <line x1="30" y1="190" x2="30" y2="210" class="door"/>
+                    </svg>
+                </div>
+            
+                <div class="col-4">
+                <!--colonna con legenda-->
+                    <h4>Explore the museum</h4>
+                    <ul style="list-style-type:disc">
+                        <li>Queen Elizabeth I's Room</li>
+                        <ol>
+                            <li type="a"><a href="#">The Coronation Portrait</a>
+                            <li type="a"><a href="#">Chequers Ring</a></li>
+                            <li type="a"><a href="#">Tilbury Speech</a></li>
+                            <li type="a"><a href="#">First Folio</a></li>
+                        </ol>
+                        <li>Queen Victoria's Room</li>
+                        <ol>
+                            <li type="a"><a href="#">Wedding Dress</a></li>
+                            <li type="a"><a href="#">Coronation Portrait</a></li>
+                            <li type="a"><a href="#">Love letters between Albert and Victoria</a></li>
+                            <li type="a"><a href="#">The Royal Family in 1846</a></li>
+                            <li type="a"><a href="#">Queen Victoria Tea set</a></li>
+                        </ol>
+                        <li>Queen Elizabeth II's Room</li>
+                        <ol>
+                            <li type="a"><a href="#">Wedding Dress</a></li>
+                            <li type="a"><a href="#">St. Edward's Crown</a></li>
+                            <li type="a"><a href="#">The first televised Christmas Broadcast</a></li>
+                            <li type="a"><a href="#">Reigning Queens (Queen Elizabeth)</a></li>
+                            <li type="a"><a href="#">Statue of Elizabeth II</a></li>
+                        </ol>
+                        <li>Princess DIana's Room</li>
+                        <ol>
+                            <li type="a"><a href="#">Charles and Diana Engagement Interview</a></li>
+                            <li type="a"><a href="#">Princess Diana Engagement Ring</a></li>
+                            <li type="a"><a href="#">Revenge Dress</a></li>
+                            <li type="a"><a href="#">Lady Diana on holiday in Portofino</a></li>
+                            <li type="a"><a href="#">Diana: Her True Story</a></li>
+                        </ol>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!-- chose the narrative-->
+        <div id="narrative" class="text-center">
+            <h2>Choose your narrative</h2>
+            <div class="btn-group">
+                <button class="button" id="hist">Historical</button>
+                <button class="button" id="to-be-dec">(to be decided)</button>
+            </div>
+        </div>
+            
+</body>
+<!--link JS di bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<footer>
+       <div class="container footer">
+            <div class="row">
+              <div class="col-md-6">
+                  <h5>Creators</h5>
+                      <strong>Maria Juliana Gamboa</strong><br>
+                        mariajuliana.gamboa@studio.unibo.it</br>
+                        <strong>Alice Spadavecchia</strong><br>
+                       alice.spadavecchia2@studio.unibo.it</br>
+              </div>
+              <div class="col-md-6">       
+                    <address><br>
+                      </br><strong>Alma Mater Studiorum Università di Bologna</strong><br>
+                        Via Zamboni 33<br>
+                        40126 BO Bologna<br>
+                    </address>      
+              </div>
+              <div class="col-12 text-center">
+                <p>To access the Github repository follow this <a class="external-link" href="">link</a>.</p>
+                <p class="mb-0">All copyrights and related rights on the content remain with their original owners.  All copyright on the typographic and layout choices are 2025 © Queens Museum</p>
+              </div>
+            </div>
+    </footer>
+
+</html>

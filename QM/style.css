@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+  overflow-x: hidden;  }
+
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
@@ -15,3 +19,66 @@
   font-weight: 400;
   font-style: italic;
 }
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 1.8em;
+    }
+    
+svg {
+    width: 37em;
+    height: 25em;
+    border: 0.1em solid #333;
+    width: 80%; 
+    height: auto;
+    
+  }
+.room {
+  fill: #cce5ff;
+  stroke: #333;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room:hover {
+  fill: #66b3ff;
+    
+  }
+.corridor {
+  fill: #e6e6e6;
+  stroke: #333;
+  stroke-width: 0.1em;
+  }
+
+.door {
+  stroke: white;
+  stroke-width: 0.1em;
+}
+
+.title-container {
+  display: block; 
+  margin-left: 17em;
+  padding-top:2.5em;
+  padding-bottom: 0.1em}
+
+#map {padding-bottom: 5em}
+
+.button {
+  border: none;
+  color: white;
+  padding: 1em 4em;
+  text-align: center;
+  font-size: 1.25em;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border:1em black;
+}
+#hist{background-color: #333;}
+#to-be-dec{background-color: brown;}
+#narrative {padding-bottom: 5em}
+.button:hover {opacity: 1}
