@@ -1,0 +1,56 @@
+
+
+body {
+    background-color: #F6DFC1 !important;
+}
+
+.navbar {
+    background-color: #F6DFC1 !important;
+    font-family: "UnifrakturCook", cursive;
+    font-weight: 700;
+    font-style: normal; 
+    color: #262626;
+    font-size: 25px !important;
+
+
+}
+
+p {
+    font-family: "garamond", serif;
+    color: #8c5826;
+    
+}
+p.dropcap-paragraph::first-letter {
+  float: left; /* Makes text wrap around the letter */
+  font-size: 70px; /* Adjust size as needed */
+  line-height: 60%; /* Aligns the baseline with the text lines */
+  padding-right: 8px; /* Adds space between the cap and the text */
+  font-family: garamond, serif; /* Use a distinct font if desired */
+  /* Add other styling like color, background, etc. */
+}
+
+h2 {
+    
+    font-family: "UnifrakturCook", cursive;
+    font-weight: 700;
+    font-style: normal; 
+    color: #262626;
+    font-size: 50px !important;
+}
+
+.card {
+    border-style: solid !important; 
+    border-radius: 15px !important;
+    border-color: #990000 !important;
+    border-width: 4px !important;
+}
+
+.footer{
+    background-color: #663300;
+    color: #F6DFC1;
+    padding-left: 50px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+
+
+}
