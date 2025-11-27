@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background-color: #F6DFC1 !important;
+    background-color: #fcf4e9 !important;
     font-family: "UnifrakturCook", cursive;
     font-weight: 700;
     font-style: normal; 
@@ -29,7 +29,7 @@ p.dropcap-paragraph::first-letter {
   /* Add other styling like color, background, etc. */
 }
 
-h2 {
+h1, h2, h4 {
     
     font-family: "UnifrakturCook", cursive;
     font-weight: 700;
@@ -38,6 +38,7 @@ h2 {
     font-size: 50px !important;
 }
 
+/*Style card in index*/
 .card {
     border-style: solid !important; 
     border-radius: 15px !important;
@@ -45,7 +46,88 @@ h2 {
     border-width: 4px !important;
 }
 
+/*Style in Map*/
+
+#map{
+    font-family: "garamond", serif;
+    color: #8c5826;
+}
+
+/*Style card item in exhibition*/
+.card_item {
+    font-family: "garamond", serif;
+    color: #8c5826;
+    border-style: solid !important; 
+    border-radius: 15px !important;
+    border-color: #990000 !important;
+    border-width: 4px !important;
+    background-color: #f9e8d2;
+}
+
+.card-header {
+    padding: 10px !important;
+    border-bottom-style: solid !important;
+    border-color: #990000 !important;
+    color: #262626 !important;
+}
+
+.table{
+    padding-top: 10px !important;
+    background-color: #f9e8d2;
+}
+
+#ChildrenDifficulty {
+    font-family: "garamond", serif !important;
+    background-color: #000066;
+    border-color: #000066;
+    color: #fcf4e9;
+}
+
+#AdultDifficulty {
+    font-family: "garamond", serif !important;
+    background-color: #000066;
+    border-color: #000066;
+    color: #fcf4e9;
+}
+
+#showLess{
+    font-family: "garamond", serif !important;
+    border-color: #000066;
+    color: #000066;
+    
+}
+
+#showMore{
+    font-family: "garamond", serif !important;
+    border-color: #000066;
+    color: #000066;
+}
+
+#previousButton {
+    background-color: #000066;
+    border-color: #000066;
+    font-family: "garamond", serif !important;
+    color: #fcf4e9;
+}
+
+#nextButton {
+    background-color: #000066;
+    border-color: #000066;
+    font-family: "garamond", serif !important;
+    color: #fcf4e9;
+}
+
+.card-footer {
+    padding: 8px !important;
+    border-top-style: solid !important;
+    border-color: #990000 !important;
+    font-family: "garamond", serif !important;
+}
+
+
+/*Style Footer*/
 .footer{
+    font-family: "garamond", serif;
     background-color: #663300;
     color: #F6DFC1;
     padding-left: 50px !important;
