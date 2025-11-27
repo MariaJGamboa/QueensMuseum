@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ThemeStyles/historical.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
         <a class="navbar-brand" href="#">
@@ -44,7 +44,7 @@
                <a class="nav-link" href="#">Documentation</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a> </a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a> 
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">1500-1800</a></li>
                 <li><a class="dropdown-item" href="#">1900-1950</a></li>
@@ -79,7 +79,7 @@
             </button>
           </div>
       <div class="container">
-        <div class="text">
+        <div class="text" style="padding-top: 35px;">
           <h2>About the Museum</h2>
           <p class="dropcap-paragraph">The Queens Museum is a virtual exhibition that aims to recognize the extraordinary life of four of the most important women in english history. We decided to build this museum to honor four royal women that shape England through time. We chose a collection of items that represent the greatness of this four women thought their life and their impact in history and popular culture.</p>
           <p>The first woman that we decided to honor is <b>Queen Elizabeth I</b> (1533-1603). She lived and reign England during the 16th century, she is consider one of the most important monarchs despite never getting married and the issues being a single woman and queen at the time. Her reign was consider the golden age of England during witch the english renaissance flourish, with courage and strength she rule for 45 years. Remembered as a song queen and one of the most influenced woman of the 16th century. </p>
@@ -91,13 +91,13 @@
 
         <!--items-->
         <div class="text-items"></div>
-          <h2>Items</h2>
+          <h2 style="padding-top: 15px;">Items</h2>
           <p class="dropcap-paragraph">The exhibition is organized in four rooms, each one dedicated to one queen, therefore the items that represent each queen are organized by room. Here are the topics of our items.</p>
           <p>We decide to propose a timeline so our visitor are contextualized with the lifespan of the items in the exhibition. </p>
               <div class="row">
                 <div class="col-sm-3 mb-3 mb-sm-0">
                   <div class="card" >
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/Q_elizabeth_I.jpg" class="card-img-top" alt="Q_Elizabeth_I">
                     <div class="card-body">
                       <p class="card-text">Queen Elizabeth I</p>
                     </div>
@@ -105,15 +105,15 @@
                 </div>
                 <div class="col-sm-3 mb-3 mb-sm-0">
                   <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/Q_victoria.jpg" class="card-img-top" alt="Q_victoria" >
                     <div class="card-body">
                       <p class="card-text">Queen Victoria</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-3 mb-3 mb-sm-0">
-                  <div class="card" >
-                    <img src="..." class="card-img-top" alt="...">
+                  <div class="card">
+                    <img src="images/Queen_Elizabeth_II.jpg" class="card-img-top" alt="Q_Elizabeth_II">
                     <div class="card-body">
                       <p class="card-text">Queen Elizabeth II</p>
                     </div>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-sm-3 mb-3 mb-sm-0">
                   <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/Diana,_Princess_of_Wales.jpg" class="card-img-top" alt="Q_Diana">
                     <div class="card-body">
                       <p class="card-text">Lady Diana, Princess of Wales</p>
                     </div>
@@ -147,7 +147,7 @@
           </section>
       
           <!-- chose the narrative-->
-          <div id="narrative" class="text-center">
+          <div id="narrative" class="text-center" style="padding-top: 10px;">
               <h2>Choose your narrative</h2>
               <p class="dropcap-paragraph" align="left">We decided to incorporate two different ways in witch our visitors can explore our exhibition, the narratives are: </p>
               <p align="left">Historical: It follows the chronological order of the objects related to the respected queen.</p>
