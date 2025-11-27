@@ -3,17 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ThemeStyles/historical.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="/main.js"></script>
+    <!--font historical-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <title>Queens Museum</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="logo.png" alt="logo" width="60" height="50">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -29,7 +36,7 @@
                <a class="nav-link" href="#">Documentation</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a> </a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">1500-1800</a></li>
                 <li><a class="dropdown-item" href="#">1900-1950</a></li>
@@ -41,8 +48,8 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="card">
+    <div class="container" style="padding: 30px;">
+      <div class="card_item">
         <div class="card-header">
           <h2 class="text-center" id="titolo-item">Titolo Item</h2>
         </div>
@@ -75,16 +82,16 @@
                                 <td id="Materiality"><a href="#"></a></td> <!--Oil on canvas -->
                               </tr>
                             </tbody>
-                      </div>        
-                  </table>   
+                    </div>        
+                </table>   
               </section>
             </div>
           </div>
-          <div class="col-sm-12 mt-4 mb-4">
+          <div class="col-sm-12 mt-4 mb-4" style="padding-left: 8px;">
                 <a href="#" type="button" id="ChildrenDifficulty" onclick="changeTextChildren()" class="btn btn-primary content-button">Children Difficulty</a>
                 <a href="#" type="button" id="AdultDifficulty" onclick="changeTextAdult()" class="btn btn-primary content-button">Adult Difficulty</a>
           </div>
-            <section id="card-text">
+            <section id="card-text-item" style="padding-left: 8px;">
               <article class="my-2">
                 <p id="shortTextArea" class=""></p>
                 <p id="mediumTextArea" class=""></p>
@@ -93,7 +100,6 @@
             </section>
             <button id="showLess" class="btn btn-outline-primary btn-sm mb-4" onclick="showLess()">Show less</button>
             <button id="showMore" class="btn btn-outline-primary btn-sm mb-4" onclick="showMore()">Show more</button>
-          </section>
         </div>
         <div class="card-footer">
           <a href="#" class="btn btn-primary" id="previousButton">Previous</a>
@@ -105,7 +111,7 @@
 
     <!--FOOTER-->
     <footer>
-       <div class="container footer">
+       <div class="container-fluid footer">
             <div class="row">
               <div class="col-md-6">
                   <h5>Creators</h5>
