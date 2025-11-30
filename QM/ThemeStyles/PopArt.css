@@ -1,0 +1,29 @@
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {background-color: #FFB6C1;}
+
+.nav-text {color:#FFA500;
+ text-shadow:
+      -2px  2px 0 black,
+     2px  2px 0 black;
+     }
+
+.nav-link:hover {
+  color: #FF0000 !important; /* colore quando passi sopra */
+}
+.nav-link.dropdown-toggle.show,
+.nav-link.dropdown-toggle:focus,
+.nav-link.dropdown-toggle:active {
+  color: #ff2f72 !important;   /* colore che vuoi */
+}
+.carousel-inner img {
+  width: 1500px;       /* larghezza fissa */
+  height: 630px;        /* altezza fissa */
+  object-fit: cover;    /* ritaglia/centra l'immagine senza distorsione */
+  display: block;
+  margin: 0 auto;       /* centra l'immagine */
+}
