@@ -44,8 +44,8 @@ body {background-color: #FF69B4 !important;
 }
 
 .dropdown-item {color:black;}
-.dropdown-item:hover {color: yellow;
-background-color: dodgerblue}
+.dropdown-item:hover {color: yellow !important;
+background-color: dodgerblue !important}
 
 /*TITLE*/
 h2 {color: yellow;
