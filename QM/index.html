@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- standard style-->
     <link rel="stylesheet" href="style.css">
+    <!-- tema selezionabile con js-->
+    <link id="theme-css" rel="stylesheet" href=""> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"><!--IM Fell english font-->
-    <link rel="stylesheet" href="ThemeStyles/PopArt.css">
     <!--font historical-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +23,7 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg nav-cl">
       <div class="container-fluid">
 
         <a class="navbar-brand" href="#">
@@ -30,7 +32,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse bangers-regular" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -47,17 +49,17 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a> 
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1500-1800</a></li>
-                <li><a class="dropdown-item" href="#">1900-1950</a></li>
-                <li><a class="dropdown-item" href="#">1950-2000</a></li>
-                <li><a class="dropdown-item" href="#">2035</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/historical.css')">1500-1800</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme()">1900-1950</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/PopArt.css')">1950-2000</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme()">2035</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">-->
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -82,20 +84,26 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+       <!--  </div> -->
       <div class="container">
         <div class="text" style="padding-top: 35px;">
-          <h2>About the Museum</h2>
-          <p class="dropcap-paragraph">The Queens Museum is a virtual exhibition that aims to recognize the extraordinary life of four of the most important women in english history. We decided to build this museum to honor four royal women that shape England through time. We chose a collection of items that represent the greatness of this four women thought their life and their impact in history and popular culture.</p>
-          <p>The first woman that we decided to honor is <b>Queen Elizabeth I</b> (1533-1603). She lived and reign England during the 16th century, she is consider one of the most important monarchs despite never getting married and the issues being a single woman and queen at the time. Her reign was consider the golden age of England during witch the english renaissance flourish, with courage and strength she rule for 45 years. Remembered as a song queen and one of the most influenced woman of the 16th century. </p>
-          <p>The next queen is <b>Queen Victoria</b> (1819-1901). She lived and reign during the 19th century The United Kingdom. During her reign England became an empire extended all around the globe, while  the industrial revolution was a thriving inside the country. Alongside her devoted husband, Prince Albert she rule for almost al the century becoming a figure of stability not just for England but for all Europe, furthermore the 1800’s are remembered as the victorian age. </p>
-          <p>The following queen is <b>Queen Elizabeth II</b> (1926-2022). She is the last queen that England has had and she became the face of the modern monarchy, while inheriting the throne at a very young age she was able to perform her duties as queen in a very challenging world, in constant change and one that it belief that there was not need for monarchs. She reign for 70 years dealing with the challenges of the world in the 1900’s, bringing letting see the humanity behind the stoic figures of monarchs. </p> 
-          <p>The last woman that we decided to honor on this museum is <b>Lady Diana, Prince of Wales</b>(1961-1997), even thou we know that she wasn’t a queen, she will always be the Peoples queen. And we wanted to honor Princess Diana the “Queen that never was”. Princess Diana became very fast the center of attention of the whole word by marring the heir to the English throne. During the 1980’s and 1990’s she was more that the princess of Wales, she became a fashion icon and is remembered for her kindness and sensibility to the one in need others, she is became the People’s Princess.</p>         
+            <div class="title-bubble">
+              <h2>About the Museum</h2>
+            </div>  
+            <div class=""clearfix></div></div>
+            <p class="dropcap-paragraph">The Queens Museum is a virtual exhibition that aims to recognize the extraordinary life of four of the most important women in english history. We decided to build this museum to honor four royal women that shape England through time. We chose a collection of items that represent the greatness of this four women thought their life and their impact in history and popular culture.</p>
+            <p>The first woman that we decided to honor is <b>Queen Elizabeth I</b> (1533-1603). She lived and reign England during the 16th century, she is consider one of the most important monarchs despite never getting married and the issues being a single woman and queen at the time. Her reign was consider the golden age of England during witch the english renaissance flourish, with courage and strength she rule for 45 years. Remembered as a song queen and one of the most influenced woman of the 16th century. </p>
+            <p>The next queen is <b>Queen Victoria</b> (1819-1901). She lived and reign during the 19th century The United Kingdom. During her reign England became an empire extended all around the globe, while  the industrial revolution was a thriving inside the country. Alongside her devoted husband, Prince Albert she rule for almost al the century becoming a figure of stability not just for England but for all Europe, furthermore the 1800’s are remembered as the victorian age. </p>
+            <p>The following queen is <b>Queen Elizabeth II</b> (1926-2022). She is the last queen that England has had and she became the face of the modern monarchy, while inheriting the throne at a very young age she was able to perform her duties as queen in a very challenging world, in constant change and one that it belief that there was not need for monarchs. She reign for 70 years dealing with the challenges of the world in the 1900’s, bringing letting see the humanity behind the stoic figures of monarchs. </p> 
+            <p>The last woman that we decided to honor on this museum is <b>Lady Diana, Prince of Wales</b>(1961-1997), even thou we know that she wasn’t a queen, she will always be the Peoples queen. And we wanted to honor Princess Diana the “Queen that never was”. Princess Diana became very fast the center of attention of the whole word by marring the heir to the English throne. During the 1980’s and 1990’s she was more that the princess of Wales, she became a fashion icon and is remembered for her kindness and sensibility to the one in need others, she is became the People’s Princess.</p>         
         </div>
 
 
         <!--items-->
-        <div class="text-items"></div>
-          <h2 style="padding-top: 15px;">Items</h2>
+        <div class="container">
+          <div class="items-bubble"> 
+            <h2 style="padding-top: 15px;">Items</h2>
+          </div>
           <p class="dropcap-paragraph">The exhibition is organized in four rooms, each one dedicated to one queen, therefore the items that represent each queen are organized by room. Here are the topics of our items.</p>
           <p>We decide to propose a timeline so our visitor are contextualized with the lifespan of the items in the exhibition. </p>
               <div class="row">
@@ -132,7 +140,7 @@
                   </div>
                 </div>
               </div>
-    
+        </div>
           <!-- Timeline -->
           <section id="time-line">
             <div class="container lg-4 my-5">
@@ -151,7 +159,7 @@
           </section>
       
           <!-- chose the narrative-->
-          <div id="narrative" class="text-center" style="padding-top: 10px;">
+          <div id="narrative" class="container text-center" style="padding-top: 10px;">
               <h2>Choose your narrative</h2>
               <p class="dropcap-paragraph" align="left">We decided to incorporate two different ways in witch our visitors can explore our exhibition, the narratives are: </p>
               <p align="left">Historical: It follows the chronological order of the objects related to the respected queen.</p>
@@ -193,5 +201,25 @@
 
     <!--link JS di bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- javascript per cambiare gli stili-->
+    <script>
+      function changeTheme(cssFile) {
+        const link = document.getElementById("theme-css");
+        if(link) {
+      // cambia il tema e forza ricaricamento senza cache
+          link.href = cssFile + "?v=" + Date.now();
+          sessionStorage.setItem('selectedTheme', cssFile)
+    }
+      }
+  // Applica il tema salvato al caricamento della pagina
+        document.addEventListener('DOMContentLoaded', () => {
+          const savedTheme = sessionStorage.getItem('selectedTheme');
+          if(savedTheme) {
+            const link = document.getElementById("theme-css");
+            if(link) link.href = savedTheme;
+          }
+        });
+
+  </script>
   </body>
 </html>

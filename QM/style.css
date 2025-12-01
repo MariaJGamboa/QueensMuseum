@@ -60,9 +60,9 @@ svg {
 
 .title-container {
   display: block; 
-  margin-left: 17em;
+  text-align: center;
   padding-top:2.5em;
-  padding-bottom: 0.1em}
+  padding-bottom: 5em}
 
 #map {padding-bottom: 5em}
 
@@ -83,3 +83,4 @@ svg {
 #to-be-dec{background-color: brown;}
 #narrative {padding-bottom: 5em}
 .button:hover {opacity: 1}
+

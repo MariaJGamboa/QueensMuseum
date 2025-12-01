@@ -1,29 +1,110 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* evita scroll orizzontale indesiderato */
+}
+
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-body {background-color: #FFB6C1;}
+body {background-color: #FF69B4 !important;
+  font-family: "Bangers", system-ui !important;
+  background-image: radial-gradient(circle, white 10%, transparent 30%);
+  background-repeat: repeat;
+  background-size: 40px 40px; /* distanza tra i pois */
+ background-position: 0 0; }
 
-.nav-text {color:#FFA500;
+
+.nav-cl{background-color: DodgerBlue;}
+.nav-text {color: yellow !important;
  text-shadow:
       -2px  2px 0 black,
      2px  2px 0 black;
      }
 
 .nav-link:hover {
-  color: #FF0000 !important; /* colore quando passi sopra */
+  color: #FFA500 !important; /* colore quando passi sopra */
 }
 .nav-link.dropdown-toggle.show,
 .nav-link.dropdown-toggle:focus,
 .nav-link.dropdown-toggle:active {
-  color: #ff2f72 !important;   /* colore che vuoi */
+  color: #FFA500 !important;   /* colore che vuoi */
 }
 .carousel-inner img {
-  width: 1500px;       /* larghezza fissa */
-  height: 630px;        /* altezza fissa */
-  object-fit: cover;    /* ritaglia/centra l'immagine senza distorsione */
+  width: 100%;
+  height: 80%;
+  object-fit: cover;   /* scala senza deformare */
   display: block;
-  margin: 0 auto;       /* centra l'immagine */
+}
+
+.dropdown-item {color:black;}
+.dropdown-item:hover {color: yellow;
+background-color: dodgerblue}
+
+/*TITLE*/
+h2 {color: yellow;
+ text-shadow:
+      -2px  2px 0 black,
+     2px  2px 0 black;
+     
+     }
+
+p {color: black}
+
+
+.title-bubble {
+  float:left;
+  width: 380px;      /* prova una misura grande per vedere se appare */
+  height: 250px;     /* idem: così SE ESISTE la vedi SICURO */
+  background-image: url('../images/comic.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow: hidden;
+  
+
+}
+
+.title-bubble h2 {
+  text-align: center;          /* centra il testo dentro il fumetto */
+  margin: 0;
+  color: yellow;
+  text-shadow:
+    -2px 2px 0 black,
+     2px 2px 0 black;
+  
+}
+
+.clearfix {clear:both;
+}
+.items-bubble {
+   background-image: url('../images/comic.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;      /* prova una misura grande per vedere se appare */
+  height: 200px;  
+
+}
+
+.items-bubble h2 {
+  margin: 0;
+  text-align: center;
+  color: yellow;
+  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
 }
