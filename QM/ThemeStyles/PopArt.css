@@ -15,7 +15,7 @@ html, body {
 
 body {background-color: #FF69B4 !important;
   font-family: "Bangers", system-ui !important;
-  background-image: radial-gradient(circle, white 10%, transparent 30%);
+  background-image: radial-gradient(circle, white 10%, transparent 20%);
   background-repeat: repeat;
   background-size: 40px 40px; /* distanza tra i pois */
  background-position: 0 0; }
@@ -37,8 +37,8 @@ body {background-color: #FF69B4 !important;
   color: #FFA500 !important;   /* colore che vuoi */
 }
 .carousel-inner img {
-  width: 100%;
-  height: 80%;
+  width: 1550px;
+  height: 710px;
   object-fit: cover;   /* scala senza deformare */
   display: block;
 }
@@ -78,7 +78,7 @@ p {color: black}
 
 .title-bubble h2 {
   text-align: center;          /* centra il testo dentro il fumetto */
-  margin: 0;
+  margin-left: 10px;
   color: yellow;
   text-shadow:
     -2px 2px 0 black,
@@ -89,7 +89,7 @@ p {color: black}
 .clearfix {clear:both;
 }
 .items-bubble {
-   background-image: url('../images/comic.png');
+  background-image: url('../images/comic.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -97,14 +97,71 @@ p {color: black}
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 300px;      /* prova una misura grande per vedere se appare */
+  width: 300px; 
   height: 200px;  
 
 }
 
 .items-bubble h2 {
-  margin: 0;
+  margin-bottom: 20px;
   text-align: center;
   color: yellow;
   text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.special-txt {color: darkblue;
+text-shadow:
+    -2px 2px 0 yellow,
+     2px 2px 0 yellow;
+    font-size: x-large;}
+
+
+
+.pop-style .carousel-inner {
+  position: relative;
+}
+
+.pop-style .carousel-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-image: url("../images/zoomeffect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  background-size: 100% 100%; 
+  z-index: 50;
+}
+
+.pop-style .carousel-item {
+  position:relative;
+  overflow:hidden;
+  height: 710px; /* o la misura che vuoi tu */
+}
+
+
+.pop-style .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}  
+
+
+.carousel-wrapper.pop-style {
+  border: 3px solid  white;
+  border-radius: 40px 40px 20px 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0);
+  overflow: hidden;
+  width: 1400px;
+  margin: 30px auto;
+
+  }
+.comic {background-color: wheat;
+margin-top: 60px;
+margin-bottom:60px;
+padding-bottom: 30px;
+ border-radius: 40px 40px 20px 20px; ;
+border: 2px solid black;
+box-shadow: 0 6px 16px rgba(0,0,0)
 }
