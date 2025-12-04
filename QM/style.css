@@ -74,13 +74,14 @@ svg {
   font-size: 1.25em;
   opacity: 0.6;
   transition: 0.3s;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   cursor: pointer;
   border:1em black;
+  margin: 10px;
 }
 #hist{background-color: #333;}
-#to-be-dec{background-color: brown;}
+#pop-cult{background-color: brown;}
 #narrative {padding-bottom: 5em}
 .button:hover {opacity: 1}
 
