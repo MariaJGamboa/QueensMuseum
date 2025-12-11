@@ -20,7 +20,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"><!--IM Fell english font-->
-    
+    <!--font future-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
     <title>Queens Museum</title>
   </head>
   <body>
@@ -49,10 +52,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your Theme</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1500-1800</a></li>
-                <li><a class="dropdown-item" href="#">1900-1950</a></li>
-                <li><a class="dropdown-item" href="#">1950-2000</a></li>
-                <li><a class="dropdown-item" href="#">2035</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/historical.css')">1500-1800</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme()">1900-1950</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/PopArt.css')">1950-2000</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/future.css')">2035</a></li>
               </ul>
             </li>
           </ul>
