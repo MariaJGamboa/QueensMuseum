@@ -8,8 +8,9 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
    <!-- tema selezionabile con js-->
-    <link id="theme-css" rel="stylesheet" href=""> 
     <script src="main.js"></script>
+    <link id="theme-css" rel="stylesheet" href=""> 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"><!--BANGERS font-->
@@ -20,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <!--font future-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
     <title>Queens Museum</title>
   </head>
   <body>
@@ -53,7 +58,7 @@
                 <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/historical.css')">1500-1800</a></li>
                 <li><a class="dropdown-item" href="#" onclick="changeTheme()">1900-1950</a></li>
                 <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/PopArt.css')">1950-2000</a></li>
-                <li><a class="dropdown-item" href="#" onclick="changeTheme()">2035</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeTheme('ThemeStyles/future.css')">2035</a></li>
               </ul>
             </li>
           </ul>
@@ -62,6 +67,7 @@
     </nav>
     <!-- <div class="container-fluid">-->
       <div class="carousel-wrapper pop-style">
+        
   
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
@@ -87,6 +93,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        
       </div>  
       
        <!--  </div> -->
@@ -153,10 +160,8 @@
                     <div class="col-lg-6 time-bubble">
                         <h2 class="h2 time-txt">Timeline</h2>
                     </div>
-                    <div>
-                        <p class="section-lower-title time-txt">Explore Our Mueseum through our Items.</p>
-                    </div>
                     <div class="col-lg-6">
+                        <p class="section-lower-title time-txt">Explore Our Mueseum through our Items.</p>
                         <p class="dropcap-paragraph">The timeline is powered by Timeline.JS, a free visualization tool developed by Northwestern University's Knight Lab. For detailed information about the timeline's creation and functionality, please visit the <a class="external-link timeline-link" href="https://timeline.knightlab.com/">Timeline.JS website</a>.</p>
                     </div>
             </div>
