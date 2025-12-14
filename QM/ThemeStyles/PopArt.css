@@ -249,9 +249,30 @@ font-size: x-large;}
   text-shadow: -2px 2px 0 black, 2px 2px 0 black;
 font-size: x-large;}
 
-div#tl-fyfma.tl-text {
-    font-family: "Bangers", system-ui !important
+.map-link{color: blue; 
+  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;
+  text-decoration: none;}
+
+.map-link:hover {color: yellow;
+  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-decoration: none;}
+
+ol li::marker {
+  color: blue; /* colore della letterina */
+  font-weight: bold; 
+  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;/* opzionale, se vuoi renderla più evidente */
 }
+
+
+ul > li::marker {
+    color: black; /* colore dei dischi */
+    font-size: 25px; /* opzionale, se vuoi renderli più grandi */
+}
+
+.elizI {color: red;   text-shadow: -2px 2px 0 black, 2px 2px 0 black; font-size: x-large; letter-spacing: 2px;}
+.vict {color:blue;   text-shadow: -2px 2px 0 black, 2px 2px 0 black;font-size: x-large; letter-spacing: 2px;}
+.elizII{color: green;  text-shadow: -2px 2px 0 black, 2px 2px 0 black;font-size: x-large; letter-spacing: 2px;}
+.diana{color:purple;  text-shadow: -2px 2px 0 black, 2px 2px 0 black;font-size: x-large; letter-spacing: 2px;}
 
 .button {
   display:block;
@@ -283,7 +304,7 @@ text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
 
 .comic-nar {background-color: wheat;
   width:1000px;
-border-radius: 40px 40px 20px 20px; ;
+border-radius: 40px 40px 20px 20px ;
 border: 2px solid black;
 box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
 text-align: center;
@@ -339,35 +360,121 @@ border-bottom: 4px solid black;}
   font-size: x-large;
 letter-spacing: 2px; }
 
-.map-bubble { background-image: url('../images/comic.png');
+
+
+.comic-map {background-color: wheat;
+      /* evita overflow */
+  border: 3px solid black;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
+  border-radius: 40px 40px 40px 40px;
+  padding-top: 20px;
+  padding-bottom:40px;
+  margin-top:40px  !important;
+  width:800px;
+  margin: 0 auto
+}
+
+#path {margin-top: 50px;}
+
+.ex-bubble { background-image: url('../images/comic.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 700px; 
-  height: 340px;  
+  margin-right:100px;
+  width: 400px; 
+  height: 200px; 
+
 
 }
 
-.map-bubble h1 {color:yellow; 
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
-  margin-top: 30px;}
-
-.comic-nar2 {background-color: wheat;
-      /* evita overflow */
-  border: 2px solid black;
+.ex-bubble h2 {
+  margin-left: 10px;
+  margin-bottom: 10px;
   text-align: center;
-box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
-padding-top: 20px;
-padding-bottom:20px;
-margin-top:20px
+  color: yellow;
+  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+}
 
+.ex-comic{background-color: wheat;
+      /* evita overflow */
+  border: 3px solid black;
+  
+  box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
+  border-radius: 40px 40px 40px 40px;
  
-   }
+  margin-top:40px  !important;
+  width:400px;
+  margin: 0 auto
+}
+.map-title {color:yellow; 
+  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  font-size: xx-large;
+letter-spacing: 3px;}
 
 
+.room1 {
+  fill: red;
+  fill-opacity:0.5;
+  stroke: #333;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room1:hover {
+  fill: red;
+   fill-opacity: 1; 
+  }
+
+.room2 {
+  fill: blue;
+  fill-opacity:0.5;
+  stroke: #333;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room2:hover {
+  fill: blue;
+   fill-opacity: 1; 
+  }
+
+.room3 {
+  fill: green;
+  fill-opacity:0.5;
+  stroke: #333;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room3:hover {
+  fill: green;
+   fill-opacity: 1; 
+  }
+
+.room4 {
+  fill: purple;
+  fill-opacity:0.5;
+  stroke: #333;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room4:hover {
+  fill:purple;
+   fill-opacity: 1; 
+  }
 
 
+.corr-pop {
+  fill: yellow;
+  stroke: #333;
+  stroke-width: 0.1em;
+  fill-opacity:0.5
+  }
+
+.label-txt {fill: yellow; 
+  text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
