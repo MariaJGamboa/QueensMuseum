@@ -388,7 +388,6 @@ letter-spacing: 2px; }
   width: 400px; 
   height: 200px; 
 
-
 }
 
 .ex-bubble h2 {
@@ -478,3 +477,104 @@ letter-spacing: 3px;}
 
 .label-txt {fill: yellow; 
   text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+
+.img-comic {
+  text-align: center;  /* centra il contenuto inline */
+}
+
+.img-comic img.item-img {
+  display: inline-block; /* necessario per centrare */
+  max-width: 100%;       /* si adatta al contenitore */
+  height: auto;
+  border: 3px solid black;  /* bordo intorno alla foto */
+  border-radius: 15px;      /* angoli arrotondati */
+  box-sizing: border-box;
+  box-shadow: 0 6px 16px rgba(0,0,0, 0.5)
+}
+
+.row.meta-data {
+  display: flex;
+  flex-direction: column;  /* immagine sopra, tabella sotto */
+  align-items: center;     /* centra orizzontalmente tutto */
+  gap: 20px;               /* spazio tra immagine e tabella */
+}
+
+.row.meta-data .col-12.col-md-6:last-child {
+  width: 100%; /* tabella prende tutta la larghezza disponibile */
+}
+
+
+.table-responsive {
+  display: flex;
+  justify-content: center;  /* centra la tabella */
+  width: 100%;
+}
+
+table#table {
+  width: 50%; 
+             /* larghezza si adatta al contenuto */
+}
+
+
+#table {
+  border-collapse: separate; 
+  border-spacing: 0;        
+  border-radius: 12px;      
+  overflow: hidden;         
+  border: 2px solid #333;  
+}
+
+#table th, 
+#table td {
+  border: 1px solid #ccc;    
+ 
+}
+
+.table-txt{color: darkblue !important; 
+  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow}
+
+#metadataTable td,#metadataTable th {
+  background-color: wheat !important;
+  
+}
+
+
+.button-diff {
+  display:inline-block;
+  width: fit-content;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 5px solid black;
+  border-radius: 15px;
+  box-shadow: 0 9px black;
+  margin:auto;
+  opacity: 1;
+}
+
+.button-diff:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#difficulty { text-align: center}
+#ChildrenDifficulty {
+background-color: red ;
+color: yellow;
+text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+
+#AdultDifficulty {
+background-color: purple;
+color:yellow;
+text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+
+#card-text-item article {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fff8dc;
+  max-width: 100%;
+  display: inline-block;
+}
