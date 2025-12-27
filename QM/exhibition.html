@@ -63,68 +63,92 @@
       </div>
     </nav>
     <div class="container" style="padding: 30px;">
-      <div class="card_item">
+
+      <div class="card-item">
         <div class="card-header">
           <h2 class="text-center" id="titolo-item">Titolo Item</h2>
         </div>
+
+       
         <div class="card-body">
           <div class="row meta-data">
             <div class="col-12 col-md-6">
+              
               <div class="container">
+                
+                <div class="img-comic" id="carousel-container"> 
+                 
+                    <button class="carousel-control-prev" type="button" onclick="prevImage()">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
 
-                <div class="img-comic"> 
-                 <img class="item-img" src="" alt="photo">
+                    <img class="item-img" src="" alt="photo">
+                    
+
+                    <button class="carousel-control-next" type="button" onclick="nextImage()">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                 
                 </div>
-
+           
               </div>
+           
             </div>
 
-            <div class="col-12 col-md-6">
-              <section>
+            <div class="col-12 col-md-6 meta-comic">
+              
+
                   <div class="table-responsive">
                     <table class="table table-striped border mb-0" id="table"> 
-                                <tbody id="metadataTable">
-                                  <tr>
-                                    <th class="table-txt">Full name</th>
-                                    <td id="fullName" class="data"></td> <!-- Coronation Painting-->
-                                  </tr>
-                                  <tr>
-                                    <th class="table-txt">Date</th>
-                                    <td id="date" class="data"><a href="#"></a></td> <!-- 1538 -->
-                                  </tr>
-                                  <tr>
-                                    <th class="table-txt">Place</th>
-                                    <td id="place" class="data"></td> <!-- NAtional Portrait Museum -->
-                                  </tr>
-                                  <tr>
-                                    <th class="table-txt">Materiality</th>
-                                    <td id="materiality" class="data"><a href="#"></a></td> <!--Oil on canvas -->
-                                  </tr>
-                                </tbody>
+                      <tbody id="metadataTable">
+                        <tr>
+                          <th class="table-txt">Full name</th>
+                          <td id="fullName" class="data"></td> <!-- Coronation Painting-->
+                        </tr>
+                        <tr>
+                          <th class="table-txt">Date</th>
+                          <td id="date" class="data"><a href="#"></a></td> <!-- 1538 -->
+                        </tr>
+                        <tr>
+                          <th class="table-txt">Place</th>
+                          <td id="place" class="data"></td> <!-- NAtional Portrait Museum -->
+                        </tr>
+                        <tr>
+                          <th class="table-txt">Materiality</th>
+                          <td id="materiality" class="data"><a href="#"></a></td> <!--Oil on canvas -->
+                        </tr>
+                        <tr>
+                          <th class="table-txt">Room</th>
+                          <td id="room" class="data"><a href="#"></a></td> <!--Oil on canvas -->
+                        </tr>
+                      </tbody>
                     </table>
-                </div>    
-              </section>
-            </div>
-          </div>
-          <div class="col-sm-12 mt-4 mb-4" id="difficulty" style="padding-left: 8px;">
-                <button class="button-diff" id="ChildrenDifficulty" onclick="changeTextChildren()" class="btn btn-primary content-button">Children Difficulty</button>
-                <button class="button-diff" id="AdultDifficulty" onclick="changeTextAdult()" class="btn btn-primary content-button">Adult Difficulty</button>
-          </div>
-            <section id="card-text-item" style="padding-left: 8px;">
-              <article class="my-2">
-                <p id="shortTextArea" class=""></p>
-                <p id="mediumTextArea" class=""></p>
-                <p id="longTextArea" class=""></p>
-                </article>
-            </section>
-            <button id="showLess" class="btn btn-outline-primary btn-sm mb-4" onclick="showLess()">Show less</button>
-            <button id="showMore" class="btn btn-outline-primary btn-sm mb-4" onclick="showMore()">Show more</button>
-        </div>
+                  </div>    
+             
 
+                <div class="col-sm-12 mt-4 mb-4 butt-group" id="difficulty" style="padding-left: 8px;">
+                      <button class="button-diff " id="ChildrenDifficulty" onclick="changeTextChildren()" >Children Difficulty</button>
+                      <button class="button-diff" id="AdultDifficulty" onclick="changeTextAdult()">Adult Difficulty</button>
+                </div>
+                  <section id="card-text-item" style="padding-left: 8px;">
+                    <article class="my-2">
+                      <p id="shortTextArea" class=""></p>
+                      <p id="mediumTextArea" class=""></p>
+                      <p id="longTextArea" class=""></p>
+                      </article>
+                  </section>
+                  <button id="showLess" class="button-diff-n" onclick="showLess()">Show less</button>
+                  <button id="showMore" class="button-diff-n" onclick="showMore()">Show more</button>
+                </div>
+              </div>
+
+            </div>
         <div>
-          <button class="btn btn-primary" id="previousButton" onclick="previousItem()">Previous</button>
-          <button class="btn btn-primary float-end" id="nextButton" onclick="nextItem()">Next</button> 
-        </div>
+          <button class="button-diff-n" id="previousButton" onclick="previousItem()">Previous</button>
+          <button class="button-diff-n" id="nextButton" onclick="nextItem()">Next</button> 
+        </div> <!-- ho tolto float:end dal secondo vutton-->
       </div>
     </div>
   
