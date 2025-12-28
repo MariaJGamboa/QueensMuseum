@@ -72,8 +72,8 @@
        
         <div class="card-body">
           <div class="row meta-data">
+
             <div class="col-12 col-md-6">
-              
               <div class="container">
                 
                 <div class="img-comic" id="carousel-container"> 
@@ -97,10 +97,8 @@
            
             </div>
 
-            <div class="col-12 col-md-6 meta-comic">
-              
-
-                  <div class="table-responsive">
+            <div class="col-12 col-md-6">
+              <div class="table-responsive">
                     <table class="table table-striped border mb-0" id="table"> 
                       <tbody id="metadataTable">
                         <tr>
@@ -125,9 +123,12 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>    
-             
+               </div> 
+            </div> 
 
+          </div>        
+             
+          <div class="meta-comic">
                 <div class="col-sm-12 mt-4 mb-4 butt-group" id="difficulty" style="padding-left: 8px;">
                       <button class="button-diff " id="ChildrenDifficulty" onclick="changeTextChildren()" >Children Difficulty</button>
                       <button class="button-diff" id="AdultDifficulty" onclick="changeTextAdult()">Adult Difficulty</button>
@@ -141,20 +142,20 @@
                   </section>
                   <button id="showLess" class="button-diff-n" onclick="showLess()">Show less</button>
                   <button id="showMore" class="button-diff-n" onclick="showMore()">Show more</button>
-                </div>
-              </div>
+          </div>
 
-            </div>
-        <div>
-          <button class="button-diff-n" id="previousButton" onclick="previousItem()">Previous</button>
-          <button class="button-diff-n" id="nextButton" onclick="nextItem()">Next</button> 
-        </div> <!-- ho tolto float:end dal secondo vutton-->
+          <div>
+              <button class="button-diff-n" id="previousButton" onclick="previousItem()">Previous</button>
+              <button class="button-diff-n" id="nextButton" onclick="nextItem()">Next</button> 
+          </div> <!-- ho tolto float:end dal secondo vutton-->
+        </div> 
       </div>
-    </div>
+  </div>
+    
   
 
     <!--FOOTER-->
-    <footer>
+  <footer>
        <div class="container-fluid footer footer-cl">
             <div class="row">
               <div class="col-md-6 text-center">
@@ -176,6 +177,7 @@
                 <p class="mb-0 foot-copy">All copyrights and related rights on the content remain with their original owners.  All copyright on the typographic and layout choices are 2025 © Queens Museum</p>
               </div>
             </div>
+      </div>
     </footer>
     <!-- JS personalizzato -->
     <script src="main.js"></script>

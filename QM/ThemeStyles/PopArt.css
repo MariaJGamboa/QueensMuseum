@@ -501,28 +501,10 @@ letter-spacing: 3px;}
 
 
 
-
-.row.meta-data {
-  display: flex;
-  flex-direction: column;  /* immagine sopra, tabella sotto */
-  align-items: center;     /* centra orizzontalmente tutto */
-  gap: 20px;               /* spazio tra immagine e tabella */
-}
-
-.row.meta-data .col-12.col-md-6:last-child {
-  width: 100%; /* tabella prende tutta la larghezza disponibile */
-}
-
-
-.table-responsive {
-  display: flex;
-  justify-content: center;  /* centra la tabella */
-  width: 100%;
-}
-
 table#table {
-  width: 40%; 
-             /* larghezza si adatta al contenuto */
+  height: 100%;
+   
+             
 }
 
 
@@ -533,12 +515,13 @@ table#table {
   overflow: hidden;         
   border: 2px solid yellow;  
   margin-top: 20px;
+  min-height: 300px;
 }
 
 #table th, 
 #table td {
   border: 1px solid yellow;    
- 
+  padding-top: 30px !important;
 }
 
 .table-txt{
@@ -548,7 +531,7 @@ table#table {
   }
 
 #metadataTable td,#metadataTable th {
-  background-color: rgba(30, 143, 255, 0.797)  !important;
+  background-color: rgba(30, 169, 255, 0.797)  !important;
   
 }
 
@@ -574,13 +557,16 @@ table#table {
   transform: translateY(4px);
 }
 
-#difficulty { text-align: center;}
+#difficulty { text-align: center;
+
+  }
 
 
 #ChildrenDifficulty {
 background-color: red ;
 color: yellow;
-text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+}
 
 #AdultDifficulty {
 background-color: purple;
@@ -639,9 +625,12 @@ text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
   left: 50%;
   transform: translateX(-50%);
   margin-top: 30px;
+  
 }
 
 .meta-comic {
+  
+  margin-top: 20px;
   margin-top:30px;
   background-color: #faf8fa41; /* sfondo unico */
   border: 2px solid black;    /* bordo */

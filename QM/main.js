@@ -457,7 +457,7 @@ const items = [
 {
     id: 20,
     title: "Diana: Her True Story",
-    image: [ ],
+    image: ["images/diana-book.jpg","images/diana-book-back.jpg" ],
     metadata: {
       fullName: "Diana: Her True Story",
       date: "1992",
