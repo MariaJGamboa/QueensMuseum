@@ -21,16 +21,67 @@ p {
 .nav-text{
     color: #cc00ff !important;
 }
-.nav-link:hover 
+.nav-link:hover {
+    background-color: #cc00ff;
+    color: #000 !important;
+    box-shadow: 0 0 20px #00ff41; /* Bagliore più intenso */
+    text-shadow: none;
+}
   /* colore quando passi sopra */
 
 .pop-style .carousel-inner {
   position: relative;
 }
+/*Style dellapagina map*/
+h1{
+    padding-top: 4%;
+    font-size: 100px !important;
+}
 
 .special-txt {
+    padding-top: 6%;
     font-weight: 900;
-    text-decoration: underline;
+}
+
+.btn-group{
+    padding-bottom: 5%;
+}
+.room { 
+    fill:#cc00ff;
+}
+.room:hover {
+    fill: #00ff41;
+}
+
+.label-txt {
+    font-family: "Cascadia Code", sans-serif !important;
+    font-size: 14px;
+    text-align: center;
+}
+
+#map{
+    font-family: "Cascadia Code", sans-serif;
+    color: white !important;
+}
+.elizI{
+    font-family: "Cascadia Code", sans-serif !important;
+    color: white !important;
+}
+.vict{
+    font-family: "Cascadia Code", sans-serif !important;
+    color: white !important;
+}
+.elizII{
+    font-family: "Cascadia Code", sans-serif !important;
+    color: white !important;
+}
+.diana{
+    font-family: "Cascadia Code", sans-serif !important;
+    color: white !important;
+}
+ol {
+    font-family: "Cascadia Code", sans-serif !important;
+    color: white !important;
 }
 
 /*Style card in index*/
@@ -43,12 +94,7 @@ p {
     border-radius: 0px;
 }
 
-/*Style in Map*/
 
-#map{
-    font-family: "Cascadia Code", sans-serif;
-    color: white !important;
-}
 
 /*Style card item in exhibition*/
 .card_item {
