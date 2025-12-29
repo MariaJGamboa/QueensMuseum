@@ -48,9 +48,57 @@ h1, h2, h4 {
 
 /*Style in Map*/
 
+h1{
+    padding-top: 4%;
+    font-size: 100px !important;
+}
+
+.special-txt {
+    padding-top: 6%;
+    font-weight: 900;
+}
+
+.btn-group{
+    padding-bottom: 5%;
+}
+
+.room {
+    fill:#800000;
+}
+
+.room:hover {
+    fill:#4d0000;
+}
+
+.label-txt {
+    font-family: "garamond", serif !important;
+    color: white !important;
+}
+
 #map{
     font-family: "garamond", serif;
     color: #8c5826;
+}
+.elizI{
+    font-family: "garamond", serif !important;
+    color: #8c5826;
+}
+.vict{
+    font-family: "garamond", serif !important;
+    color: #8c5826;
+}
+.elizII{
+    font-family: "garamond", serif !important;
+    color: #8c5826;
+}
+.diana{
+    font-family: "garamond", serif !important;
+    color: #8c5826;
+}
+ol{
+    font-family: "garamond", serif !important;
+    color: #8c5826 ;
+    
 }
 
 /*Style card item in exhibition*/
@@ -124,6 +172,58 @@ h1, h2, h4 {
     font-family: "garamond", serif !important;
 }
 
+/*style bottoni narrative*/
+#hist{
+  background: #f4e4bc;
+  background: linear-gradient(135deg, #f4e4bc 0%, #d2b48c 100%);
+  
+  /* Bordo decorato */
+  border: 4px double #5d4037;
+  border-radius: 4px;
+  
+  /* Testo e font */
+  color: #3e2723;
+  font-family: 'garamond', serif; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+#hist:hover {
+  background: #e2d2a9;
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+}
+
+#pop-cult{
+  background: #f4e4bc;
+  background: linear-gradient(135deg, #f4e4bc 0%, #d2b48c 100%);
+  
+  /* Bordo decorato */
+  border: 4px double #5d4037;
+  border-radius: 4px;
+  
+  /* Testo e font */
+  color: #3e2723;
+  font-family: 'garamond', serif; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+#pop-cult:hover{
+    background: #e2d2a9;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+}
 
 /*Style Footer*/
 .footer{
