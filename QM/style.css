@@ -4,16 +4,16 @@ html {
 }
 
 
-.im-container {
-  width: 50px !important;
-  height: 30px !important;
+.img-container {
+  width: 70% !important;
+  height: 50%!important;
   overflow: hidden;
 
 }
 
 .img-container img {
   width: 100% !important;
-  height: 80% !important;
+  height: 100% !important;
   object-fit: cover; /* "cover" fills container; "contain" fits image inside */
 }
 
