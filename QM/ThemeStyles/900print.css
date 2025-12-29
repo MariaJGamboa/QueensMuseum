@@ -24,16 +24,15 @@
   line-height:1.1;
   text-align: center;
   
+  
 }
-
-
 
 body {font-family: "IM Fell English";}
 
 nav {
     font-family: "IM Fell English SC";
-    border: 2px solid black;
-    outline: 2px solid black;
+    border: 2px solid #2C2D2D;
+    outline: 2px solid #2C2D2D;
     outline-offset: -4px;
 }
 h2 {font-family: "IM Fell English SC"}
@@ -47,16 +46,13 @@ h2 {font-family: "IM Fell English SC"}
 
 .frame {
     margin-top: 60px;
-
     padding: 35px;
-
-  border: 3px solid black;      /* bordo interno */
-
-  box-shadow:
-    0 0 0 8px white,            /* spazio tra i bordi */
-    0 0 0 12px black;
+    border: 3px solid #2C2D2D;   
+    box-shadow:
+    0 0 0 8px white,          
+    0 0 0 12px #2C2D2D;
     position: relative;
-    margin-bottom: 60px
+    margin-bottom: 60px;
     }
 
 .frame::after {
@@ -64,12 +60,12 @@ h2 {font-family: "IM Fell English SC"}
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -70px;      /* 👈 sotto al frame */
+  bottom: -70px;      
   height: 1px;
-  background-color: black;
-  display: block;          /* elemento nel flusso */
+  background-color: #2C2D2D;
+  display: block;          
   width: 90vw; 
-  left: 50%;               /* punto centrale */
+  left: 50%;               
   transform: translateX(-50%);
   
 }
@@ -84,4 +80,23 @@ h2 {font-family: "IM Fell English SC"}
     padding:45px;
     color: white;
 
+}
+
+
+
+
+.floral-dec {
+  display: flex;   /* importante che non sia solo 'block' */
+  justify-content: center;   /* centra il testo */
+  align-items: center;
+}
+
+.floral-dec::before,
+.floral-dec::after {
+  content: "✿";
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2rem;
+  color: white;
+  vertical-align: middle; /* mantiene il fiorellino allineato al testo */
 }
