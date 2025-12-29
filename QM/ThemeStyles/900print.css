@@ -1,0 +1,87 @@
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-english-regular-italic {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.im-fell-english-sc-regular {
+  font-family: "IM Fell English SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair {
+  font-family: "Playfair", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height:1.1;
+  text-align: center;
+  
+}
+
+
+
+body {font-family: "IM Fell English";}
+
+nav {
+    font-family: "IM Fell English SC";
+    border: 2px solid black;
+    outline: 2px solid black;
+    outline-offset: -4px;
+}
+h2 {font-family: "IM Fell English SC"}
+
+.carousel-inner img {
+  width: 1550px !important;
+  height: 710px !important;
+  object-fit: cover;   /* scala senza deformare */
+  display: block;
+}
+
+.frame {
+    margin-top: 60px;
+
+    padding: 35px;
+
+  border: 3px solid black;      /* bordo interno */
+
+  box-shadow:
+    0 0 0 8px white,            /* spazio tra i bordi */
+    0 0 0 12px black;
+    position: relative;
+    margin-bottom: 60px
+    }
+
+.frame::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;      /* 👈 sotto al frame */
+  height: 1px;
+  background-color: black;
+  display: block;          /* elemento nel flusso */
+  width: 90vw; 
+  left: 50%;               /* punto centrale */
+  transform: translateX(-50%);
+  
+}
+
+.frame > .text {
+  padding-top: 0 !important;
+}
+
+.black-frame {
+    margin-top:130px;
+    background-color: #2C2D2D;
+    padding:45px;
+    color: white;
+
+}
