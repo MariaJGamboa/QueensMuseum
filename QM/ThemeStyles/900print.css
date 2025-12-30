@@ -4,6 +4,15 @@
   font-style: normal;
 }
 
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: larger;
+  letter-spacing: 1px;
+
+}
+
 .im-fell-english-regular-italic {
   font-family: "IM Fell English", serif;
   font-weight: 400;
@@ -77,8 +86,11 @@ h2 {font-family: "IM Fell English SC"}
 .black-frame {
     margin-top:130px;
     background-color: #2C2D2D;
-    padding:45px;
+    padding-bottom:30px;
+    padding-left:40px;
+    padding-right:40px;
     color: white;
+    border: 4px dotted white;
 
 }
 
@@ -93,10 +105,110 @@ h2 {font-family: "IM Fell English SC"}
 
 .floral-dec::before,
 .floral-dec::after {
-  content: "✿";
+  content: "⁕";
   display: inline-block;
   margin: 0 15px;
   font-size: 2rem;
   color: white;
   vertical-align: middle; /* mantiene il fiorellino allineato al testo */
 }
+
+.close-p {
+  margin-top:1px;
+margin-bottom:1px}
+
+img {
+  filter: grayscale(100%);
+}
+
+.card, 
+.card-img-top {
+  border-radius: 0 !important;
+}
+
+.section-divider {
+  position: relative;
+  margin: 60px 0;
+  padding-top: 20px;
+   /* spazio sopra e sotto */
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  left:0;
+  right:0;
+  top: 0;              /* sopra al contenuto */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 2px;
+  background-color: #2C2D2D;
+;
+}
+
+.dec-frame {
+  overflow: visible;
+  border: 20px solid transparent;   /* spessore del bordo */
+  border-image: url('../images/frame-giusto.png') 30 round; /* il tuo PNG/SVG */
+  ;
+  width: 100vw;
+  max-width: 1200px; }
+
+.footer-cl {
+  margin-top: 80px;
+    font-family: "IM Fell English SC";
+    border: 2px solid white;
+    outline: 2px solid white;
+    outline-offset: -4px;
+    background-color:#2C2D2D;
+    color:white 
+  };
+
+#hist {background-color: #2C2D2D !important;}
+
+.button {
+  display:block;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  opacity: 1;
+  border: 3px dashed black;
+  
+
+  
+}
+
+#hist{background-color: white ;
+color: #2C2D2D ;;
+
+ }
+
+#pop-cult{background-color: white ;
+color: #2C2D2D; }
+
+
+.button:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.nar-text {text-align: center;}
+
+.time-bubble {
+  display: inline-block;             /* Adatta la dimensione al contenuto */
+  padding: 100px 140px;                /* Spazio interno per il testo */
+  background-image: url('../images/TM-frame.png'); /* Percorso del PNG */
+  background-size: contain;          /* Ridimensiona per adattarsi */
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+ 
+}
+
+.section-lower-title { margin-top: 70px;}

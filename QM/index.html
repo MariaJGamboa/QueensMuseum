@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"><!--IM Fell english font-->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"><!--IM Fell english SC font-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"><!-- playfair font-->
+    <!--pinyon font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Pinyon+Script&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <!--font historical-->
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <!--font future-->
@@ -68,24 +70,24 @@
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="img-container">
+                <!-- ex <div class="img-container"-->
                   <img src="images/ElizabethII.jpg" alt="Slide 1">
-                </div>
+                
               </div>
               <div class="carousel-item">
-                <div class="img-container">
+                <!-- ex <div class="img-container"-->
                   <img src="images/ElizabethI.jpg" alt="Slide 2">
-                </div>
+                
               </div>
               <div class="carousel-item">
-                <div class="img-container">
+                <!-- ex <div class="img-container"-->
                   <img src="images/QVictoria.jpg" alt="Slide 3">
-                </div>
+               
               </div>
               <div class="carousel-item">
-                <div class="img-container">
+                <!-- ex <div class="img-container"-->
                   <img src="images/Diana.webp" alt="Slide 4">
-                </div>
+              
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -120,14 +122,14 @@
         <div class="items-bubble"> 
           <h2 class="playfair floral-dec" style="padding-top: 15px;">Items</h2>
         </div>
-        <p class="dropcap-paragraph item-text">The exhibition is organized in <b class="special-txt">four rooms</b>, each one dedicated to one queen, therefore the items that represent each queen are organized by room. Here are the topics of our items.</p>
+        <p class="dropcap-paragraph item-text close-p">The exhibition is organized in <b class="special-txt">four rooms</b>, each one dedicated to one queen, therefore the items that represent each queen are organized by room. Here are the topics of our items.</p>
         <p class="item-text">We decide to propose a <b class="special-txt">timeline</b> so our visitor are contextualized with the lifespan of the items in the exhibition. </p>
           <div class="row">
             <div class="col-sm-3 mb-3 mb-sm-0">
               <div class="card card1" >
                 <img src="images/Q_elizabeth_I.jpg" class="card-img-top" alt="Q_Elizabeth_I">
                   <div class="card-body">
-                    <p class="card-text text">Queen Elizabeth I</p>
+                    <p class="card-text text pinyon-script-regular">Queen Elizabeth I</p>
                   </div>
               </div>
             </div>
@@ -135,7 +137,7 @@
               <div class="card card2">
                 <img src="images/Q_victoria.jpg" class="card-img-top" alt="Q_victoria" >
                   <div class="card-body">
-                    <p class="card-text text">Queen Victoria</p>
+                    <p class="card-text text pinyon-script-regular">Queen Victoria</p>
                   </div>
               </div>
             </div>
@@ -143,7 +145,7 @@
               <div class="card card3">
                 <img src="images/Queen_Elizabeth_II.jpg" class="card-img-top" alt="Q_Elizabeth_II">
                   <div class="card-body">
-                    <p class="card-text text">Queen Elizabeth II</p>
+                    <p class="card-text text pinyon-script-regular">Queen Elizabeth II</p>
                   </div>
               </div>
             </div>
@@ -151,36 +153,37 @@
               <div class="card card4">
                 <img src="images/Diana,_Princess_of_Wales.jpg" class="card-img-top" alt="Q_Diana">
               <div class="card-body">
-                <p class="card-text text">Lady Diana, Princess of Wales</p>
+                <p class="card-text text pinyon-script-regular">Lady Diana, Princess of Wales</p>
               </div>
               </div>
             </div>
           </div>
         </div>
           <!-- Timeline -->
-          <section id="time-line">
+          <section id="time-line" class="section-divider">
             <div class="container lg-4 my-5 comic-time">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 time-bubble">
-                        <h2 class="h2 time-txt">Timeline</h2>
+                        <h2 class="h2 time-txt playfair">Timeline</h2>
                     </div>
                     <div class="col-lg-6">
                         <p class="section-lower-title time-txt">Explore Our Mueseum through our Items.</p>
                         <p class="dropcap-paragraph">The timeline is powered by Timeline.JS, a free visualization tool developed by Northwestern University's Knight Lab. For detailed information about the timeline's creation and functionality, please visit the <a class="external-link timeline-link" href="https://timeline.knightlab.com/">Timeline.JS website</a>.</p>
                     </div>
-            </div>
+                </div>
             <div class="container lg-4 my-5">
               <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vRl7S6GUXpLOrLZ-ybkLgJeoo2s7mEAh5_9Acs_2ke2FwXJowQ2x4thiWsgi1u9hMnASOD1pfKIMPdf&font=Default&lang=en&initial_zoom=2&width=100%25&height=600' width='100%' height='600' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
             </div>
           </section>
       
           <!-- chose the narrative--><!--ho tolto container-->
-          <div class="container text-center comic-nar" style="padding-top: 10px;">
-            <div class="nar-bubble">
+          <div class="section-divider"></div>
+          <div class="container text-center comic-nar dec-frame" style="padding-top: 10px;">
+            <div class="nar-bubbler">
               <h2>Choose your narrative</h2>
             </div>
-            <p class="dropcap-paragraph nar-text" align="left">We decided to incorporate two different ways in witch our visitors can explore our exhibition, the<b class = "special-txt"> narratives</b>are: </p>
-            <p align="left" class="nar-text"><b class = "special-txt" id="hist-nar">Historical:</b> It follows the chronological order of the objects related to the respected queen.</p>
+            <p class="dropcap-paragraph nar-text close-p" align="left">We decided to incorporate two different ways in witch our visitors can explore our exhibition, the<b class = "special-txt"> narratives</b> are: </p>
+            <p align="left" class="nar-text close-p"><b class = "special-txt" id="hist-nar">Historical:</b> It follows the chronological order of the objects related to the respected queen.</p>
             <p align="left" class="nar-text"><b class = "special-txt" id="pop-nar">Queens in Popular Culture:</b> It follows how each queen’s personal choices (fashion, image, media presence) shaped and were shaped by popular culture.</p>
             <div class="btn-group">
                 <button class="button" id="hist">Historical</button>
