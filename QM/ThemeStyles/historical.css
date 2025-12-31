@@ -11,15 +11,20 @@ body {
     font-style: normal; 
     color: #262626;
     font-size: 25px !important;
-
-
 }
 
 p {
     font-family: "garamond", serif;
-    color: #8c5826;
-    
+    color: #8c5826;  
 }
+
+.carousel-inner img {
+  width: 1550px !important;
+  height: 710px !important;
+  object-fit: cover;   /* scala senza deformare */
+  display: block;
+}
+
 p.dropcap-paragraph::first-letter {
   float: left; /* Makes text wrap around the letter */
   font-size: 70px; /* Adjust size as needed */
@@ -105,17 +110,12 @@ ol{
 .card_item {
     font-family: "garamond", serif;
     color: #8c5826;
-    border-style: solid !important; 
-    border-radius: 15px !important;
-    border-color: #990000 !important;
-    border-width: 4px !important;
     background-color: #f9e8d2;
 }
 
 .card-header {
     padding: 10px !important;
-    border-bottom-style: solid !important;
-    border-color: #990000 !important;
+    border-bottom: 3px #990000 !important;
     color: #262626 !important;
 }
 
@@ -139,7 +139,9 @@ ol{
   
 }
 
-
+.table-responsive{
+    padding-top: 30% !important;
+}
 
 #metadataTable td,#metadataTable th{
     background-color: #f9e8d2;
@@ -179,6 +181,7 @@ ol{
     border-color: #000066;
     font-family: "garamond", serif !important;
     color: #fcf4e9;
+    margin-top: 2% !important;
 }
 
 #nextButton {
@@ -186,6 +189,7 @@ ol{
     border-color: #000066;
     font-family: "garamond", serif !important;
     color: #fcf4e9;
+    
 }
 
 .card-footer {
