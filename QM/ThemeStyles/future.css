@@ -30,9 +30,13 @@ p {
 }
   /* colore quando passi sopra */
 
-.pop-style .carousel-inner {
-  position: relative;
+.carousel-inner img {
+  width: 1550px !important;
+  height: 710px !important;
+  object-fit: cover;   /* scala senza deformare */
+  display: block;
 }
+
 
 /*Style dellapagina map*/
 h1{
@@ -137,11 +141,12 @@ ol {
   
 }
 
+.table-responsive{
+    padding-top: 30% !important;
+}
+
 #metadataTable td,#metadataTable th{
     font-family: "Cascadia Code", sans-serif;
-}
-.table{
-    padding-top: 10px !important;
 }
 
 #ChildrenDifficulty{
@@ -221,6 +226,7 @@ ol {
     border-color: #cc00ff;
     box-shadow: 0 0 5px #cc00ff;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 2% !important;
 }
 #nextButton:hover{
     background-color: #cc00ff;
