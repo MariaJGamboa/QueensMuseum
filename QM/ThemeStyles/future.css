@@ -156,8 +156,78 @@ ol {
     background-color: #cc00ff;
     color: #000;
     box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
-    
-  }
+}
+
+#AdultDifficulty{
+    background-color: transparent;
+    color: white;
+    border: 3px solid;
+    border-color: #cc00ff;
+    box-shadow: 0 0 5px #cc00ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#AdultDifficulty:hover {
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
+}
+
+#showLess{
+    background-color: transparent;
+    color: white;
+    border: 3px solid;
+    border-color: #cc00ff;
+    box-shadow: 0 0 5px #cc00ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#showLess:hover {
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
+}
+
+#showMore{
+    background-color: transparent;
+    color: white;
+    border: 3px solid;
+    border-color: #cc00ff;
+    box-shadow: 0 0 5px #cc00ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#showMore:hover {
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
+}
+
+#previousButton{
+    background-color: transparent;
+    color: white;
+    border: 3px solid;
+    border-color: #cc00ff;
+    box-shadow: 0 0 5px #cc00ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#previousButton:hover {
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
+}
+
+#nextButton{
+    background-color: transparent;
+    color: white;
+    border: 3px solid;
+    border-color: #cc00ff;
+    box-shadow: 0 0 5px #cc00ff;
+    font-family: 'Courier New', Courier, monospace;
+}
+#nextButton:hover{
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
+}
+
 
 .card-footer {
     padding: 8px !important;
