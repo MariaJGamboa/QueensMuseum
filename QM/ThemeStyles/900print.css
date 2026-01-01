@@ -293,3 +293,95 @@ text-decoration: none;}
   background-position: center;
   z-index: 10;
 }
+
+@media (max-width: 992px) {
+  .comic-map::before,
+  .comic-map::after {
+    display: none;
+  }
+}
+
+.room {cursor: pointer;}
+/* change color of the rooms */
+
+.room1 {
+  fill: grey;
+  fill-opacity:0.5;
+  stroke: black;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room1:hover {
+  fill: #2C2D2D;
+   fill-opacity: 1; 
+  }
+
+.room1:hover ~ .lab1 {
+  fill: white;
+}
+
+
+.room2 {
+  fill: grey;
+  fill-opacity:0.5;
+  stroke: black;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room2:hover {
+  fill: #2C2D2D;
+   fill-opacity: 1;
+  }
+
+.room2:hover ~ .lab2 {
+  fill: white;
+}
+.room3 {
+ fill: grey;
+  fill-opacity:0.5;
+  stroke: black;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room3:hover {
+  fill: #2C2D2D;
+   fill-opacity: 1; 
+  }
+
+.room3:hover ~ .lab3 {
+  fill: white;
+}
+.room4 {
+  fill: grey;
+  fill-opacity:0.5;
+  stroke: black;
+  stroke-width: 0.1em;
+  cursor: pointer;
+  transition: fill 0.2s, transform 0.2s;
+  }
+.room4:hover {
+  fill: #2C2D2D;
+   fill-opacity: 1; 
+   
+  }
+
+  
+.room4:hover ~ .lab4 {
+  fill: white;
+}
+
+
+.corr-pop {
+  fill: white;
+  stroke: #333;
+  stroke-width: 0.1em;
+  fill-opacity:0.5
+  }
+
+
+
+
+

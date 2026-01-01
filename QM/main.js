@@ -608,10 +608,77 @@ function nextItem() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  currentDifficulty = "children"; // default
-  showFullText = false;
-  currentItemIndex = 0; // primo item
-  updateContent();
-});
+document.addEventListener('DOMContentLoaded', () => {
 
+    // -------------------------------
+    // Mappa dei nomi delle stanze
+    // -------------------------------
+    const roomMap = {
+        'queen-elizabeth-i': "Queen Elizabeth I's Room",
+        'queen-victoria': "Queen Victoria's Room",
+        'queen-elizabeth-ii': "Queen Elizabeth II's Room",
+        'princess-diana': "Princess Diana's Room"
+    };
+
+    // -------------------------------
+    // 1. Aggiungi click alle stanze SVG
+    // -------------------------------
+    Object.keys(roomMap).forEach(roomClass => {
+        const roomElement = document.querySelector(`.${roomClass}`);
+        if (roomElement) {   // <-- qui controlla la variabile giusta
+            roomElement.style.cursor = 'pointer'; // cambia cursore
+            roomElement.addEventListener('click', () => {
+                window.location.href = `exhibition.html?room=${roomClass}`;
+            });
+        }
+    });
+
+    // -------------------------------
+    // 2. Genera dinamicamente gli item nella lista invisibile
+    // -------------------------------
+    const container = document.querySelector('#items-container');
+    if (container) {
+        items.forEach(item => {
+            const li = document.createElement('li');
+            li.dataset.id = item.id;
+            li.innerHTML = `<a href="#" class="map-link">${item.title}</a>`;
+            container.appendChild(li);
+        });
+    }
+
+    // -------------------------------
+    // 3. Leggi parametro ?room= dall'URL
+    // -------------------------------
+    const params = new URLSearchParams(window.location.search);
+    const targetRoom = params.get('room'); // es: "queen-elizabeth-ii"
+
+    if (targetRoom && roomMap[targetRoom]) {
+        // Trova indice del primo item della stanza
+        const firstItemIndex = items.findIndex(item =>
+            item.metadata.room === roomMap[targetRoom]
+        );
+
+        if (firstItemIndex !== -1) {
+            currentItemIndex = firstItemIndex;
+
+            // Scrolla e evidenzia nella lista invisibile
+            const elem = document.querySelector(`[data-id='${items[currentItemIndex].id}']`);
+            if (elem) {
+                elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                elem.style.backgroundColor = '#ffff99';
+                setTimeout(() => elem.style.backgroundColor = '', 1000);
+            }
+        } else {
+            currentItemIndex = 0; // fallback
+        }
+    } else {
+        currentItemIndex = 0; // nessuna stanza selezionata → primo item in generale
+    }
+
+    // -------------------------------
+    // 4. Mostra contenuto dell'item corrente
+    // -------------------------------
+    currentDifficulty = "children"; // default
+    showFullText = false;
+    updateContent();
+});
