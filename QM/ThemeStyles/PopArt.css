@@ -332,17 +332,24 @@ ul > li::marker {
   opacity: 1;
 }
 
+
+
 #hist {
   background-color: red;
   color: yellow;
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
+
+
+
 #pop-cult {
   background-color: purple;
   color: yellow;
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
+
+
 
 .button:active {
   box-shadow: 0 0.3125rem #666;
@@ -541,7 +548,6 @@ ul > li::marker {
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
-
 .img-comic {
   position: relative;
   text-align: center;
@@ -692,4 +698,5 @@ table#table {
   width: 100%;
   box-sizing: border-box;
 }
+
 
