@@ -164,9 +164,32 @@ img {
   overflow: visible;
   border: 1.25rem solid transparent;
   border-image: url('../images/frame-giusto.png') 2rem round;
-  width: 100vw;
+  
+  border-image-source: url('../images/frame-giusto.png');
+  border-image-slice: 30;
+  border-image-repeat: round;
+  padding: 3rem 2rem;  
   max-width: 75rem;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
+.dec-frame2 {
+  overflow: visible;
+  border: 1.25rem solid transparent;
+  border-image: url('../images/frame-giusto.png') 2rem round;
+  
+  border-image-source: url('../images/frame-giusto.png');
+  border-image-slice: 30;
+  border-image-repeat: round;
+  padding: 1.5rem 2rem; 
+  max-width: 55rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+
 
 .footer-cl {
   margin-top: 5rem;
@@ -273,7 +296,7 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  left: 82rem;
+  left: 83rem;
   transform: translateY(-50%);
   width: 9.5rem;
   height: 9.5rem;
@@ -426,4 +449,10 @@ img {
   left: 48%;
   transform: translateX(-48%);
   margin-top: 2rem;
+}
+
+
+.dec-frame2.comic-map::before,
+.dec-frame2.comic-map::after {
+    content: none !important;
 }
