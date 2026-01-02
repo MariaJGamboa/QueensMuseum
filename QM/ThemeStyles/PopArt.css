@@ -1,88 +1,91 @@
-
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-body {background-color: #FF69B4 !important;
+body {
+  background-color: #FF69B4 !important;
   font-family: "Bangers", system-ui !important;
   background-image: radial-gradient(circle, white 10%, transparent 20%);
   background-repeat: repeat;
-  background-size: 40px 40px; /* distanza tra i pois */
- background-position: 0 0; }
+  background-size: 2.5rem 2.5rem;
+  background-position: 0 0;
+}
 
+.nav-cl {
+  background-color: DodgerBlue;
+  border-top: 0.25rem solid black;
+  border-bottom: 0.25rem solid black;
+}
 
-.nav-cl{background-color: DodgerBlue;
-border-top: 4px solid black;
-border-bottom: 4px solid black;}
-
-.nav-text {color: yellow !important;
- text-shadow:
-      -2px  2px 0 black,
-     2px  2px 0 black;
-     }
+.nav-text {
+  color: yellow !important;
+  text-shadow:
+    -0.125rem 0.125rem 0 black,
+     0.125rem 0.125rem 0 black;
+}
 
 .nav-link:hover {
-  color: #FFA500 !important; /* colore quando passi sopra */
+  color: #FFA500 !important;
 }
+
 .nav-link.dropdown-toggle.show,
 .nav-link.dropdown-toggle:focus,
 .nav-link.dropdown-toggle:active {
-  color: #FFA500 !important;   /* colore che vuoi */
+  color: #FFA500 !important;
 }
-/*.carousel-inner img {
-  width: 1550px;
-  height: 710px;
-  object-fit: cover;  
-  display: block;
-}*/
 
-.dropdown-item {color:black;}
-.dropdown-item:hover {color: yellow !important;
-background-color: dodgerblue !important}
+.dropdown-item {
+  color: black;
+}
 
-/*TITLE*/
-h2 {color: yellow;
- text-shadow:
-      -2px  2px 0 black,
-     2px  2px 0 black;
-     
-     }
+.dropdown-item:hover {
+  color: yellow !important;
+  background-color: dodgerblue !important;
+}
 
-p {color: black}
+/* TITLE */
+h2 {
+  color: yellow;
+  text-shadow:
+    -0.125rem 0.125rem 0 black,
+     0.125rem 0.125rem 0 black;
+}
 
+p {
+  color: black;
+}
 
 .title-bubble {
-  float:left;
-  width: 380px;      /* prova una misura grande per vedere se appare */
-  height: 250px;     /* idem: così SE ESISTE la vedi SICURO */
+  float: left;
+  width: 23.75rem;
+  height: 15.625rem;
   background-image: url('../images/comic.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  margin-right: 0.125rem;
+  margin-bottom: 0.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  
-
 }
 
 .title-bubble h2 {
-  text-align: center;          /* centra il testo dentro il fumetto */
-  margin-left: 10px;
+  text-align: center;
+  margin-left: 0.625rem;
   color: yellow;
   text-shadow:
-    -2px 2px 0 black,
-     2px 2px 0 black;
-  
+    -0.125rem 0.125rem 0 black,
+     0.125rem 0.125rem 0 black;
 }
 
-.clearfix {clear:both;
+.clearfix {
+  clear: both;
 }
+
 .items-bubble {
   background-image: url('../images/comic.png');
   background-size: contain;
@@ -92,25 +95,22 @@ p {color: black}
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 300px; 
-  height: 200px;  
-
+  width: 18.75rem;
+  height: 12.5rem;
 }
 
 .items-bubble h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-align: center;
   color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
-.special-txt {color: darkblue;
-text-shadow:
-    -2px 2px 0 yellow,
-     2px 2px 0 yellow;
-    font-size: x-large;}
-
-
+.special-txt {
+  color: darkblue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  font-size: x-large;
+}
 
 .pop-style .carousel-inner {
   position: relative;
@@ -119,103 +119,112 @@ text-shadow:
 .pop-style .carousel-inner::after {
   content: "";
   position: absolute;
-  inset: 0; 
+  inset: 0;
   background-image: url("../images/zoomeffect.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   pointer-events: none;
-  background-size: 100% 100%; 
   z-index: 50;
 }
 
 .pop-style .carousel-item {
-  position:relative;
-  overflow:hidden;
-  height: 710px; /* o la misura che vuoi tu */
+  position: relative;
+  overflow: hidden;
+  height: 44.375rem;
 }
-
 
 .pop-style .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-}  
-
+}
 
 .carousel-wrapper.pop-style {
-  border: 3px solid  white;
-  border-radius: 40px 40px 20px 20px;
-  box-shadow: 0 6px 16px rgba(0,0,0);
+  border: 0.1875rem solid white;
+  border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0);
   overflow: hidden;
-  width: 1400px;
-  margin: 30px auto;
-
-  }
-.comic {background-color: wheat;
-margin-top: 60px;
-margin-bottom:60px;
-padding-bottom: 30px;
-border-radius: 40px 40px 20px 20px; ;
-border: 2px solid black;
-box-shadow: 0 6px 16px rgba(0,0,0, 0.5)
+  width: 87.5rem;
+  margin: 1.875rem auto;
 }
 
-.comic-item{background-color: wheat;
-margin-top: 60px;
-margin-bottom:60px;
-padding-bottom: 30px;
-padding-left:30px !important;
-padding-right:30px !important;
-border-radius: 40px 40px 20px 20px;
-border: 2px solid black;
-box-shadow: 0 6px 16px rgba(0,0,0, 0.5)
+.comic {
+  background-color: wheat;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.875rem;
+  border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+  border: 0.125rem solid black;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
 }
 
-.card1 {background-color:  rgba(255, 0, 0, 0.5) !important;
-  box-shadow:  -8px 8px 0px black;}
-
-.card2 {background-color:  rgba(0, 0, 255, 0.5) !important;
-  box-shadow:  -8px 8px 0px black;
+.comic-item {
+  background-color: wheat;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  padding-bottom: 1.875rem;
+  padding-left: 1.875rem !important;
+  padding-right: 1.875rem !important;
+  border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+  border: 0.125rem solid black;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
 }
 
-.card3 {background-color:  rgba(59, 212, 59, 0.5)  !important;
-;
-               box-shadow:  -8px 8px 0px black;
-            }
+.card1 {
+  background-color: rgba(255,0,0,0.5) !important;
+  box-shadow: -0.5rem 0.5rem 0 black;
+}
 
-.card4 {background-color: rgba(128, 0, 128, 0.5) !important;
-    box-shadow:  -8px 8px 0px black;}
+.card2 {
+  background-color: rgba(0,0,255,0.5) !important;
+  box-shadow: -0.5rem 0.5rem 0 black;
+}
 
-.text {color:yellow; 
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
-font-size: x-large; }
+.card3 {
+  background-color: rgba(59,212,59,0.5) !important;
+  box-shadow: -0.5rem 0.5rem 0 black;
+}
 
+.card4 {
+  background-color: rgba(128,0,128,0.5) !important;
+  box-shadow: -0.5rem 0.5rem 0 black;
+}
 
-.item-text {text-align: center;}
+.text {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+}
 
-.time-txt { display:flex;
-  align-items:center;
-  justify-content:center;}
+.item-text {
+  text-align: center;
+}
+
+.time-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .comic-time {
-background-color: wheat;
- padding: 40px 20px;
-border-radius: 40px 40px 20px 20px; ;
-border: 2px solid black;
-box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
-text-align: center;
-
+  background-color: wheat;
+  padding: 2.5rem 1.25rem;
+  border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+  border: 0.125rem solid black;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
+  text-align: center;
 }
+
 .comic-time > .row {
   display: flex;
-  flex-direction: column;  
-  align-items: center;       
-  text-align: center;         
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-
-.time-bubble {background-image: url('../images/comic.png');
+.time-bubble {
+  background-image: url('../images/comic.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -223,99 +232,139 @@ text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 300px; 
-  height: 200px;  
+  width: 18.75rem;
+  height: 12.5rem;
 }
+
 .time-bubble h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-align: center;
   color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
-.timeline-link {color: blue; 
-  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;
-font-size: x-large;}
+.timeline-link {
+  color: blue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  font-size: x-large;
+}
 
-.timeline-link:hover {color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
-font-size: x-large;}
+.timeline-link:hover {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+}
 
-.link{color: blue; 
-  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;
-font-size: x-large;}
+.link {
+  color: blue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  font-size: x-large;
+}
 
-.link:hover {color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
-font-size: x-large;}
+.link:hover {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+}
 
-.map-link{color: blue; 
-  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;
-  text-decoration: none;}
+.map-link {
+  color: blue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  text-decoration: none;
+}
 
-.map-link:hover {color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
-  text-decoration: none;}
+.map-link:hover {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  text-decoration: none;
+}
 
 ol li::marker {
-  color: blue; /* colore della letterina */
-  font-weight: bold; 
-  text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;/* opzionale, se vuoi renderla più evidente */
+  color: blue;
+  font-weight: bold;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
 }
-
 
 ul > li::marker {
-    color: black; /* colore dei dischi */
-    font-size: 25px; /* opzionale, se vuoi renderli più grandi */
+  color: black;
+  font-size: 1.5625rem;
 }
 
-.elizI {color: red;   text-shadow: -2px 2px 0 black, 2px 2px 0 black; font-size: x-large; letter-spacing: 2px;}
-.vict {color:blue;   text-shadow: -2px 2px 0 black, 2px 2px 0 black;font-size: x-large; letter-spacing: 2px;}
-.elizII{color: green;  text-shadow: -2px 2px 0 black, 2px 2px 0 black;font-size: x-large; letter-spacing: 2px;}
-.diana{color:purple;  text-shadow: -2px 2px 0 black, 2px 2px 0 black;font-size: x-large; letter-spacing: 2px;}
+.elizI {
+  color: red;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+  letter-spacing: 0.125rem;
+}
+
+.vict {
+  color: blue;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+  letter-spacing: 0.125rem;
+}
+
+.elizII {
+  color: green;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+  letter-spacing: 0.125rem;
+}
+
+.diana {
+  color: purple;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: x-large;
+  letter-spacing: 0.125rem;
+}
 
 .button {
-  display:block;
+  display: block;
   width: fit-content;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 0.9375rem 1.5625rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 5px solid black;
-  border-radius: 15px;
-  box-shadow: 0 9px black;
-  /*margin: 10px;*/
+  border: 0.3125rem solid black;
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.5625rem black;
   opacity: 1;
 }
 
-#hist{background-color: red ;
-color: yellow;
- text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+#hist {
+  background-color: red;
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+}
 
-#pop-cult{background-color: purple;
-color:yellow;
-text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+#pop-cult {
+  background-color: purple;
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+}
 
 .button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 0.3125rem #666;
+  transform: translateY(0.25rem);
 }
 
-.comic-nar {background-color: wheat;
-  width:1000px;
-border-radius: 40px 40px 20px 20px ;
-border: 2px solid black;
-box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
-text-align: center;
-padding-bottom: 40px;
-
-
+.comic-nar {
+  background-color: wheat;
+  width: 62.5rem;
+  border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+  border: 0.125rem solid black;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
+  text-align: center;
+  padding-bottom: 2.5rem;
 }
 
-.nar-text {text-align: center;}
+.nar-text {
+  text-align: center;
+}
 
-.nar-bubble { background-image: url('../images/comic.png');
+.nar-bubble {
+  background-image: url('../images/comic.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -323,327 +372,324 @@ padding-bottom: 40px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 700px; 
-  height: 300px;  
-
+  width: 43.75rem;
+  height: 18.75rem;
 }
 
 .nar-bubble h2 {
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 0.625rem;
+  margin-bottom: 0.625rem;
   text-align: center;
   color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
-#hist-nar {text-decoration: underline;
-text-decoration-thickness: 3px;}
-#pop-nar  {text-decoration: underline;
-  text-decoration-thickness: 3px;
+#hist-nar {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1875rem;
 }
 
-.footer-cl{margin-top: 120px;
-  padding-top:30px;
+#pop-nar {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1875rem;
+}
+
+.footer-cl {
+  margin-top: 7.5rem;
+  padding-top: 1.875rem;
   background-color: DodgerBlue;
-border-top: 4px solid black;
-border-bottom: 4px solid black;}
-
-.foot-git {padding-top: 15px;
+  border-top: 0.25rem solid black;
+  border-bottom: 0.25rem solid black;
 }
-.foot-text{color:black; 
-  text-shadow: -2px 2px 0 white, 2px 2px 0 white;
- }
 
+.foot-git {
+  padding-top: 0.9375rem;
+}
 
- .foot-text2 {color:yellow; 
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+.foot-text {
+  color: black;
+  text-shadow: -0.125rem 0.125rem 0 white, 0.125rem 0.125rem 0 white;
+}
+
+.foot-text2 {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
   font-size: x-large;
-letter-spacing: 2px; }
-
-
-
-.comic-map {background-color: wheat;
-      /* evita overflow */
-  border: 3px solid black;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
-  border-radius: 40px 40px 40px 40px;
-  padding-top: 20px;
-  padding-bottom:40px;
-  margin-top:40px  !important;
-  width:800px;
-  margin: 0 auto
+  letter-spacing: 0.125rem;
 }
 
-#path {margin-top: 50px;}
+.comic-map {
+  background-color: wheat;
+  border: 0.1875rem solid black;
+  text-align: center;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
+  border-radius: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  margin-top: 2.5rem !important;
+  width: 50rem;
+  margin: 0 auto;
+}
 
-.ex-bubble { background-image: url('../images/comic.png');
+#path {
+  margin-top: 3.125rem;
+}
+
+.ex-bubble {
+  background-image: url('../images/comic.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right:100px;
-  width: 400px; 
-  height: 200px; 
-
+  margin-right: 6.25rem;
+  width: 25rem;
+  height: 12.5rem;
 }
 
 .ex-bubble h2 {
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-left: 0.625rem;
+  margin-bottom: 0.625rem;
   text-align: center;
   color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
-.ex-comic{background-color: wheat;
-      /* evita overflow */
-  border: 3px solid black;
-  
-  box-shadow: 0 6px 16px rgba(0,0,0, 0.5);
-  border-radius: 40px 40px 40px 40px;
- 
-  margin-top:40px  !important;
-  width:400px;
-  margin: 0 auto
+.ex-comic {
+  background-color: wheat;
+  border: 0.1875rem solid black;
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
+  border-radius: 2.5rem;
+  margin-top: 2.5rem !important;
+  width: 25rem;
+  margin: 0 auto;
 }
-.map-title {color:yellow; 
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
-  font-size: xx-large;
-letter-spacing: 3px;}
 
+.map-title {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: 2.5rem;
+  letter-spacing: 0.1875rem;
+}
 
 .room1 {
   fill: red;
-  fill-opacity:0.5;
+  fill-opacity: 0.5;
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
-  }
+}
+
 .room1:hover {
   fill: red;
-   fill-opacity: 1; 
-  }
+  fill-opacity: 1;
+}
 
 .room2 {
   fill: blue;
-  fill-opacity:0.5;
+  fill-opacity: 0.5;
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
-  }
+}
+
 .room2:hover {
   fill: blue;
-   fill-opacity: 1; 
-  }
+  fill-opacity: 1;
+}
 
 .room3 {
   fill: green;
-  fill-opacity:0.5;
+  fill-opacity: 0.5;
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
-  }
+}
+
 .room3:hover {
   fill: green;
-   fill-opacity: 1; 
-  }
+  fill-opacity: 1;
+}
 
 .room4 {
   fill: purple;
-  fill-opacity:0.5;
+  fill-opacity: 0.5;
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
-  }
-.room4:hover {
-  fill:purple;
-   fill-opacity: 1; 
-  }
+}
 
+.room4:hover {
+  fill: purple;
+  fill-opacity: 1;
+}
 
 .corr-pop {
   fill: yellow;
   stroke: #333;
   stroke-width: 0.1em;
-  fill-opacity:0.5
-  }
+  fill-opacity: 0.5;
+}
 
-.label-txt {fill: yellow; 
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+.label-txt {
+  fill: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+}
+
 
 .img-comic {
-  position:relative;
-  text-align: center; 
-  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  margin-top: 1.875rem;
   overflow: visible;
 }
 
 .img-comic img.item-img {
-  display: block; 
+  display: block;
   max-width: 100%;
-  margin: 0 auto;     
+  margin: 0 auto;
   height: auto;
-  border: 3px solid black;  
-  border-radius: 15px;    
+  border: 0.1875rem solid black;
+  border-radius: 0.9375rem;
   box-sizing: border-box;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
-  width: 550px;
-  height: 500px;
-  
+  box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
+  width: 34.375rem;
+  height: 31.25rem;
 }
-
-
-
 
 table#table {
   height: 100%;
-   
-             
 }
-
 
 #table {
-  border-collapse: separate; 
-  border-spacing: 0;        
-  border-radius: 12px;      
-  overflow: hidden;         
-  border: 2px solid yellow;  
-  margin-top: 20px;
-  min-height: 300px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 0.125rem solid yellow;
+  margin-top: 2.5rem;
+  min-height: 18.75rem;
 }
 
-#table th, 
+#table th,
 #table td {
-  border: 1px solid yellow;    
-  padding-top: 30px !important;
+  border: 0.0625rem solid yellow;
+  padding-top: 1.875rem !important;
 }
 
-.table-txt{
-  /*color: darkblue !important;*/
-  letter-spacing: 1px; 
-  /*text-shadow: -2px 2px 0 yellow, 2px 2px 0 yellow;*/
-  }
-
-#metadataTable td,#metadataTable th {
-  background-color: rgba(30, 169, 255, 0.797)  !important;
-  
+.table-txt {
+  letter-spacing: 0.0625rem;
 }
 
+#metadataTable td,
+#metadataTable th {
+  background-color: rgba(30, 169, 255, 0.797) !important;
+}
 
 .button-diff {
-  display:inline-block;
+  display: inline-block;
   width: fit-content;
-  padding: 15px 25px;
-  font-size: 18px;
+  padding: 0.9375rem 1.5625rem;
+  font-size: 1.125rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 5px solid black;
-  border-radius: 15px;
-  box-shadow: 0 9px black;
-  margin:auto;
+  border: 0.3125rem solid black;
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.5625rem black;
+  margin: auto;
   opacity: 1;
-
 }
 
 .button-diff:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 0.3125rem #666;
+  transform: translateY(0.25rem);
 }
 
-#difficulty { text-align: center;
-
-  }
-
+#difficulty {
+  text-align: center;
+}
 
 #ChildrenDifficulty {
-background-color: red ;
-color: yellow;
-text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  background-color: red;
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
 #AdultDifficulty {
-background-color: purple;
-color:yellow;
-text-shadow: -2px 2px 0 black, 2px 2px 0 black;}
+  background-color: purple;
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+}
 
 #card-text-item article {
-  border: 3px solid black;
-  border-radius: 15px;
-  padding: 15px;
+  border: 0.1875rem solid black;
+  border-radius: 0.9375rem;
+  padding: 0.9375rem;
   background-color: #fff8dc;
   max-width: 100%;
   display: inline-block;
 }
 
-
-#titolo-item {margin-top: 15px;}
+#titolo-item {
+  margin-top: 0.9375rem;
+}
 
 #showLess {
-  background-color: green ;
+  background-color: green;
   color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
 #showMore {
-  background-color: blue ;
+  background-color: blue;
   color: yellow;
-  text-shadow: -2px 2px 0 black, 2px 2px 0 black;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
 .button-diff-n {
-  display:inline-block;
+  display: inline-block;
   width: fit-content;
-  padding: 8px 10px;
-  font-size: 15px;
+  padding: 0.5rem 0.625rem;
+  font-size: 0.9375rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 2px solid black;
-  border-radius: 15px;
-  box-shadow: 0 2px black;
-  
+  border: 0.125rem solid black;
+  border-radius: 0.9375rem;
+  box-shadow: 0 0.125rem black;
   opacity: 1;
-  letter-spacing: 1px;
-
+  letter-spacing: 0.0625rem;
 }
 
 .button-diff-n:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 0.3125rem #666;
+  transform: translateY(0.25rem);
 }
 
 #previousButton,
 #nextButton {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 30px;
+  left: 48%;
+  transform: translateX(-48%);
+  margin-top: 1.875rem;
   background-color: rgba(255, 255, 3, 0.56);
-
-  
 }
 
 .meta-comic {
-  margin-top:30px;
-  padding-bottom: 40px;
-  background-color: #faf8fa41; /* sfondo unico */
-  border: 2px solid black;    /* bordo */
-  border-radius: 12px;       /* angoli arrotondati */
-  padding-left:20px;
-  padding-right: 20px;
+  margin-top: 1.875rem;
+  padding-bottom: 2.5rem;
+  background-color: #faf8fa41;
+  border: 0.125rem solid black;
+  border-radius: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   width: 100%;
   box-sizing: border-box;
-  
 }
-
-
-
 
