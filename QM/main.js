@@ -150,7 +150,7 @@ const items = [
   {
     id: 4,
     title: "First Folio",
-    image: ["images/First_folio_VA.jpg","images/shake-FF.jpg" ],
+    image: ["images/First_folio_VA.jpg","images/shake-FF.jpg"],
     metadata: {
       fullName: "First Folio",
       date: "1623",
@@ -192,7 +192,7 @@ const items = [
     {
     id: 5,
     title: "Wedding Dress",
-    image: [ ],
+    image: ["" ],
     metadata: {
       fullName: "Wedding Dress",
       date: "1840",
@@ -402,7 +402,7 @@ const items = [
 {
     id: 10,
     title: "Wedding Dress",
-    image: [ ],
+    image: ["images/wedding-dress-1.jpg", "images/wedding-dress-2.jpg", "images/wedding-dress-3.jpg" ],
     metadata: {
       fullName: "Wedding Dress",
       date: "1947",
@@ -444,7 +444,7 @@ const items = [
 {
     id: 11,
     title: "St Edward’s Crown",
-    image: [ ],
+    image: ["images/crown-0.jpg", "images/crown-1.jpg", "images/crown-3.jpg"],
     metadata: {
       fullName: "St Edward’s Crown",
       date: "1661",
@@ -486,7 +486,7 @@ const items = [
 {
     id: 12,
     title: "The first televised Christmas Broadcast",
-    image: [ ],
+    image: ["images/message-1.jpg", "images/message-2.1.jpg"],
     metadata: {
       fullName: "The first televised Christmas Broadcast",
       date: "1957",
@@ -528,7 +528,7 @@ const items = [
 {
     id: 13,
     title: "Reigning Queens (Queen Elizabeth)",
-    image: [ ],
+    image: ["images/picture-1.jpg", "images/picture-2.jpg", "images/picture-3.jpg" ],
     metadata: {
       fullName: "Reigning Queens (Queen Elizabeth)",
       date: "1985",
@@ -570,7 +570,7 @@ const items = [
 {
     id: 14,
     title: "Statue of Elizabeth II",
-    image: [ ],
+    image: ["images/statue-2.jpg", "images/statue.jpg"],
     metadata: {
       fullName: "Statue of Elizabeth II",
       date: "2022",
@@ -613,7 +613,7 @@ const items = [
 {
     id: 15,
     title: "Charles and Diana Engagement Interview",
-    image: [ ],
+    image: ["images/int-1.1.jpg", "images/int-1.jpg" ],
     metadata: {
       fullName: "Charles and Diana Engagement Interview",
       date: "1981",
@@ -655,7 +655,7 @@ const items = [
 {
     id: 16,
     title: "Princess Diana Engagement ring",
-    image: [ ],
+    image: ["images/ring-1.jpg", "images/ring-2.jpg"],
     metadata: {
       fullName: "Princess Diana Engagement ring",
       date: "1981",
@@ -697,7 +697,7 @@ const items = [
 {
     id: 17,
     title: "Revenge Dress",
-    image: [ ],
+    image: ["images/dress-1.jpg", "images/dress-2.jpg" ],
     metadata: {
       fullName: "Revenge Dress",
       date: "1994",
@@ -739,7 +739,7 @@ const items = [
 {
     id: 18,
     title: "Lady Diana on holiday in Portofino",
-    image: [ ],
+    image: ["images/photo-1.jpg", "images/photo-2.jpg", "images/photo-3.jpg" ],
     metadata: {
       fullName: "Lady Diana on holiday in Portofino",
       date: "1997",
