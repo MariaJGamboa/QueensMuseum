@@ -666,9 +666,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "Prince Charles gave Princess Diana a sparkly ring when he asked her to marry him. It was made of white gold, had a big blue sapphire in the middle, and lots of tiny diamonds around it. Diana picked it herself from the jeweler’s collection.",
+          medium: "On February 6, 1981, Prince Charles asked Diana to marry him and gave her a beautiful ring. It was white gold, with a big blue sapphire and 14 shiny diamonds around it. Diana chose the ring herself from the jeweler’s catalog. The ring was special because it wasn’t made just for her, it was already in the collection. Some people thought that was unusual, but Diana liked it because it reminded her of her mother’s ring. She did not care about tadition neither wearing a unique ring, she only chose that  based on what she liked more.",
+          long: "On February 6, 1981, Prince Charles asked Princess Diana to marry him, and he gave her a beautiful ring. It was made of white gold, with a big blue sapphire in the middle and 14 sparkling diamonds around it. Diana picked it herself from the jeweler’s catalog because it reminded her of her mother’s ring. Even though the ring wasn’t made just for her, Diana loved it. After she and Charles divorced, she still wore it. Later, when Diana passed away, her two sons, Prince William and Prince Harry, got the ring. Many years later, in 2010, Prince William used the same ring to ask Kate to marry him. The ring became famous all over the world, and everyone remembers Diana’s beautiful blue ring and how happy she looked when she got it."
         },
         adult: {
           short:"The ring that Prince Charles proposed to Princess Diana was an 18 carats white gold topped with a 12 carats oval Ceylon sapphire surrounded by 14 solitaire diamonds. It was chosen by Princess Diana from Garrad’s existing catalogue.",
@@ -678,14 +678,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"Prince Charles gave Princess Diana a very famous ring when he proposed. It was made of shiny white gold with a big blue sapphire and sparkling diamonds. Diana picked it herself, and it quickly became a symbol of the royal union.",
+          medium:"On February 6, 1981, Prince Charles asked Princess Diana to marry him with a ring that would become very famous. Diana chose a big blue sapphire ring with 14 glittering diamonds, all set in shiny white gold. She picked it herself from the crown jeweler Garrard’s catalogue. The design was inspired by a really old royal brooch that Queen Victoria got from Prince Albert. People couldn’t stop talking about it because it wasn’t a custom-made ring meaning that anyone could buy a similar one. Some people disliked this choice while others thought that this would make Diana more relatable to the public.",
+          long: "Prince Charles asked Princess Diana to marry him on February 6, 1981, with a ring that instantly became famous around the world. Diana chose it herself: it was 18-carat shiny white gold with a giant, bright blue sapphire in the middle and 14 sparkling diamonds around it. She picked it from the crown jeweler Garrard’s catalogue. The ring’s design was inspired by a very old royal brooch that Queen Victoria got from Prince Albert back in 1840. People went crazy for it because it wasn’t custom-made, lots of fans could get a similar ring, which made Diana feel connected to everyone while still being a royal. Diana also loved it for sentimental reasons because it reminded her of her mom’s engagement ring. She wore it all the time, even after her divorce, and when she passed away, her sons William and Harry inherited it. Later, Prince William used the same ring in 2010 to propose to Kate Middleton, passing Diana’s legendary royal style on to the next generation."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"Prince Charles’s engagement ring for Princess Diana became instantly iconic. Made of 18-carat white gold with a 12-carat Ceylon sapphire surrounded by 14 diamonds, it was chosen by Diana herself from Garrard’s catalogue, breaking tradition for not choosing a customed and unique ring for herself.",
+          medium:"The engagement ring Prince Charles gave to Princess Diana on February 6, 1981, quickly became a symbol of royal style and pop culture. Diana chose an 18-carat white gold ring topped with a 12-carat oval blue Ceylon sapphire, surrounded by 14 solitaire diamonds, from the crown jeweler Garrard’s catalogue. The design was inspired by a historic brooch Prince Albert gave Queen Victoria in 1840, blending royal tradition with a modern twist. While it caused some controversy because it was chosen from existing pieces rather than custom-made, it became instantly iconic and allowed the public to connect with Diana by wearing similar rings themselves.",
+          long:"On February 6, 1981, Prince Charles proposed to Princess Diana with an engagement ring that would become one of the most famous jewels in modern royal history. Diana picked the ring herself: an 18-carat white gold band topped with a 12-carat oval blue Ceylon sapphire and surrounded by 14 solitaire diamonds. She chose it from the crown jeweler Garrard’s catalogue, inspired by Queen Victoria’s sapphire and diamond cluster brooch given by Prince Albert in 1840. The ring immediately entered pop culture. It broke from royal tradition because it was not custom-made, allowing ordinary people to buy similar rings, making Diana feel relatable while remaining iconic. Diana also had personal reasons for the choice: it reminded her of her mother’s engagement ring. She continued to wear it even after her divorce, and after her death, the ring was inherited by her sons, Prince William and Prince Harry. In 2010, Prince William used it to propose to Kate Middleton, passing Diana’s pop culture legacy into the next generation."
         }
       }
     },
@@ -708,9 +708,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short childrem",
-          medium: "medium children",
-          long: "long children"
+          short: "In June 1994, Princess Diana wore a black silk dress to a garden party after she and Prince Charles divorced. The dress became very famous because everyone kept talking about it even after the event.",
+          medium: "Princess Diana wore a black silk dress in June 1994 to a garden party after her divorce from Prince Charles. The dress became very famous because she wore it the same night that Charles told on TV that he had been with someone else while still being married to the Princess. The dress was very different from what most royal people wore. It was short, with off-the-shoulder sleeves, black tights, and high heels. Diana wore the dress to show that she was strong and brave, and people loved how confident she looked. She used the dress to tell her own story and be noticed in the news in a positive way.",
+          long: "In June 1994, Princess Diana went to a big garden party. She had recently divorced Prince Charles. That same night, Charles told everyone on TV that he had been with another woman. Diana wore a special black silk dress made by a designer named Christina Stambolian. The dress was very different from what most royal people wore. It was short, had bare shoulders, and she wore black tights and high heels. Diana had owned the dress for many years but was too shy to wear it before because it was very bold and brave. That night, she decided to wear it to show everyone that she was strong and could be happy even after sad news. People loved her confidence and thought she looked amazing. The dress helped Diana tell her own story without saying a word. Later, the dress was sold at an auction, and now a collector in Scotland has it. Diana’s dress became very famous, and many people still remember it today because it showed that she was brave and stylish"
         },
         adult: {
           short:"The black silk minidress created by the designer Christina Stambolian became iconic when Princess Diana wore it in June, 1994 to the garden party held by Vanity Fair, after the divorce from Prince Charles.",
@@ -720,14 +720,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"revenge dress ecc ecc",
-          medium:"medium children",
+          short:"Princess Diana wore a black silk minidress by Christina Stambolian in June 1994 and everyone remembered it! The dress was bold, short, and off the shoulder. Diana looked amazing and instantly became a style icon that everyone loved.",
+          medium:"In June 1994, Princess Diana went to a fancy garden party hosted by Vanity Fair and wore a black silk minidress by Christina Stambolian. It was a very special dress because it was short, off the shoulder, and completely different from what royal ladies usually wore. That night was famous because it happened the same evening Prince Charles admitted on TV that he had been unfaithful. Diana didn’t look sad or scared, she looked powerful and confident. Wearing that dress, she showed everyone she was brave, stylish, and in charge of her own story. The dress became a pop culture moment that people still talk about today.",
           long: "long children"
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"Princess Diana’s black silk minidress by Christina Stambolian became instantly legendary when she wore it in June 1994 to Vanity Fair’s garden party. Bold, glamorous, and completely unexpected for a royal, the dress turned Diana into a fashion icon and a pop culture superstar.",
+          medium:"In June 1994, Princess Diana made a bold fashion statement at Vanity Fair’s garden party after her divorce from Prince Charles. She wore a black silk minidress designed by Christina Stambolian, a dress that became instantly iconic. The timing was unforgettable because it was the night Prince Charles confessed on TV about his affair with Camilla Parker Bowles. Diana’s short off-the-shoulder dress paired with black tights and heels broke royal fashion rules while capturing public admiration. By wearing it, Diana took control of the story, turning the spotlight on herself and cementing her status as a fearless style icon and pop culture legend.",
+          long:"Princess Diana’s black silk minidress by Christina Stambolian became one of the most iconic royal fashion moments of the 1990s. She wore it in June 1994 at Vanity Fair’s garden party following her divorce from Prince Charles. The moment was unforgettable because the dress appeared the same night Charles admitted on television to his affair with Camilla Parker Bowles. The dress was daring for a royal. It was short with an off-the-shoulder neckline and paired with black tights and heels. Diana had owned it for years but had never worn it publicly because she considered it too bold until the perfect moment arrived. By stepping out in the dress she broke the traditional royal dress code, which demanded modesty, and instantly captured public admiration. Diana’s choice was more than fashion. She reclaimed the narrative, diverted attention from Charles’ confession, and reminded the world of her charisma, style, and fearless personality. The dress became a symbol of Diana’s power, independence, and pop culture influence. Today it belongs to Scottish collector Graeme Mackenzie who purchased it at auction in New York on June 25, 1997."
         }
       }
     },
@@ -750,9 +750,9 @@ const items = [
     text: {
       historical: {
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "This is a picture of Princess Diana on holiday in Portofino. She is sitting on the diving board of a big yacht and looking out at the sea. This photo was taken one month before she died in a car accident.",
+          medium: "In this picture, Princess Diana is on holiday in Portofino. She is wearing a blue swimsuit and sitting on the diving board of a big yacht owned by Mohammed Al Fayed. She is spending time with Dodi, who was her friend after she and Prince Charles divorced. Diana was also with her two sons, Prince William and Prince Harry. They played, laughed, and had a lot of fun together. Harry later said it was a very happy time. Some photographers followed them, but Diana tried to keep her children safe and happy. This picture is one of the last photos taken of the Princess.",
+          long: "Princess Diana went on a holiday to Portofino. She wore a bright blue swimsuit and sat on the diving board of a big yacht. She went with Dodi, her friend after she and Prince Charles divorced. Diana also brought her two sons, Prince William and Prince Harry. They spent time laughing, playing, and enjoying the sun and sea. Harry remembered it as a very happy holiday with his mum. Even on holiday, some photographers tried to take pictures of Diana. She let them take some, but she always wanted to protect her children from the cameras. The TV series The Crown even shows some of these photographers following her on the yacht. After the holiday, Diana and Dodi went back to Paris. Sadly, a few days later, she had a car accident and passed away. This makes the photos from Portofino very special, because they show Diana happy, free, and enjoying life with her sons. Many people remember her as “The People’s Princess” because she cared so much about her children and people, expecially the less fortunate."
         },
         adult: {
           short:"The picture portraits Lady Diana on holiday in Portofino, sitting on the diving board of Mohammed Al Fayed’s yacht, gazing at the horizon. This photograph captures Diana one month before her death caused by a fatal car accident.",
@@ -762,14 +762,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"This famous photo shows Princess Diana on holiday in Portofino, sitting on the diving board of a big yacht and looking at the sea. It was taken just one month before her tragic accident. Even in a quiet moment, Diana looked graceful and this picture became legendary all over the world.",
+          medium:"Princess Diana is sitting on the diving board of Mohammed Al Fayed’s yacht in Portofino wearing a bright aqua blue swimsuit. She was on holiday with her sons, Prince William and Prince Harry, and with Dodi Fayed, who she had a romantic relationship with after her divorce from Prince Charles. Even though paparazzi were around, Diana stayed calm and graceful, protecting her kids while still shining like a true sta. The photo shows her strong, brave, and stylish all at once. People everywhere loved it, and it became a famous pop culture moment showing Diana as the'People’s Princess'.",
+          long: "In this iconic photo, Princess Diana is sitting on the diving board of a yacht in Portofino wearing a beautiful aqua blue swimsuit. She was on vacation with her sons, Prince William and Prince Harry, and with Dodi Fayed. This trip came after her divorce from Prince Charles, and it was a happy and special time for Diana and her family. Even though photographers were chasing them, Diana handled the cameras like a true superstar, protecting her children while still looking amazing. She laughed, played, and enjoyed the trip, showing everyone her brave, strong, and stylish side. After the vacation, Diana and Dodi went back to Paris, where a tragic accident happened. This photo is one of the last pictures of her and it reminds the world of her courage, her beauty, and her status as a true pop culture icon. Even in a quiet moment, Diana looked unforgettable and magical."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"This famous photo captures Princess Diana on holiday in Portofino, sitting on the diving board of Mohammed Al Fayed’s yacht and staring at the horizon. Taken just one month before her tragic death, it shows Diana in a quiet, reflective moment that became instantly iconic in pop culture, cementing her image as “the People’s Princess.”",
+          medium:"Princess Diana is pictured on holiday in Portofino wearing a stunning aqua blue swimsuit, sitting on the diving board of Mohammed Al Fayed’s yacht. This vacation, spent with Dodi Fayed and her two sons, Prince William and Prince Harry, was one of her last moments of joy after the turmoil of her divorce from Prince Charles. The photograph captures a solitary and intimate side of Diana, showing her strength, grace, and vulnerability all at once. Even with paparazzi nearby, Diana handled the cameras with poise, protecting her children while asserting her independence. This image quickly became a pop culture symbol of Diana’s freedom, charm, and enduring influence on the world.",
+          long:"In this iconic photograph, Princess Diana is captured on holiday in Portofino, wearing an aqua blue swimsuit and sitting on the diving board of Mohammed Al Fayed’s yacht. The image shows her in a private, contemplative moment during her vacation with Dodi Fayed, with whom she shared a romantic relationship after her divorce from Prince Charles. The trip came at a pivotal moment in Diana’s life, shortly after Prince Charles hosted a lavish birthday party for Camilla Parker Bowles at Highgrove. Diana spent the vacation with her sons, Prince William and Prince Harry, who later recalled in Spare the laughter, joy, and precious family moments they shared. Despite paparazzi chasing them, Diana skillfully navigated the media to protect her children while maintaining her own public presence. The photograph has become a lasting pop culture image, representing Diana’s courage, independence, and iconic style. Her willingness to be photographed was a subtle assertion of freedom, and her relationship with Dodi was widely covered in the press, making her personal life part of global conversation. The couple returned to Paris after the trip, where paparazzi pursuit ultimately led to the tragic accident that ended Diana’s life. This image remains one of the last enduring visuals of 'the People’s Princess,' a true pop culture legend."
         }
       }
     },
@@ -792,9 +792,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "Princess Diana had a big book written about her life! It was published on June 16, 1992. The book talked about the hard times she had in her marriage and some of the problems she faced being a princess.",
+          medium: "Princess Diana’s life was shared in a book written by Andrew Morton, published on June 16, 1992. The book tells Diana’s story in her own words. She talked about her life, her marriage with Prince Charles, and how it was sometimes really hard to be a princess in the royal family. The book became super famous and was the #1 bestseller because people got to hear Diana’s story directly. She talked about being sad sometimes, feeling unwell, and struggling with her feelings. Even though she helped write it, when the book first came out, people said it was only from her friends and family. Later, we learned Diana really did help write it herself.",
+          long: "Princess Diana had a big book about her life. It was written by a man named Andrew Morton and came out on June 16, 1992. The book talks about Diana’s life as a princess and her marriage to Prince Charles. In the book, Diana tells how sometimes she felt very sad and worried. She had some hard times in her marriage and didn’t always feel happy. She also talks about helping people who were having a tough time, which is why many people called her 'The People’s Princess'. At first, people thought Diana didn’t really help write the book, but later we learned she did. After she passed away, the book was updated so that people who cared about her could keep learning from her story. It shows that even princesses can be brave, kind, and strong, even when life is hard."
         },
         adult: {
           short:"Princess Diana’s Biography, written by Andrew Morton was published on June 16, 1992. The book revealed marital issues and difficulties, as well as unhappiness within her marriage and her struggles.",
@@ -804,14 +804,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"Princess Diana had a book written about her life by Andrew Morton. It came out on June 16, 1992. The book told everyone about her problems, her sad marriage, and all the hard things she faced as a princess. People loved it and it made Diana even more famous, a popular icon.",
+          medium:"In 1992, Andrew Morton published a book about Princess Diana. It talked about her life, her marriage to Prince Charles, and all the tough stuff she had to deal with being a princess. The book was very honest and told her story in her own words. It became a number one bestseller because people felt like they were hearing Diana speak directly to them. The book showed how brave she was, how she sometimes felt sad, and how much she cared about other people. Everyone called her the People’s Princess. The book was a huge pop culture moment and made Diana even more loved around the world.",
+          long: "Princess Diana’s life was shared with the world in a book by Andrew Morton. It came out on June 16, 1992. The book told her story from her side, about being a princess, her difficult marriage to Prince Charles, and how hard it was to always be watched by the media. The book became a number one bestseller because Diana’s voice was real and honest. It talked about her struggles with sadness, depression, and bulimia. It also showed how kind she was and how much she cared about people who were having a hard time, which is why everyone called her the 'People’s Princess'. Even though people said Diana didn’t help with the book while she was alive, later it came out that she was the main source. The book shared her personal thoughts and feelings, making it feel like Diana was talking directly to the readers. After she passed away in 1997, the book became even more special. It reminded the world how brave, kind, and amazing she was, and it helped her story stay alive for the people. Diana became a real pop culture icon, a princess who inspired everyone."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"Princess Diana’s biography by Andrew Morton, published on June 16, 1992, shook the world. Revealing her struggles, her unhappy marriage, and life in the royal spotlight, the book instantly became a pop culture phenomenon and cemented Diana’s status as 'the People’s Princess'.",
+          medium:"Princess Diana’s biography by Andrew Morton, released on June 16, 1992, gave the world a rare glimpse into her life. Told from her perspective, it shared her challenges in the royal family, her difficult marriage to Prince Charles, and the pressures of constant media attention. The book became a number one New York Times bestseller because Diana’s voice was honest, raw, and unforgettable. Readers learned about her mental health struggles, her relationship with Queen Elizabeth, and her deep empathy for others, which earned her the nickname the People’s Princess. The biography became a pop culture moment, revealing the real Diana behind the royal glamour.",
+          long:"Princess Diana’s biography, written by Andrew Morton and published on June 16, 1992, became a worldwide sensation. It offered an inside look at her life from her own perspective, exploring her struggles with the pressures of the royal family, an unhappy marriage, and nonstop media attention. The book became a number one New York Times bestseller because Diana’s voice was at its heart. It shared her difficult relationship with Prince Charles, his affair with Camilla Parker Bowles, her mental health challenges including depression and bulimia, and her empathy for marginalized people, which made her the People’s Princess. Although Diana’s direct involvement was denied while she was alive, it was later revealed that she was the main source for the biography. The tapes of her confessions gave readers a deeply personal view of her life. After her death in 1997, the book took on even greater meaning and helped solidify Diana as a cultural icon whose story continues to inspire generations and shape the pop culture image of royalty, fame, and courage."
         }
       }
     },
