@@ -114,8 +114,7 @@ ol{
 }
 
 .card-header {
-    padding: 10px !important;
-    border-bottom: 3px #990000 !important;
+    
     color: #262626 !important;
 }
 
@@ -146,21 +145,30 @@ ol{
 #metadataTable td,#metadataTable th{
     background-color: #f9e8d2;
     font-family: "garamond", serif;
+    border: 3px solid #990000;  
+    border-radius: 15px; 
+}
+#difficulty {
+  display: flex; /* Rende il contenitore un flex container */
+  gap: 10px;
 }
 
-
 #ChildrenDifficulty {
-    font-family: "garamond", serif !important;
+    font-family: "garamond", serif;
     background-color: #000066;
-    border-color: #000066;
     color: #fcf4e9;
+    font-size: 100%;
+    padding: 7px;
+    
+   
 }
 
 #AdultDifficulty {
-    font-family: "garamond", serif !important;
+    font-family: "garamond", serif;
     background-color: #000066;
-    border-color: #000066;
     color: #fcf4e9;
+    font-size: 100%;
+    padding: 7px;
 }
 
 #showLess{
@@ -168,12 +176,14 @@ ol{
     border-color: #000066;
     color: #000066;
     
+    
 }
 
 #showMore{
     font-family: "garamond", serif !important;
     border-color: #000066;
     color: #000066;
+    
 }
 
 #previousButton {
@@ -181,7 +191,7 @@ ol{
     border-color: #000066;
     font-family: "garamond", serif !important;
     color: #fcf4e9;
-    margin-top: 2% !important;
+    margin-top: 5% !important;
 }
 
 #nextButton {
@@ -189,15 +199,10 @@ ol{
     border-color: #000066;
     font-family: "garamond", serif !important;
     color: #fcf4e9;
+    margin-left: 83%;
     
 }
 
-.card-footer {
-    padding: 8px !important;
-    border-top-style: solid !important;
-    border-color: #990000 !important;
-    font-family: "garamond", serif !important;
-}
 
 /*style bottoni narrative*/
 #hist{
