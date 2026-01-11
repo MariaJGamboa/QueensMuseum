@@ -19,6 +19,11 @@ p {
     background-color: black !important;
 }
 
+.nav-link.active {
+    background-color: #cc00ff;
+    color: #000 !important;
+}
+
 .nav-text{
     color: #cc00ff !important;
 }
@@ -149,6 +154,11 @@ ol {
     font-family: "Cascadia Code", sans-serif;
 }
 
+#difficulty {
+  display: flex; /* Rende il contenitore un flex container */
+  gap: 10px;
+}
+
 #ChildrenDifficulty{
     background-color: transparent;
     color: white;
@@ -156,6 +166,8 @@ ol {
     border-color: #cc00ff;
     box-shadow: 0 0 5px #cc00ff;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    padding: 7px;
 }
 #ChildrenDifficulty:hover {
     background-color: #cc00ff;
@@ -170,6 +182,8 @@ ol {
     border-color: #cc00ff;
     box-shadow: 0 0 5px #cc00ff;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    padding: 7px;
 }
 #AdultDifficulty:hover {
     background-color: #cc00ff;
