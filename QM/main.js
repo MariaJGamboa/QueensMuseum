@@ -26,7 +26,7 @@ const items = [
     image: ["images/coronation_portrait2_elizI.jpg", "images/coronation_portrait_elizI.jpg" ],
     metadata: {
       fullName: "The Coronation Portrait",
-      date: "circa 1600",
+      date: "1600-1610",
       place: "National Portrait Gallery, London",
       materiality: "Oil on panel",
       room: "Queen Elizabeth I's Room"
@@ -59,7 +59,7 @@ const items = [
     },
     order: {
       historical: 1,
-      popculture: 1
+      popculture: 3
     }
   },
 
@@ -70,8 +70,8 @@ const items = [
       metadata: {
         fullName: "Chequers Ring",
         date: "1570",
-        place: "unknown",
-        materiality: "mother of pearl, colg, rubies",
+        place: "Chequers, country house of the prime minister of the United Kingdom",
+        materiality: "A mother of pearl ring, with gold and rubies",
         room: "Queen Elizabeth I's Room"
       },
       text:{ 
@@ -102,13 +102,13 @@ const items = [
     },
     order: {
       historical: 2,
-      popculture: 2
+      popculture: 4
     }
   },
   {
     id: 3,
     title: "Tilbury Speech",
-    image: [ ],
+    image: ["images/tilbury-speech.jpg"],
     metadata: {
       fullName: "Tilbury Speech",
       date: "1588",
@@ -144,7 +144,7 @@ const items = [
     },
     order: {
       historical: 3,
-      popculture: 3
+      popculture: 1
     }
   },
   {
@@ -154,8 +154,8 @@ const items = [
     metadata: {
       fullName: "First Folio",
       date: "1623",
-      place: "Folger SHakespeare Library",
-      materiality: "Book",
+      place: "Folger Shakespeare Library",
+      materiality: "Printed book",
       room: "Queen Elizabeth I's Room"
     },
     text: {
@@ -186,17 +186,17 @@ const items = [
     },
     order: {
       historical: 4,
-      popculture: 4
+      popculture: 2
     }
   },
     {
     id: 5,
-    title: "Wedding Dress",
-    image: ["" ],
+    title: "Queen Victoria's Wedding Dress",
+    image: ["images/qVictoria_wedding-dress.jpg" ],
     metadata: {
       fullName: "Wedding Dress",
       date: "1840",
-      place: "",
+      place: "Royal Collection, Kensington Palace",
       materiality: "Heavy silk satin, honiton lace",
       room: "Queen Victoria's Room"
     },
@@ -227,18 +227,18 @@ const items = [
       }
     },
     order: {
-      historical: 1,
-      popculture: 1
+      historical: 3,
+      popculture: 2
     }
   },
    {
     id: 6,
     title: "Coronation Portrait",
-    image: [ ],
+    image: [ "images/Coronation_portrait_of_Queen_Victoria_1838.jpg"],
     metadata: {
       fullName: "Coronation Portrait",
       date: "1838",
-      place: "",
+      place: "National Portrait Gallery, London",
       materiality: "Oil on canvas",
       room: "Queen Victoria's Room"
     },
@@ -270,18 +270,18 @@ const items = [
     },
     order: {
       historical: 2,
-      popculture: 2
+      popculture: 5
     }
   },
 {
     id: 7,
     title: "Love letters between Albert and Victoria",
-    image: [ ],
+    image: [ "images/Love-lettersV&A.jpg"],
     metadata: {
       fullName: "Love letters between Albert and Victoria",
       date: "1836",
-      place: "",
-      materiality: "Letter",
+      place: "Royal Archives, Windsor Castle",
+      materiality: "Ink on Paper",
       room: "Queen Victoria's Room"
     },
     text: {
@@ -311,18 +311,18 @@ const items = [
       }
     },
     order: {
-      historical: 3,
+      historical: 1,
       popculture: 3
     }
   },
 {
     id: 8,
     title: "The Royal Family in 1846",
-    image: [ ],
+    image: [ "images/Royal-Famlily.jpg"],
     metadata: {
       fullName: "The Royal Family in 1846",
       date: "1846",
-      place: "",
+      place: "East Gallery, Buckingham Palace, London",
       materiality: "Oil on canvas",
       room: "Queen Victoria's Room"
     },
@@ -360,12 +360,12 @@ const items = [
 {
     id: 9,
     title: "Queen Victoria Tea set",
-    image: [ ],
+    image: ["images/teaS.jpg", "images/tea_set.jpg" ],
     metadata: {
       fullName: "Queen Victoria Tea set",
       date: "1851",
-      place: "",
-      materiality: "",
+      place: "Royal Collection Trust",
+      materiality: "English bone china tea set",
       room: "Queen Victoria's Room"
     },
     text: {
@@ -396,7 +396,7 @@ const items = [
     },
     order: {
       historical: 5,
-      popculture: 5
+      popculture: 1
     }
   },
 {
