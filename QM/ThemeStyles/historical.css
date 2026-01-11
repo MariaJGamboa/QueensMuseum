@@ -19,10 +19,22 @@ p {
 }
 
 .carousel-inner img {
-  width: 1550px !important;
+  width: 100% !important;
   height: 710px !important;
   object-fit: cover;   /* scala senza deformare */
   display: block;
+  border: 4px solid;
+  border-color: #990000;
+  border-radius: 15px;
+}
+
+.carousel-inner {
+    padding: 3%;
+}
+
+.carousel-caption h2{
+    color: #e2d2a9 !important;
+    font-size: 70px !important;
 }
 
 p.dropcap-paragraph::first-letter {
@@ -41,6 +53,7 @@ h1, h2, h4 {
     font-style: normal; 
     color: #262626;
     font-size: 50px !important;
+    padding-bottom: 1%;
 }
 
 /*Style card in index*/
@@ -140,13 +153,15 @@ ol{
 
 .table-responsive{
     padding-top: 30% !important;
+    border-radius: 15px;
 }
 
 #metadataTable td,#metadataTable th{
     background-color: #f9e8d2;
     font-family: "garamond", serif;
-    border: 3px solid #990000;  
-    border-radius: 15px; 
+    border: 3px solid;  
+    border-color: #990000;
+    
 }
 #difficulty {
   display: flex; /* Rende il contenitore un flex container */

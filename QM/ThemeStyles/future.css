@@ -41,7 +41,9 @@ p {
   object-fit: cover;   /* scala senza deformare */
   display: block;
 }
-
+.carousel-caption h2{
+    font-size: 70px !important;
+}
 
 /*Style dellapagina map*/
 h1{
@@ -152,6 +154,10 @@ ol {
 
 #metadataTable td,#metadataTable th{
     font-family: "Cascadia Code", sans-serif;
+    background-color: #999999;
+    border: 3px solid;
+    border-color: #cc00ff;
+    box-shadow: 0 0 8px #cc00ff;
 }
 
 #difficulty {
