@@ -4,19 +4,6 @@ html {
 }
 
 
-.img-container {
-  width: 70% !important;
-  height: 50%!important;
-  overflow: hidden;
-
-}
-
-.img-container img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover; /* "cover" fills container; "contain" fits image inside */
-}
-
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
