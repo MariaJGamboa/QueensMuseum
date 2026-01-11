@@ -276,7 +276,7 @@ const items = [
 {
     id: 7,
     title: "Love letters between Albert and Victoria",
-    image: [ "images/Love-lettersV&A.jpg"],
+    image: [ "images/loveletters.jpg"],
     metadata: {
       fullName: "Love letters between Albert and Victoria",
       date: "1836",
@@ -318,7 +318,7 @@ const items = [
 {
     id: 8,
     title: "The Royal Family in 1846",
-    image: [ "images/Royal-Famlily.jpg"],
+    image: [ "images/royalfamily.jpg"],
     metadata: {
       fullName: "The Royal Family in 1846",
       date: "1846",
