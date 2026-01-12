@@ -86,3 +86,14 @@ svg {
 #narrative {padding-bottom: 5em}
 .button:hover {opacity: 1}
 
+
+.vboard-print {
+  width: 100%;
+  max-width: 35rem;
+ 
+}
+.vboard-pop {
+  width: 100%;
+  max-width: 35rem;
+ 
+}

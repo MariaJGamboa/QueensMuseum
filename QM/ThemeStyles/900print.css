@@ -12,7 +12,7 @@
   letter-spacing: 0.06rem;
 }
 
-.pinyon-script-large {
+/*.pinyon-script-large {
   font-family: "Pinyon Script", cursive;
   font-weight: 600;
   font-style: normal;
@@ -20,7 +20,7 @@
   letter-spacing: 0.06rem;
 }
 
-.im-fell-english-regular-italic {
+/* .im-fell-english-regular-italic {
   font-family: "IM Fell English", serif;
   font-weight: 400;
   font-style: italic;
@@ -30,7 +30,7 @@
   font-family: "IM Fell English SC", serif;
   font-weight: 400;
   font-style: normal;
-}
+}*/
 
 .playfair {
   font-family: "Playfair", serif;
@@ -52,6 +52,7 @@
 
 body {
   font-family: "IM Fell English";
+  background-color: ivory;
 }
 
 nav {
@@ -79,7 +80,7 @@ h2 {
   padding: 2.25rem;
   border: 0.2rem solid #2C2D2D;
   box-shadow:
-    0 0 0 0.5rem white,
+    0 0 0 0.5rem ivory,
     0 0 0 0.75rem #2C2D2D;
   position: relative;
   margin-bottom: 3.75rem;
@@ -109,8 +110,8 @@ h2 {
   padding-bottom: 2rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  color: white;
-  border: 0.25rem dotted white;
+  color: ivory;
+  border: 0.25rem dotted ivory;
 }
 
 .floral-dec {
@@ -125,7 +126,7 @@ h2 {
   display: inline-block;
   margin: 0 1rem;
   font-size: 2rem;
-  color: white;
+  color: ivory;
   vertical-align: middle;
 }
 
@@ -162,25 +163,12 @@ img {
   background-color: #2C2D2D;
 }
 
-.dec-frame {
-  overflow: visible;
-  border: 1.25rem solid transparent;
-  border-image: url('../images/frame-giusto.png') 2rem round;
-  
-  border-image-source: url('../images/frame-giusto.png');
-  border-image-slice: 30;
-  border-image-repeat: round;
-  padding: 3rem 2rem;  
-  max-width: 75rem;
-  width:100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+
 
 .dec-frame2 {
   overflow: visible;
   border: 1.25rem solid transparent;
-  border-image: url('../images/frame-giusto.png') 2rem round;
+  
   
   border-image-source: url('../images/frame-giusto.png');
   border-image-slice: 30;
@@ -197,20 +185,20 @@ img {
 .footer-cl {
   margin-top: 5rem;
   font-family: "IM Fell English SC";
-  border: 0.125rem solid white;
-  outline: 0.125rem solid white;
+  border: 0.125rem solid ivory;
+  outline: 0.125rem solid ivory;
   outline-offset: -0.25rem;
   background-color: #2C2D2D;
-  color: white;
+  color:ivory;
 }
 
 #hist {
-  background-color: white;
+  background-color: ivory;
   color: #2C2D2D;
 }
 
 #pop-cult {
-  background-color: white;
+  background-color: ivory;
   color: #2C2D2D;
 }
 
@@ -230,7 +218,7 @@ img {
 
 .button:hover {
   background-color: black !important;
-  color: white !important;
+  color: ivory !important;
 }
 
 .nar-text {
@@ -264,11 +252,11 @@ img {
 .ex-black-frame {
   background-color: #2C2D2D;
   padding: 1.25rem;
-  color: white;
+  color: ivory;
   margin-right: 2.5rem;
   width: 100%;
   max-width: 27rem;
-  border: 0.2rem dotted white;
+  border: 0.2rem dotted ivory;
 }
 
 @media (max-width: 70rem) {
@@ -280,7 +268,7 @@ img {
 }
 
 .ex-black-frame a {
-  color: white;
+  color: ivory;
   text-decoration: none;
 }
 
@@ -293,10 +281,10 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  left: 9.5rem;
+  left: 4%;
   transform: translateY(-50%);
-  width: 10.5rem;
-  height: 10.5rem;
+  width: 12%;
+  aspect-ratio: 1/1;
   background-image: url("../images/map-img-left.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -308,10 +296,10 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  left: 78rem;
+  left: 85%;
   transform: translateY(-50%);
-  width: 9.5rem;
-  height: 9.5rem;
+  width: 11%;
+  aspect-ratio: 1/1;
   background-image: url("../images/map-img.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -354,11 +342,11 @@ img {
 .room2:hover ~ .lab2,
 .room3:hover ~ .lab3,
 .room4:hover ~ .lab4 {
-  fill: white;
+  fill: ivory;
 }
 
 .corr-pop {
-  fill: white;
+  fill:ivory;
   stroke: #333;
   stroke-width: 0.1em;
   fill-opacity: 0.5;
@@ -384,7 +372,7 @@ img {
   border: 0.2rem solid #2C2D2D;
   margin-bottom: 1.25rem;
   box-shadow:
-    0 0 0 0.5rem white,
+    0 0 0 0.5rem ivory,
     0 0 0 0.75rem #2C2D2D;
 }
 
@@ -414,12 +402,12 @@ img {
 
 #metadataTable td,
 #metadataTable th {
-  background-color: white !important;
+  background-color: ivory !important;
 }
 
 #ChildrenDifficulty,
 #AdultDifficulty {
-  background-color: white;
+  background-color: ivory;
   color: #2C2D2D;
 }
 
@@ -454,7 +442,7 @@ img {
 
 .button-diff-n:hover {
   background-color: black !important;
-  color: white !important;
+  color: ivory !important;
 }
 
 #previousButton,

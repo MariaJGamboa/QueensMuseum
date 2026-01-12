@@ -64,7 +64,60 @@
       </div>
     </nav>
     
-        <h1>Questo sarà documentation</h1>
+    <div class="container">
+      <h1>Documentation</h1>
+      <h2>The Project</h2>
+      <p>The Queen Museum is a companion app for a visit to an exhibition which helps the visitor visualize the items contained in an hypothetical physical museum. The development of the application is based on the MMMM acronym which stands for Multimedia Museum Meta Mirror. As specified in the requirements, the Queen Museum app offers a virtual visit of items whose history is connected to the lives of three monarchs and one princess of the United Kingdom.</p>
+      <ul>
+        <li>Meta Mirror: the application offers a complete overview of the content of a museum.</li>
+        <li>Museum: the digital companion is an online counterpart of a physical museum which explores the role of the royals in our culture through the items that belonged to them. The application helps the visitor to plan the visit and explore the physical structure of the museum digitally.</li>
+        <li>Multimedia: the application is populated with several images and text describing in detail every item contained in the museum. The Home page offers a timeline helpful to visualize every item in their time context and in the Map page a real configuration of the rooms is presented to help the visitor organize the tour.</li>
+      </ul>
+      <p>The Queen Museum exhibition counts 19 items - 4 or 5 objects for each monarch - which are presented according to two different narratives. The Historical Narrative presents the item in a chronological order, focusing on the historical period in which they belong and their important role in a specific period of time. The second narrative focuses on the role that these items have in the construction of the persona of these royals in popular culture and why they became an integral part of the narratives around these royals' lives. According to the different narratives the descriptive text on each item page changes as well as their presentation order in the Exhibition section. 
+      To dive deeper in the museum content, each item is accompanied with a text which can be elongated or shortened according to one’s interest through the “show more” and “show less” buttons. The application is developed to satisfy every age group which led us to ideate text suitable for both children and adults which can be selected also by clicking the buttons to change the difficulty level. As mentioned before the texts also adapt to the narrative selected focusing either on the historical value and role of each item or their influence in popular culture. 
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Presentation</h2>
+      <h4>Home page</h4>
+      <p></p>
+      <h4>Map page</h4>
+      <p></p>
+      <h4>Exhibition page</h4>
+      <p></p>
+    </div>
+
+    <div class="container">
+      <h2>Themes</h2>
+      <p>As specified in the guidelines, we applied to the application four different themes which can be defined as completely unique ways to present the content of the museum. The different themes affect the design of the website by modifying the colours, the font-families, the measurement and the general visual output the visitor faces while exploring the application. To have a broad variety of styles we choose every theme from a different period in time. Our choices and design features will be further explained in the following sections.</p>
+      <h4>Historical:</h4>
+      <p></p>
+      <h4>Print 20th century:</h4>
+      <p>This style is inspired by the early years of the 20th century, in particular on important media such as the journal which underwent pagination and content changes during this specific period. At the beginning of the 20s many newspapers started to use graphics and layout to stand out from the competitive market. Headlines, articles and images became a way to hierarchize the news. During these years the symmetrical layout becomes important to obtain a balance between columns containing articles. The pages are characterized by many separated sections, different fonts, mainly bold for the titles and thin for the articles and little illustration or decorative frames contributed to the enrichment of the layout. 
+      To simulate a newspaper with different pages and articles we used different separated sections to mimic the articles separation. This is why every &lt;div&gt; element is distantiated from the other either by a separation line which is implemented by the class .section-divider and by the pseudo element ::before which allows us to apply the separation line after the element &lt;div&gt; selected. Other framing techniques consist in assigning to a certain section a color that differs from the typical ivory of the journal paper, which is also the background color assigned to this theme. We used the #2C2D2D Hex Code which can be named as Light Black which resembles the shade of black observable in printed paper. &lt;div&gt; elements like the Items section in the Home Page or the Explore the museum section in the Map page have a darker background to capture the attention of the visitor as it was common at the beginning of the 20th century in newspapers. Since it was common to insert different captivating titles to arouse curiosity in the reader and make journals visually appealing, different fonts were used to seek variety. IM Fell English is typically applied to &lt;p&gt; elements or secondary titles, when they are not the main focus of attention. The Playfair font family is applied to important titles that need to capture interest because of its bold nature. Smaller layout section but still important use the .playfair-sm variation where the font-size is slightly smaller, of only one rem, being it 2rem, but still captivating. Finally the last font-family used is the Pinyon Script in cursive. It is applied to the names of the royals in the Home page because of its elegant configuration which highlights the importance of those names. 
+      Many decorations are applied to almost every section. A double border is applied to sections with class .frame thanks to the preuso-element ::after. Another type of decoration is the one identified by the .floral-dec class and its pseudo-elements ::before and ::after to apply two flower icons at the sides of some titles. In other cases PNG format pictures are used to surround other sections worthy of attention by using the property border-image-source and inserting the path to my PNG image. Other little illustrations were put to decorate the Map page, again by using the pseudo-elements previously discussed. These two illustrations do not appear when the viewport is smaller than 62rem as specified in the @media rule. (da finire)
+      </p>
+      <figure>
+        <img src="images/vision-board-print.png" class="vboard-print" alt="vision board">
+        <figcaption>Vision board for the Print 20th century theme</figcaption>
+      </figure>
+      <h4>Pop Art:</h4>
+      <p>The Pop Art theme is inspired by the historical period between the 1950s and the 1960s. During those years a new art movement arose inspired by commercial and popular culture. 
+      Pop art took major inspiration from television, comic books, magazines combining easily understandable images with a reflection on the current historical context and the values of society. 
+      The Pop Art theme, that can be chosen between the site’s theme selection, aims to present the elements of our application in a way to exploit all the features typically associated with Pop Art. We took inspiration from artists like Roy Lichtenstein and Andy Warhol to present the application in a colorful and cartoonish way. 
+      The Home page, as well as all the other html documents, resamble the works of art by Roy Lichtenstein which were based on comics, characterized by bright colours and dots. The body background is pink, a very bright colour with white dots on it which were created by using the property background-image: radial-gradient(circle, white 10%, transparent 20%);  on the body element. 
+      Both the navigation bar and the footer are DodgerBlue, a very frequent colour in the Pop Art colour palette used by artists and with a high level of contrast with the pink of the body. All of the colours chosen for this theme are bright and contrasting with one another except for the frames that surround long portions of text whose background color is wheat. These are the only sections with a lighter colour to mimic a cartoon with a dialogue in it. They are also framed with a border with rounded corners typical of comics’ cartoons. Many of the layout’s elements are framed by the same border to make each section independent from the other. 
+      A typical cartoon png is applied to the titles elements to make them distinguishable from the rest of the text and make them stand out, as they were exclamation in a comic. The font-family applied to this theme is Bangers, a cartoonish and thick font which resembles the short and impactful text of a comic. Titles are characterized by bright yellow colours while general text content is black with the exception of important words or names that are highlighted with a bright blue. Shadows are applied to texts and some of the elements to highlight their importance and add a cartoonish layer. 
+      The dimensions and proportion of the elements of this theme are calculated to achieve visual harmony and readability inspired by both comic layouts and the golden ratio principle. We chose to adopt relative units as rem, % or vh to ensure a proportionate scaling of each element according to the dimensions of the viewport and facilitate the use of our application both on pcs and smartphones.
+      </p>
+      <figure>
+        <img src="images/vision-board-pop.png" class="vboard-pop" alt="vision board">
+        <figcaption>Vision board for the Pop Art theme</figcaption>
+      </figure>
+      <h4>Future:</h4>
+      <p></p>
+    </div>
 
     <!--FOOTER-->
     <footer>
