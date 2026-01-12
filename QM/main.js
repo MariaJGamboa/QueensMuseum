@@ -1,19 +1,35 @@
 //javascript per cambiare gli stili//
 
+const themes = [
+  'ThemeStyles/historical.css',
+  'ThemeStyles/900print.css',
+  'ThemeStyles/PopArt.css',
+  'ThemeStyles/future.css'
+];
+
 function changeTheme(cssFile) {
         const link = document.getElementById("theme-css");
         if(link) {
       // cambia il tema e forza ricaricamento senza cache
-          link.href = cssFile + "?v=" + Date.now();
+          link.href = cssFile;
           sessionStorage.setItem('selectedTheme', cssFile)
     }
       }
   // Applica il tema salvato al caricamento della pagina
         document.addEventListener('DOMContentLoaded', () => {
+          const link = document.getElementById("theme-css");
+          if (!link) return;
+
           const savedTheme = sessionStorage.getItem('selectedTheme');
-          if(savedTheme) {
-            const link = document.getElementById("theme-css");
-            if(link) link.href = savedTheme;
+
+          if (savedTheme) {
+            // Tema già scelto
+            link.href = savedTheme;
+          } else {
+            // 🎲 Tema casuale al primo accesso
+            const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+            link.href = randomTheme;
+            sessionStorage.setItem('selectedTheme', randomTheme);
           }
         });
 
