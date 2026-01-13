@@ -1,5 +1,3 @@
-//javascript per cambiare gli stili//
-
 const themes = [
   'ThemeStyles/historical.css',
   'ThemeStyles/900print.css',
@@ -7,39 +5,39 @@ const themes = [
   'ThemeStyles/future.css'
 ];
 
-const link = document.getElementById("theme-css");
+document.addEventListener('DOMContentLoaded', () => {
+  const link = document.getElementById("theme-css");
+  if (!link) return;
 
-if (link){
-const savedTheme = sessionStorage.getItem("selectedTheme");
-const theme = savedTheme || themes[Math.floor(Math.random() * themes.length)];
-
-link.href = theme;
-
+  // Prendi tema salvato o random
+  let savedTheme = sessionStorage.getItem("selectedTheme");
   if (!savedTheme) {
-    sessionStorage.setItem("selectedTheme", theme)
-
+    savedTheme = themes[Math.floor(Math.random() * themes.length)];
+    sessionStorage.setItem("selectedTheme", savedTheme);
   }
- }
 
-link.onload = () => {
-    document.body.style.visibility = "visible";
-  };
+  // Applica subito il tema
+  link.href = savedTheme;
+  document.body.style.visibility = "visible"; // mostra il body ora che il tema è applicato
+});
 
-
+// Funzione per cambiare tema al click
 function changeTheme(cssFile) {
   const link = document.getElementById("theme-css");
-  if (link) {
-    document.body.style.visibility = "hidden";
+  if (!link) return;
 
+  const currentTheme = sessionStorage.getItem("selectedTheme");
+
+  if (currentTheme === cssFile) {
+    // Forza ricaricamento aggiungendo timestamp per query string
+    link.href = cssFile + '?v=' + new Date().getTime();
+  } else {
     link.href = cssFile;
     sessionStorage.setItem("selectedTheme", cssFile);
-
-    link.onload = () => {
-      document.body.style.visibility = "visible";
-    };
   }
-}
 
+  document.body.style.visibility = "visible"; // assicura che il body sia visibile
+}
 
 // dati items 
 
