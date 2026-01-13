@@ -216,8 +216,11 @@ img {
   border: 0.2rem dashed black;
 }
 
-.button:hover {
-  background-color: black !important;
+.button.active {background-color: black !important;
+  color:ivory !important;}
+
+.button:not(.active):hover {
+  background-color: black I !important;
   color: ivory !important;
 }
 
@@ -405,15 +408,20 @@ img {
   background-color: ivory !important;
 }
 
-#ChildrenDifficulty,
+/* #ChildrenDifficulty,
 #AdultDifficulty {
   background-color: ivory;
-  color: #2C2D2D;
+  color: black;
 }
 
+ #ChildrenDifficulty.active,
+#AdultDifficulty.active {
+  background-color: black !important;
+  color: ivory !important;
+} 
 #difficulty {
   text-align: center;
-}
+}*/
 
 .meta-comic {
   padding-top: 0.3rem;
@@ -424,6 +432,34 @@ img {
   width: 100%;
   box-sizing: border-box;
   border: 0.2rem dotted #2C2D2D;
+}
+
+
+
+
+.button-diff{
+  display: inline-block;
+  border-radius: 3rem;
+  width: fit-content;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.3rem;
+  opacity: 1;
+  color:black;
+  border: 0.2rem dashed black;
+}
+
+.button-diff:not(.active):hover {
+  background-color: black !important;
+  color: ivory !important;
+}
+
+.button-diff.active {
+  background-color: black;
+  color: ivory;
 }
 
 .button-diff-n {

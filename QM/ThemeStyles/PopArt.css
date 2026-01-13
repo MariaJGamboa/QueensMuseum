@@ -361,6 +361,11 @@ ul > li::marker {
   transform: translateY(0.25rem);
 }
 
+.button.active {
+  box-shadow: 0 0.3125rem black; /* riduce l’altezza come quando clicchi */
+  transform: translateY(0.25rem); /* lo abbassa */
+}
+
 .comic-nar {
   background-color: wheat;
   max-width: 62.5rem;

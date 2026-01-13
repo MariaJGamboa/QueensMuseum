@@ -925,6 +925,8 @@ function showImage(index) {
     }
 }
 
+
+
 function nextImage() {
     const item = orderedItems[currentItemIndex];
     if (!item.image || item.image.length === 0) return;
@@ -964,13 +966,21 @@ function nextItem() {
 // Cambia narrativa
 // ==============================
 function setNarrative(narrative) {
-   if (currentNarrative === narrative) return; // niente da fare se stessa narrativa
+   
+    if (currentNarrative === narrative) return;
 
-    currentNarrative = narrative;
+    currentNarrative = narrative
 
+    document.querySelectorAll('.button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    const btn = document.getElementById(narrative); // id dei bottoni = 'hist', 'pop-cult'
+    if(btn) btn.classList.add('active');
+    
+    sessionStorage.setItem('selectedNarrative', narrative);
     // salva l'id dell'item corrente
     const currentId = orderedItems[currentItemIndex]?.id;
-
     // riordina gli items
     updateOrderedItems();
 
@@ -1029,12 +1039,16 @@ function changeTextChildren() {
     currentDifficulty = "children";
     currentTextLevel = 0;
     updateContent();
+    document.querySelectorAll('.button-diff').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('ChildrenDifficulty').classList.add('active');
 }
 
 function changeTextAdult() {
     currentDifficulty = "adult";
     currentTextLevel = 0;
     updateContent();
+    document.querySelectorAll('.button-diff').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('AdultDifficulty').classList.add('active');
 }
 
 function showLess() {
