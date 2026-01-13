@@ -97,26 +97,14 @@ h1{
     font-family: "garamond", serif;
     color: #8c5826;
 }
-.elizI{
-    font-family: "garamond", serif !important;
-    color: #8c5826;
-}
-.vict{
-    font-family: "garamond", serif !important;
-    color: #8c5826;
-}
-.elizII{
-    font-family: "garamond", serif !important;
-    color: #8c5826;
-}
-.diana{
-    font-family: "garamond", serif !important;
-    color: #8c5826;
+
+ul > li {
+    color: #8c5826 ;  
 }
 ol{
     font-family: "garamond", serif !important;
     color: #8c5826 ;
-    
+    margin-bottom: 5% !important;   
 }
 
 /*Style card item in exhibition*/
