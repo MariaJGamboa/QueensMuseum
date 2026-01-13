@@ -76,25 +76,17 @@ h1{
     font-family: "Cascadia Code", sans-serif;
     color: white !important;
 }
-.elizI{
-    font-family: "Cascadia Code", sans-serif !important;
-    color: white !important;
-}
-.vict{
-    font-family: "Cascadia Code", sans-serif !important;
-    color: white !important;
-}
-.elizII{
-    font-family: "Cascadia Code", sans-serif !important;
-    color: white !important;
-}
-.diana{
-    font-family: "Cascadia Code", sans-serif !important;
-    color: white !important;
-}
+
 ol {
-    font-family: "Cascadia Code", sans-serif !important;
-    color: white !important;
+   font-family: "Cascadia Code", sans-serif !important;
+   color: white ;
+    margin-bottom: 5% !important;
+}
+
+
+ul > li {
+  font-family: "Cascadia Code", sans-serif !important;
+  color: white ;
 }
 
 /*Style card in index*/

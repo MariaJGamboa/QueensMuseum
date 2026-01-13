@@ -56,9 +56,9 @@ const items = [
     text: {
       historical: {
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "This painting shows Queen Elizabeth I wearing the clothes, crown, and jewelry she used on the day she became queen. She is holding special objects that show her power as ruler. The painting was made by an unknown artist around 1600–1610.",
+          medium: "Queen Elizabeth I became Queen of England on 15 January 1559, when she was only 25 years old. This painting, called The Coronation Portrait, was made by an unknown artist around 1600–1610. It is a copy of an older painting that no longer exists. In the portrait, Elizabeth is wearing a beautiful golden robe that she wore on her coronation day. She is holding two important objects, the orb and the sceptre, which show that she is the queen and has the power to rule England.",
+          long: "On 15 January 1559, Elizabeth I became Queen of England when she was just 25 years old. This painting, known as The Coronation Portrait, was painted by an unknown artist around 1600–1610. It is a copy of the original painting made in 1559, which has been lost. Today, this portrait is kept in the National Portrait Gallery in London. In the painting, Elizabeth is shown wearing a golden robe that she wore during her coronation ceremony. The robe had originally been made for her half-sister, Queen Mary I, five years earlier. By wearing the same robe, Elizabeth showed that she was continuing the Tudor family line. The golden color represents power, royalty, and greatness, and some people believe it also suggests the “Golden Age” of Elizabeth’s reign. The robe is decorated with Tudor roses. This rose combines a red rose and a white rose, symbols of two families that were once enemies. Their union created the Tudor dynasty, the family Elizabeth belonged to. Elizabeth is also shown wearing a crown and holding the orb and sceptre. These objects are symbols of her power as queen. The orb is especially important because it shows that Elizabeth was not only queen but also the head of the Church of England."
         },
         adult: {
           short: " The portrait depicts Queen Elizabeth I with the clothes, crown and jewelry that she wore during her coronation ceremony, while holding the symbols of her authority as queen. The painting is from an unknown artist, painted around 1600-1610.",
@@ -99,9 +99,9 @@ const items = [
       text:{ 
       historical: {
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "The Chequers Ring is one of the few pieces of jewelry that belonged to Queen Elizabeth I that still exists today. It is a pearl ring decorated with rubies. Inside the ring there is a small secret compartment with two portraits: one of Queen Elizabeth and another of a woman who was very important in her life.",
+          medium: "The Chequers Ring is one of Queen Elizabeth I’s most loved pieces of jewelry and one of the few that has survived to this day. The ring was made around the 1570s and is decorated with pearls, gold, and rubies. On the top of the ring, small diamonds form the letter E for Elizabeth, and underneath there is an R, which stands for Regina, the Latin word for queen. Inside the ring, there is a hidden locket with two tiny portraits. One shows Queen Elizabeth herself, and the other shows a woman whose identity has been a mystery for many years. Most historians believe this woman is Catherine Parr, Elizabeth’s stepmother.",
+          long: "The Chequers Ring is one of the most special jewels owned by Queen Elizabeth I and one of the few that still exists today. The ring is kept at Chequers, the country house of the Prime Minister of the United Kingdom, which is why it is called the Chequers Ring. Although it is part of a private collection, it is sometimes shown to the public. The ring was made in the mid-1570s. It has a band made of mother-of-pearl and is decorated with gold and rubies. On the top of the ring, white diamonds form the letter E for Elizabeth, and below it an R for Regina, meaning queen. On the back of the ring there is a phoenix, a bird that rises from fire. This symbol may represent the Seymour family, who were connected to Elizabeth’s family, or it may simply have been a popular symbol in her jewelry. The most interesting part of the ring is hidden inside. When the ring opens, it reveals a small locket with two portraits. One portrait shows Queen Elizabeth I. The second portrait shows a younger woman, and for many years people have wondered who she is. Some thought it was Elizabeth’s mother, Anne Boleyn, or her half-sister Mary I. Today, many historians believe the woman is Catherine Parr, Elizabeth’s stepmother, who cared for her and played an important role in her life when she was young."
         },
         adult: {
           short: "'Chequers Ring' is one of the few surviving pieces of jewelry used by Queen Elizabeth I. Is a pearl ring with a set of rubies, with a locket with  the portrait of the queen itself and another woman, probably her mother or step-mother.",
@@ -141,9 +141,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "This is a famous speech given by Queen Elizabeth I in 1588 to her soldiers in Tilbury, England. She spoke to them before a big battle against Spain, encouraging them to be brave and loyal. The speech shows how much the queen cared about protecting her country.",
+          medium: "The Tilbury Speech was given by Queen Elizabeth I on 19 August 1588 to English soldiers gathered in Tilbury, Essex. They were preparing to defend England from an invasion by the Spanish Armada. In her speech, Elizabeth encouraged the soldiers to be brave and loyal. She showed that she was ready to stand with them and protect her kingdom. England won this important battle against Spain, and the speech helped make Elizabeth very popular as a strong and caring ruler. The document we have today is a copy of the speech written down years later to remember this important moment in history.",
+          long: "The Tilbury Speech was spoken by Queen Elizabeth I on 19 August 1588 to English soldiers gathered in Tilbury, Essex. At that time, England was under threat of invasion by the Spanish Armada, a powerful fleet sent by King Philip II of Spain. He wanted to defeat Elizabeth and bring England back under Catholic rule. Queen Elizabeth visited the army and gave a powerful speech to encourage her soldiers. She told them she trusted them and was ready to stand with them, even in battle. Her words inspired courage, loyalty, and love for their country. The speech showed Elizabeth as a brave and determined leader who was willing to defend England at all costs. Although the war with Spain continued until 1604, England defeated the Spanish Armada in this key battle. After this victory, Elizabeth became even more admired by her people and was seen as the queen who protected the nation. The text we have today is a copy of the speech written down years later, and it is remembered as one of the most important speeches in English history."
         },
         adult: {
           short: "The speech given by Queen Elizabeth I in 1588 to the English army in Tilbury, Essex before facing the Spanish armada. The speech inspired loyalty and courage from the soldiers to face the Spanish invasion, it demonstrated the queen’s dedication to her kingdom.",
@@ -183,9 +183,9 @@ const items = [
     text: {
       historical: {
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "The First Folio is a book that collects all the plays written by William Shakespeare. It was published in 1623, seven years after his death. Shakespeare wrote his plays during the time of Queen Elizabeth I, and some of them were performed at her royal court.",
+          medium: "The First Folio is a famous book that brings together many of the plays written by William Shakespeare. It was published in 1623, seven years after Shakespeare died. The book includes 36 plays and was prepared by two of his friends and fellow actors, John Heminges and Henry Condell. This collection is very important because many of Shakespeare’s plays had never been printed before. If they had not been included in the First Folio, some of his most famous works might have been lost forever. Shakespeare lived and worked during the Elizabethan era, a time when art and theatre were very important, and several of his plays were performed for Queen Elizabeth I herself.",
+          long: "The First Folio is one of the most important books in history. It is a collection of plays written by William Shakespeare and was published in 1623, seven years after his death. When it was first printed, it was called “Mr. William Shakespeare’s Comedies, Histories and Tragedies.” The book contains 36 plays and was put together by Shakespeare’s friends and fellow actors, John Heminges and Henry Condell. The First Folio is especially important because, during Shakespeare’s lifetime, only 19 of his plays had been printed. Thanks to this book, about 20 other plays were saved from being lost forever. Famous works such as Macbeth, Julius Caesar, The Tempest, and Twelfth Night were printed for the first time in this collection. The book was printed in a large format called a folio, which is why it is known today as the First Folio. Around 750 copies were originally printed, but only about 235 still exist today. Most of them are kept in libraries, museums, or private collections in England and the United States. Shakespeare lived during the Elizabethan era, also known as the “Golden Age” of English theatre. Queen Elizabeth I strongly supported the arts, and several of Shakespeare’s plays were performed at her court. Her love for theatre helped create the perfect environment for Shakespeare to become one of the most famous playwrights in history."
         },
         adult: {
           short:"The collection of all of William Shakespeare plays, it was published in 1623, seven years after his death. Shakespeare wrote all his plays during the Elizabethan era, and several of the plays in the collection were performed in Queen Elizabethf court.",
@@ -225,9 +225,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "In February 1840, Queen Victoria married Prince Albert. She wore a beautiful white wedding dress made of silk. At that time, most brides did not wear white, but after Queen Victoria’s wedding, white dresses became a tradition for brides.",
+          medium: "On 10 February 1840, Queen Victoria married Prince Albert at St James’s Palace in London. For her wedding, she wore a white dress made of silk and decorated with lace. At the time, queens usually wore rich red or purple robes, but Victoria chose white instead. People saw this as a romantic choice that made her look like a young and loving bride. Her wedding attracted a lot of attention, and soon many brides began choosing white dresses. This is how the white wedding dress became a tradition.",
+          long: "On 10 February 1840, Queen Victoria married Prince Albert at St James’s Palace in London. For the ceremony, she wore a white wedding dress made of silk satin and decorated with beautiful lace and orange blossoms. The lace was designed by William Dyce, and the dress was made by Mary Bettans. The dress had a long train that was carried by her bridesmaids. Today, Queen Victoria’s wedding dress is kept at Kensington Palace. At the time, royal brides usually wore rich red or velvet robes to show their power. Queen Victoria chose white instead, which made her look romantic and gentle. Many people loved this image of the queen as a young bride, and the idea of the bride dressed in white quickly became popular, especially among wealthy families in England. White dresses also matched the values of the Victorian age, which focused on modesty and good behavior. After Queen Victoria’s wedding, white became the most common color for brides marrying for the first time. Interestingly, Queen Victoria did not choose white to start a fashion trend. She wanted to support British lace makers, who were struggling because of new machines and factories during the Industrial Revolution. By wearing lace made by hand, she helped bring attention to their work."
         },
         adult: {
           short:"In February of 1840, Queen Victoria married Prince Albert. She wore a white wedding dress made of heavy silk satin. Queen Victoria was one of the first women to get married in a white dress, after her it became a tradition white bridal gowns became a tradition.",
@@ -267,9 +267,9 @@ const items = [
     text: {
       historical: {
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "Queen Victoria became the ruler of the United Kingdom in 1838 when she was only 18 years old. This portrait, painted by George Hayter, shows the young queen wearing the crown, robes, and holding the sceptre she used at her coronation.",
+          medium: "Queen Victoria was crowned Queen of the United Kingdom on 28 June 1838 at Westminster Abbey, when she was just 18 years old. This painting was made in the same year by the artist George Hayter. In the portrait, Queen Victoria is shown sitting and wearing her coronation robes. She wears the Imperial State Crown and holds the sceptre with the cross, symbols of her power as queen. This painting is known as her coronation state portrait. Several copies were made later, and one of the most famous can be seen today at the National Portrait Gallery in London.",
+          long: "Queen Victoria was crowned Queen of the United Kingdom on 28 June 1838 at Westminster Abbey when she was only 18 years old. This portrait was painted in the same year by the English artist George Hayter using oil on canvas. The painting shows the young queen sitting on a ceremonial chair. She is wearing her coronation robes and the Imperial State Crown, and she holds the sceptre with the cross in her hand. These objects are symbols of her role as queen. The main version of this portrait is kept at Holyrood Palace in Edinburgh, and several copies were made. One well-known copy from 1863 is now in the National Portrait Gallery in London. At first, Hayter planned to place Queen Victoria inside Westminster Abbey, where the coronation took place. Later, he chose a more general royal setting instead. The queen’s face is turned slightly upward and lit by a soft light, which gives the painting a hopeful and powerful feeling. Many people believe this reflects the optimism felt by the British people at the beginning of her long reign. George Hayter also painted a large scene of the coronation ceremony itself in 1839. For many years, he worked closely with Queen Victoria and created several important royal portraits before she later chose other artists."
         },
         adult: {
           short:"Queen Victoria was crowned as the ruler of the United Kingdom in 1838 at the age of 18. The portrait by George Hayter of the same year shows the young queen in the regal gowns, crown and scepter worn during her coronation ceremony.",
@@ -309,9 +309,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "This letter is part of a collection of love letters written by Queen Victoria and Prince Albert. Their letters show how much they cared for each other before they were married. They help us understand that Queen Victoria was not only a ruler, but also a person in love.",
+          medium: "The love letters between Queen Victoria and Prince Albert are part of a large collection of letters they wrote to each other during their courtship. They began writing letters after they first met in 1836. Even though they were cousins, their friendship slowly turned into a romantic relationship. These letters show how deeply Victoria and Albert cared for each other. Through their words, we can see the queen’s feelings, thoughts, and love for Albert. The letters help us understand their strong relationship and are remembered today as part of one of history’s most famous royal love stories.",
+          long: "The love letters between Queen Victoria and Prince Albert are part of a large collection of more than 5,000 letters written after they first met in 1836. The letters were written in both English and German, and after their engagement, they mostly wrote to each other in German. Today, these letters are kept in the Royal Archives at Windsor Castle. At first, Victoria and Albert were cousins, but over time their friendship grew into love. Victoria wrote in her diary that Albert was “extremely handsome.” When Albert visited England in 1839, Victoria surprised everyone by proposing to him herself. Their letters from this time are full of strong emotions and show how much they loved each other. On the day they became engaged, Albert wrote that he felt as if Heaven had sent him an angel. These letters are very important because they show a personal side of Queen Victoria. They reveal that behind the serious image of a powerful queen was a woman who loved deeply, shared interests with her husband, and sometimes even argued with him. The letters continued until Albert’s death in 1861 and are remembered today as one of the greatest royal love stories in history."
         },
         adult: {
           short:"This document makes part of the collection of several love letters between Victoria and Albert. The relationship between Victoria and Albert is known as deeply affectionate and caring for each other. The collection of letters between the both of them during their courtship before their wedding demonstrate their love for each other.",
@@ -351,9 +351,9 @@ const items = [
     text: {
       historical:{
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "This painting from 1846 shows Queen Victoria and Prince Albert with five of their children. Queen Victoria is often called the “Grandmother of Europe” because her children married into many royal families across Europe, connecting many kings and queens.",
+          medium: "The Royal Family is a painting made in 1846 by the artist Franz Xaver Winterhalter. It shows Queen Victoria and her husband, Prince Albert, together with five of their nine children. The painting focuses on family love and closeness, while also showing their royal status through their elegant clothes and jewelry. Queen Victoria later became known as the “Grandmother of Europe” because her children married into royal families in many different European countries. This painting helps us understand how royal families across Europe became closely connected.",
+          long: "The Royal Family is an oil painting created in 1846 by the German artist Franz Xaver Winterhalter. Today, it is part of the Royal Collection and can be seen at Buckingham Palace in London. The painting shows Queen Victoria with her husband, Prince Albert, and five of their nine children. It was designed to show not only their royal power but also a sense of family love, peace, and happiness. Queen Victoria is wearing a beautiful crown-like jewel called a diadem, made of emeralds and diamonds, while Prince Albert is dressed in formal court clothes. Their children are shown close to their parents, emphasizing the importance of family. Queen Victoria is often called the “Grandmother of Europe” because most of her children married princes and princesses from other European countries. As a result, many royal families across Europe were related to her. Years later, this meant that some European kings were cousins, even during times of conflict. Queen Victoria herself asked the artist Winterhalter to paint this picture. When it was finished, she loved it very much and wrote in her diary that it was one of her favorite portraits."
         },
         adult: {
           short:"The painting by Franz Xaver Winterhalter of 1846 portraits Queen Victoria and Prince Albert with five of their nine children. Queen Victoria is remembered as the “grandmother of Europe” because all her children married several European royal families, spreading her lineage all over the crowns of Europe.",
@@ -393,9 +393,9 @@ const items = [
     text: {
       hisorical: {
         children: {
-          short: "short children",
-          medium: "medium children",
-          long: "long children"
+          short: "This tea set is inspired by one made for Queen Victoria in 1851. Queen Victoria loved drinking tea and helped make afternoon tea a popular tradition in England. She was also crowned Empress of India during her reign, when England ruled over India.",
+          medium: "This tea set was inspired by the one Queen Victoria had for the Great Exhibition in 1851. It is made of English bone china and decorated with the Queen’s initials and pretty floral designs. Queen Victoria became Empress of India during her reign, when England controlled the country. Tea was an important export from India to England, and the Queen loved drinking it. She helped make afternoon tea a popular tradition, turning tea time into a special social occasion.",
+          long: "This tea set is inspired by the one Queen Victoria commissioned for the Great Exhibition in 1851. It is made of fine English bone china, decorated with Queen Victoria’s initials surrounded by delicate flowers, and finished with gold details. Today, sets like this are still sold by the Royal Collection. During Queen Victoria’s reign, India was controlled by England. After the Indian Rebellion of 1857, England took full control of India, and in 1876, Victoria was crowned Empress of India. Tea became a very popular drink, exported from India to England and around the world. Queen Victoria enjoyed drinking tea herself, and she helped make afternoon tea a formal and elegant tradition. Her favorite was said to be Earl Grey, and she often wrote about tea in her journal. Thanks to the Industrial Revolution, tea became more affordable and available to many people, not just the wealthy. Today, afternoon tea is still a classic British tradition, and Queen Victoria is remembered as one of the people who made it famous."
         },
         adult: {
           short:"This tea set is inspired by the set commissioned by Queen Victoria for the Great Exhibition in 1851. During her reign she was crowned empress of India, and is famously associated with drinking tea and popularizing the British tradition of afternoon tea.",
