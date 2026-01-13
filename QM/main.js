@@ -7,31 +7,39 @@ const themes = [
   'ThemeStyles/future.css'
 ];
 
+const link = document.getElementById("theme-css");
+
+if (link){
+const savedTheme = sessionStorage.getItem("selectedTheme");
+const theme = savedTheme || themes[Math.floor(Math.random() * themes.length)];
+
+link.href = theme;
+
+  if (!savedTheme) {
+    sessionStorage.setItem("selectedTheme", theme)
+
+  }
+ }
+
+link.onload = () => {
+    document.body.style.visibility = "visible";
+  };
+
+
 function changeTheme(cssFile) {
-        const link = document.getElementById("theme-css");
-        if(link) {
-      // cambia il tema e forza ricaricamento senza cache
-          link.href = cssFile;
-          sessionStorage.setItem('selectedTheme', cssFile)
-    }
-      }
-  // Applica il tema salvato al caricamento della pagina
-        document.addEventListener('DOMContentLoaded', () => {
-          const link = document.getElementById("theme-css");
-          if (!link) return;
+  const link = document.getElementById("theme-css");
+  if (link) {
+    document.body.style.visibility = "hidden";
 
-          const savedTheme = sessionStorage.getItem('selectedTheme');
+    link.href = cssFile;
+    sessionStorage.setItem("selectedTheme", cssFile);
 
-          if (savedTheme) {
-            // Tema già scelto
-            link.href = savedTheme;
-          } else {
-            // 🎲 Tema casuale al primo accesso
-            const randomTheme = themes[Math.floor(Math.random() * themes.length)];
-            link.href = randomTheme;
-            sessionStorage.setItem('selectedTheme', randomTheme);
-          }
-        });
+    link.onload = () => {
+      document.body.style.visibility = "visible";
+    };
+  }
+}
+
 
 // dati items 
 
@@ -652,12 +660,12 @@ const items = [
       },
       popculture: {
         children: {
-          short:"Prince Charles and Lady Diana announced they were going to get married on February 24, 1981, in a famous TV interview. Charles said the iconic line, “Whatever ‘in love’ means,” which made Diana surprised. Everyone remembered it, and it became a famous royal pop culture moment.",
+          short:"Prince Charles and Lady Diana announced they were going to get married on February 24, 1981, in a famous TV interview. Charles said the iconic line, “Whatever ‘in love’ means” which made Diana surprised. Everyone remembered it, and it became a famous royal pop culture moment.",
           medium:"On February 24, 1981, Prince Charles and Lady Diana shared big news: they were going to get married! They told everyone in a special TV interview at Buckingham Palace, and people all around the world were watching. Charles said he was “delighted and amazed” that Diana said yes, and Diana said Charles was “pretty amazing.” But the interview became super famous for one awkward moment. When someone asked if they were in love, Charles said, “Whatever ‘in love’ means.” Diana looked surprised, and the line became instantly famous, a royal pop culture moment everyone talked about.",
           long: "On February 24, 1981, the world watched as Prince Charles and Lady Diana announced they were going to get married in a TV interview at Buckingham Palace. They had only been dating six months, but people everywhere were excited. Charles said he was “delighted and amazed” that Diana said yes, and Diana said Charles was “pretty amazing.” The interview became legendary for one moment. When asked if they were in love, Charles said, “Whatever ‘in love’ means.” Diana was surprised and later remembered that it confused her a lot. She wrote in her book that she thought, “What a strange answer. It shocked me.” Even though it was a little awkward, this moment became part of the story that made their engagement so famous. It turned the announcement into a real pop culture event, remembered by everyone as one of the most iconic royal moments ever."
         },
         adult:{
-          short:"The royal couple made headlines on February 24, 1981, when they announced their engagement in an exclusive ITN interview. Prince Charles’s unforgettable line, “Whatever ‘in love’ means,” became one of the most memorable moments in royal pop culture history.",
+          short:"The royal couple made headlines on February 24, 1981, when they announced their engagement in an exclusive ITN interview. Prince Charles’s unforgettable line, “Whatever ‘in love’ means” became one of the most memorable moments in royal pop culture history.",
           medium:"On February 24, 1981, Prince Charles and Lady Diana Spencer announced their engagement in an ITN interview recorded at Buckingham Palace. At the time, they had only been dating six months, but the world was watching every word. Charles said he was “delighted and frankly amazed” that Diana agreed to marry him, while Diana called Charles “pretty amazing.” However, the interview quickly became legendary for a different reason. When asked if they were in love, Charles responded with the iconic line: “Whatever ‘in love’ means,” leaving Diana visibly unsettled. That awkward moment immediately cemented itself in pop culture, turning a simple engagement announcement into a moment remembered by generations.",
           long:"On February 24, 1981, the world tuned in as Prince Charles and Lady Diana Spencer announced their engagement in an exclusive ITN interview at Buckingham Palace. After dating for just six months, the royal couple shared their excitement with the public and Charles said he was “delighted and frankly amazed” that Diana agreed to marry him while Diana described Charles as “pretty amazing.” But the interview quickly became a pop culture landmark for a different reason. When asked if they were in love, Charles delivered the iconic line: “Whatever ‘in love’ means,” leaving Diana upset and creating one of the most memorable royal moments of the 20th century. Diana later reflected on the interview in her biography Diana: In Her Own Words: “We had this ghastly interview the day we announced our engagement… Charles turned round and said, ‘Whatever love means.’ And that threw me completely. I thought, what a strange answer. It traumatized me.” This brief, awkward moment in front of the cameras became emblematic of their complicated relationship, instantly entering the global pop culture narrative and shaping how the world remembers their engagement and later marriage."
         }
