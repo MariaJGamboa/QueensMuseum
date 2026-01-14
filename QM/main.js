@@ -68,14 +68,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"This painting shows Queen Elizabeth I dressed like she was on the day she became queen. The crown, clothes, and objects she holds helped people recognize her as a powerful ruler. Pictures like this helped everyone know what their queen looked like.",
+          medium:"Queen Elizabeth I became queen in 1559. This painting, called The Coronation Portrait, shows her wearing the special clothes, crown, and jewelry from her coronation. At a time when people could not see the queen in person, paintings like this were very important. They helped spread her image across England and showed her as strong, confident, and royal. This portrait helped shape how people imagined their queen.",
+          long: "Queen Elizabeth I became Queen of England in 1559, when she was 25 years old. This painting, known as The Coronation Portrait, was made many years later as a copy of the original image from her coronation. In the painting, Elizabeth wears rich golden clothes, a crown, and holds special objects called the orb and sceptre. These items were important symbols that showed her power as queen. The painting was not just meant to show what she looked like, but to send a message about who she was: strong, royal, and in control. In Elizabeth’s time, portraits were like today’s posters or photographs. They helped people recognize their ruler and remember her image. By choosing how she was shown, Elizabeth helped create a powerful royal image that people admired and remembered long after her reign."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"This portrait shows Queen Elizabeth I dressed in the clothing, crown, and jewels she wore at her coronation. More than a record of an event, the image helped create a powerful public image of the queen as a strong and legitimate ruler. Painted by an unknown artist around 1600–1610, it reflects how Elizabeth carefully shaped how she was seen by her people",
+          medium:"Queen Elizabeth I was crowned in 1559 at the age of 25. This painting, known as The Coronation Portrait, was created around 1600–1610 as a copy of the original image made at the time of her coronation. Although painted decades later, the portrait became one of the most important images of Elizabeth’s reign. Through her clothing, crown, and the symbols she holds, Elizabeth presents herself as a powerful and rightful monarch. The image was widely copied and circulated, helping to fix her royal identity in the public imagination. It shows how portraits were used as a form of media to control and spread the queen’s image during the Elizabethan age.",
+          long:"Queen Elizabeth I was crowned Queen of England on 15 January 1559, when she was just 25 years old. This painting, commonly known as The Coronation Portrait, was created by an unknown artist around 1600–1610 as a copy of the original coronation portrait, which is now lost. Today, the painting is held at the National Portrait Gallery in London. More than a simple likeness, the portrait was a carefully constructed image designed to shape how Elizabeth was seen by her subjects. She is shown wearing the golden coronation robe originally made for her half-sister Mary I, emphasizing continuity and legitimacy within the Tudor dynasty. The gold fabric, rich decoration, and Tudor roses all communicate majesty, power, and stability. Elizabeth holds the orb and sceptre, traditional symbols of royal authority, reinforcing her role as queen and supreme ruler. In a time before photography, portraits like this acted as powerful tools of communication, spreading an idealized image of the monarch throughout the kingdom. Through repeated copies and public display, Elizabeth’s image became iconic, helping to create the lasting visual identity of the “Virgin Queen” that still defines her place in popular culture today"
         }
       }
     },
@@ -104,21 +104,21 @@ const items = [
           long: "The Chequers Ring is one of the most special jewels owned by Queen Elizabeth I and one of the few that still exists today. The ring is kept at Chequers, the country house of the Prime Minister of the United Kingdom, which is why it is called the Chequers Ring. Although it is part of a private collection, it is sometimes shown to the public. The ring was made in the mid-1570s. It has a band made of mother-of-pearl and is decorated with gold and rubies. On the top of the ring, white diamonds form the letter E for Elizabeth, and below it an R for Regina, meaning queen. On the back of the ring there is a phoenix, a bird that rises from fire. This symbol may represent the Seymour family, who were connected to Elizabeth’s family, or it may simply have been a popular symbol in her jewelry. The most interesting part of the ring is hidden inside. When the ring opens, it reveals a small locket with two portraits. One portrait shows Queen Elizabeth I. The second portrait shows a younger woman, and for many years people have wondered who she is. Some thought it was Elizabeth’s mother, Anne Boleyn, or her half-sister Mary I. Today, many historians believe the woman is Catherine Parr, Elizabeth’s stepmother, who cared for her and played an important role in her life when she was young."
         },
         adult: {
-          short: "'Chequers Ring' is one of the few surviving pieces of jewelry used by Queen Elizabeth I. Is a pearl ring with a set of rubies, with a locket with  the portrait of the queen itself and another woman, probably her mother or step-mother.",
+          short: "'Chequers Ring' is one of the few surviving pieces of jewelry used by Queen Elizabeth I. Is a pearl ring with a set of rubies, with a locket with  the portrait of the queen itself and another woman, probably her mother or stepmother.",
           medium: "The 'Chequers Ring' is one of the most beloved jewels worn by Queen Elizabeth I, and one of the few surviving pieces of her jewels to us today. The ring dates mid-1570 and is a pearl ring with a string of gold with a set of table-cut of rubies, on the bezel part of the ring are white diamonds that form the E for Elizabeth and underneath an R for regina in cobalt blue enamel. Inside the basel there is a locket with two portraits, one is Elizabeth herself and the other has been a topic of speculation for several years. At the beginning it was thought that it was her mother Anne Boleyn or her step-sister Mary I, but  probably is Catherin Parr, Elizabeth step-mother.",
           long: "The ring dates to the mid-1570s, is a mother-of-pearl hoop mounted with a sheet of gold with a set of table-cut rubies. On the bezel white diamonds form the letter E for Elizabeth and underneath an R for regina in cobalt blue enamel. In the back of the bezel there is a phoenix, a typical symbol of the Seymour family, some argued that it was a gift from the Seymor Family to Elizabeth  (Jane Saymor was the third wife of Henry VIII, Elizabeth’s father, and the mother of Elizabeth's half brother, Edward VI who died at 15 years old). Others suggest that the phoenix was just a common symbol in other of Elizabeth’s jewellery. The most intriguing part of the ring is inside of the basel where there is a locket with two portraits, one is Elizabeth herself and the other has been a topic of speculation for several years. Due to the juxtaposition of Elizabeth’s portrait, it was said that the other portrait of a younger woman was traditionally said to be her mother, Anne Boleyn, specially because she was executed at a young age, when Elizabeth was just two years old. This was profoundly argued because it is said that Elizabeth mentioned very rarely her mother Anne, and the portrait shows a woman with red-ish hair color, therefore several argued that it was supposed to be her half-sister Mary I. It is likely that the young woman depicted is Catherine Parr (Elizabeth's father, Henry VIII last (six) wife), she is remembered with reddish hair and very close to Elizabeth, being her step-mother and a very important mother figure during adolescence."
         }
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"The Chequers Ring is a special ring that belonged to Queen Elizabeth I. It was not just pretty jewelry, it helped show who she was as a queen and as a person. Inside the ring is a secret picture hidden from view.",
+          medium:"The Chequers Ring is one of the few pieces of jewelry that belonged to Queen Elizabeth I and still exists today. The ring is decorated with pearls and rubies, and on top it shows the queen’s name and title. Inside the ring is a small hidden locket with two tiny portraits. One shows Queen Elizabeth, and the other shows a woman who was important to her. Jewelry like this helped Elizabeth create a powerful image while still keeping some things private.",
+          long: "he Chequers Ring is a beautiful and meaningful ring that belonged to Queen Elizabeth I. It is decorated with pearls, gold, and rubies, and shows the queen’s initials to remind everyone that it belonged to her. What makes the ring special is what is hidden inside. When opened, it reveals two tiny portraits. One is of Elizabeth herself, and the other is of a woman who was very important in her life. This secret part shows that even though Elizabeth was a famous queen, she also had personal feelings and memories. Elizabeth’s clothes and jewelry were carefully chosen and copied by others. People paid close attention to how she looked, and her style became famous. The Chequers Ring helps us understand how Elizabeth used fashion and jewelry to shape her image and become an icon people still remember today."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"The Chequers Ring is one of the few surviving jewels worn by Queen Elizabeth I. More than decoration, the ring expressed identity, memory, and royal image. Its hidden portraits show how Elizabeth used personal jewelry to communicate emotion and meaning within her carefully controlled public image.",
+          medium:"The Chequers Ring, dating from the mid-1570s, is one of the most personal pieces of jewelry associated with Queen Elizabeth I. Richly decorated with pearls, rubies, and diamonds, the ring displays the queen’s initials and royal title, turning a private object into a statement of identity. Inside the ring is a hidden locket with two miniature portraits: one of Elizabeth herself and another of a woman close to her. This secret detail contrasts with the queen’s public image and shows how jewelry allowed Elizabeth to express personal relationships while maintaining a carefully managed royal persona. Such objects contributed to the fascination surrounding Elizabeth’s image in popular culture.",
+          long:"The Chequers Ring, made in the mid-1570s, is one of the most intimate surviving objects connected to Queen Elizabeth I. Decorated with mother-of-pearl, gold, rubies, and diamonds, the ring combines luxury with symbolism. On the bezel, diamonds form the letter E for Elizabeth, with an R beneath it for Regina, reinforcing her royal identity even in personal adornment. On the reverse is a phoenix, a symbol of rebirth and endurance, often associated with Elizabeth’s image as the eternal queen. The most intriguing feature lies hidden inside the ring: a locket containing two miniature portraits—one of Elizabeth and another of a woman believed to be Catherine Parr, her stepmother. This private element reveals the emotional side behind the queen’s carefully constructed public image. Elizabeth I famously used fashion and jewelry as tools of communication. Her appearance was closely observed, copied, and discussed, turning her into a cultural icon. The Chequers Ring shows how even small personal objects contributed to the myths and stories surrounding the queen, strengthening her lasting presence in popular culture"
         }
       }
     },
@@ -153,14 +153,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"In 1588, Queen Elizabeth I gave a famous speech to her soldiers before a big battle. Her strong words helped people see her as a brave leader who cared about her country.",
+          medium:"The Tilbury Speech was given by Queen Elizabeth I in 1588 to soldiers who were getting ready to defend England. She spoke to them in person, encouraging them to be brave and loyal. This moment was very important because people remembered not only what she said, but how she said it. The speech helped create the image of Elizabeth as a strong and confident queen, and her words were shared long after the event.",
+          long: "In 1588, Queen Elizabeth I went to Tilbury to speak to her soldiers before they faced the Spanish Armada. At a time when many people thought queens should stay out of war, Elizabeth surprised everyone by speaking directly to the army. Her speech showed courage and confidence. She told the soldiers she trusted them and was ready to stand with them. Later, her words were written down and shared, helping people remember her as a brave and powerful ruler. The Tilbury Speech helped shape how people saw Queen Elizabeth I. It turned her into a symbol of strength and leadership, and it is still remembered today as one of the most famous speeches in English history."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"The Tilbury Speech shows how Queen Elizabeth I used words and public appearance to shape her image as a strong ruler. Delivered in 1588 to her soldiers, the speech became a powerful example of how the queen performed leadership and inspired loyalty through carefully chosen language.",
+          medium:"The Tilbury Speech was delivered by Queen Elizabeth I on 19 August 1588 to English troops gathered at Tilbury, just before facing the Spanish Armada. More than a military address, the speech was a carefully staged public moment that presented Elizabeth as brave, confident, and committed to her people. By appearing before the army and speaking directly to the soldiers, Elizabeth created a powerful image of leadership. Her words were later written down and circulated, turning the speech into a key part of her public image. Over time, it became one of the most famous examples of how a queen used performance and language to influence popular opinion.",
+          long:"On 19 August 1588, Queen Elizabeth I delivered the speech now known as the Tilbury Speech to English soldiers assembled at Tilbury, Essex, as they prepared to defend England against the Spanish Armada. At a moment of national danger, the speech became a carefully crafted act of leadership that combined politics, performance, and image-making. Elizabeth’s appearance before the troops challenged expectations of female rule. By declaring her willingness to live and die alongside her soldiers, she presented herself as both monarch and warrior. The speech was later recorded and shared, allowing the moment to reach a much wider audience than those present at Tilbury. Over time, the Tilbury Speech became one of the most famous texts associated with Elizabeth I. It helped create the enduring image of the queen as a fearless protector of the nation and remains a powerful example of how words, performance, and media shaped royal identity in early modern popular culture."
         }
       }
     },
@@ -195,14 +195,15 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
-        },
+          short:"Shakespeare’s First Folio is a famous book that helped spread stories about kings and queens. Shakespeare wrote his plays during the time of Queen Elizabeth I, and some of them were performed at her royal court, it shows how plays helped people imagine what rulers were like long ago.",
+          medium:"The First Folio is a book that collected Shakespeare’s plays and helped save them for the future. Many of these plays talk about kings, queens, and power.  By turning plays into a book, the stories could reach many more people. This helped shape how people thought about rulers and made theatre an important part of popular culture.",
+          long:"Shakespeare’s First Folio, published in 1623, collected many famous plays that had been performed for both royal families and ordinary people. These stories often showed kings and queens making important choices, helping audiences think about power and leadership. Before the book was printed, people could only see these stories on stage. The First Folio helped share them with many more readers, making them part of everyday culture. Because of this book, ideas about queens, rulers, and heroes were passed down for generations. The First Folio shows how stories and books helped shape popular culture and how people remembered their rulers."
+          },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"Shakespeare’s First Folio shows how royal power and popular culture were closely connected. By preserving plays written for royal courts and public theatres, the book helped shape ideas about monarchy, authority, and national identity during the age of queens.",
+          medium:"Published in 1623, Shakespeare’s First Folio collected 36 plays that had been performed at court and in public theatres. Many of these works reflect the power, image, and challenges of monarchy, themes that resonated strongly in a society shaped by powerful queens such as Elizabeth I. The Folio transformed live performance into a widely shared cultural object. By turning plays into printed texts, it allowed royal ideas, characters, and values to circulate far beyond the stage, helping popular culture play a key role in shaping how rulers were imagined and remembered.",
+          long: "Shakespeare’s First Folio, published in 1623, is one of the most important books in English literary history. It preserved 36 plays that were originally written for performance, many of them staged before royal audiences as well as the general public. These works often explored themes of kingship, legitimacy, power, and succession—central concerns in a culture shaped by the reign of Queen Elizabeth I and the early Stuart monarchs. The Folio marked a major shift in how culture was shared. By transforming theatre into print, it allowed royal images and political ideas to reach readers across England and beyond. Plays that once existed only as live performances became lasting cultural references, shaping how people understood monarchy and authority. In this way, the First Folio represents an early form of mass media. It shows how literature and performance helped create powerful images of rulers and queens, contributing to the long-lasting connection between royalty and popular culture."
+      
         }
       }
     },
@@ -237,14 +238,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"Queen Victoria wore a white wedding dress that changed fashion forever. After her wedding, many brides wanted to dress like the queen.",
+          medium:"When Queen Victoria married Prince Albert, she wore a white dress instead of a colorful one. People saw pictures of her wedding and loved her style. Soon, brides everywhere started wearing white dresses too. Her choice showed how a queen’s fashion could inspire people far beyond the palace.",
+          long:"At her wedding in 1840, Queen Victoria chose to wear a white dress, which was very unusual at the time. Most brides wore colorful clothes, but Victoria wanted something simple and elegant. Pictures and stories about her wedding spread quickly, and many people wanted to copy her style. Soon, wearing white became a popular tradition for brides. Queen Victoria’s wedding dress shows how fashion and popular culture can be shaped by a queen’s personal choices, turning one dress into a tradition that still exists today."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"Queen Victoria’s wedding dress transformed royal fashion and popular culture. By choosing a white gown, she set a trend that reshaped bridal traditions and continues to influence weddings today.",
+          medium:"Queen Victoria’s wedding dress, worn in 1840 for her marriage to Prince Albert, marked a turning point in fashion and popular culture. Instead of wearing a richly colored gown, she chose a white silk satin dress decorated with Honiton lace. This personal fashion choice was widely reproduced in newspapers, prints, and paintings, quickly influencing public taste. The dress helped establish white as the symbol of bridal purity and elegance, showing how a queen’s image could shape everyday customs far beyond the royal court.",
+          long: "Queen Victoria’s wedding dress, worn in 1840 when she married Prince Albert, became one of the most influential fashion statements in modern history. At the time, royal brides often wore richly colored dresses, but Victoria chose a white silk satin gown trimmed with handmade Honiton lace, emphasizing craftsmanship and British industry. The wedding was widely reported in newspapers and illustrated prints, allowing Victoria’s image to circulate across the country and beyond. As a result, her dress quickly became a model for brides of all social classes. White, once an unusual choice, was transformed into the standard color for Western wedding gowns. Victoria’s decision shows how a queen’s personal style could shape popular culture. Through media coverage and public fascination, her image bridged royal ceremony and everyday life, turning a private choice into a lasting cultural tradition."
         }
       }
     },
@@ -279,14 +280,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"Queen Victoria became Queen of the United Kingdom  when she was only 18 years old.This portrait shows Queen Victoria at her coronation. It helped people imagine their new young queen.",
+          medium:"When Queen Victoria became queen at just 18 years old, an artist painted her coronation portrait. She is shown wearing a crown and royal clothes. Many people saw copies of this image, even if they never saw the queen in real life. The portrait helped everyone recognize and remember her.",
+          long: "Queen Victoria became queen when she was only 18 years old. To show people what their new queen looked like, an artist painted her coronation portrait. In the painting, Victoria wears a crown and special royal clothes and holds a sceptre. Copies of the portrait were shared with many people, helping them feel connected to their queen. This portrait shows how pictures of queens helped shape popular culture, letting people learn about royalty through images long before television or social media."
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"Queen Victoria became the ruler of the United Kingdom in 1838 when she was only 18 years old.Queen Victoria’s coronation portrait helped shape her public image as a young and powerful monarch. Through this widely copied image, royal portraiture became a key tool in popular culture.",
+          medium:"Painted by George Hayter in 1838, Queen Victoria’s coronation portrait presents the young queen as a symbol of authority and renewal. Wearing her coronation robes, crown, and holding the sceptre, Victoria appears both regal and approachable. The portrait was widely reproduced in prints and copies, allowing the queen’s image to circulate beyond the court. This helped establish a visual identity that connected monarchy, media, and popular culture at the beginning of her reign.",
+          long:"Queen Victoria’s coronation portrait, painted by George Hayter in 1838, played a crucial role in shaping how the young queen was seen by the public. At just eighteen years old, Victoria used portraiture to project confidence, legitimacy, and continuity at the start of her reign. The painting presents Victoria wearing her coronation robes, the Imperial State Crown, and holding the Sceptre with the Cross. Although rooted in traditional royal symbolism, the portrait emphasizes her youth and calm expression, making her image both powerful and relatable. Hayter’s decision to place the queen in a dignified but generalized setting strengthened her timeless, iconic appearance. Multiple copies and engravings of the portrait were produced and distributed, allowing Victoria’s image to reach a wide audience. In this way, the coronation portrait became an early example of royal image management, showing how monarchy, visual media, and popular culture intersected to shape public perception."
         }
       }
     },
@@ -363,14 +364,14 @@ const items = [
       },
       popculture: {
         children: {
-          short:"short children",
-          medium:"medium children",
-          long: "long children"
+          short:"This painting from 1846 shows Queen Victoria, Prince Albert, and five of their children. It presents the royal family as loving and united.",
+          medium:"Painted in 1846 by Franz Xaver Winterhalter, this artwork shows Queen Victoria and Prince Albert with five of their nine children. They are dressed in royal clothes and surrounded by beautiful objects. The painting was made to show the royal family as happy and close, while also reminding people of their royal status.",
+          long: "This painting, called The Royal Family, was made in 1846 by the artist Franz Xaver Winterhalter. It shows Queen Victoria, her husband Prince Albert, and five of their children. The family is shown together in a calm and peaceful moment. The queen wears royal jewels, and Prince Albert wears formal court clothes. These details show that they are important members of the royal family. At the same time, their closeness shows love and care between parents and children. The painting helped people understand the royal family not only as rulers, but also as a family. Because many of Queen Victoria’s children married into royal families across Europe, she later became known as the “Grandmother of Europe.”"
         },
         adult:{
-          short:"short adult",
-          medium:"medium adult",
-          long:"long adult"
+          short:"This portrait by Franz Xaver Winterhalter of 1846 presents Queen Victoria as both monarch and mother, shaping the popular image of the royal family as a model of domestic harmony. Queen Victoria is remembered as the “grandmother of Europe” because all her children married several European royal families, spreading her lineage all over the crowns of Europe.",
+          medium:"Painted by Franz Xaver Winterhalter in 1846, The Royal Family depicts Queen Victoria, Prince Albert, and five of their children in an intimate yet regal setting. Queen Victoria is remembered as the “grandmother of Europe” because all her children married several European royal families, spreading her lineage all over the crowns of Europe. The painting combines symbols of royal status with gestures of affection, presenting the monarchy as a loving family. This image strongly influenced popular culture by promoting ideals of domesticity, morality, and family life. Victoria’s public image as a devoted wife and mother helped redefine monarchy in the Victorian age, aligning royal life with middle class values.",
+          long:"The Royal Family (1846), painted by Franz Xaver Winterhalter, played a crucial role in shaping Queen Victoria’s public image and its influence on popular culture. Rather than focusing solely on power and ceremony, the portrait presents the monarchy as a close-knit, affectionate family. Queen Victoria and Prince Albert are shown with five of their children, surrounded by symbols of status such as jewels, elegant clothing, and refined furnishings. At the same time, their relaxed poses and physical closeness emphasize domestic harmony. This carefully constructed image promoted values of love, stability, and moral respectability. The painting was widely admired and reproduced, helping establish the idea of the royal family as a moral model for society. Victoria’s image as a devoted mother shaped public expectations of family life and earned her the nickname “Grandmother of Europe,” highlighting how royal image-making influenced popular culture across generations "
         }
       }
     },
