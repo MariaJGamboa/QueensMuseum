@@ -1160,8 +1160,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if(index >=0) currentItemIndex = index;
         }
 
+        currentDifficulty = "adult"; // default
+        currentTextLevel = 0; 
+
         updateContent();
 
+        const adultBtn = document.getElementById("AdultDifficulty");
+        const childrenBtn = document.getElementById("ChildrenDifficulty");
+        adultBtn?.classList.add("active");
+        childrenBtn?.classList.remove("active");
+        
         histBtn?.addEventListener('click', () => { setNarrative("historical"); setActiveButton(histBtn); });
         popBtn?.addEventListener('click', () => { setNarrative("popculture"); setActiveButton(popBtn); });
         setActiveButton(histBtn);

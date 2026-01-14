@@ -12,12 +12,13 @@
   letter-spacing: 0.06rem;
 }
 
-/*.pinyon-script-large {
+.pinyon-script-large {
   font-family: "Pinyon Script", cursive;
   font-weight: 600;
   font-style: normal;
-  font-size: x-large;
+  font-size: 6rem;
   letter-spacing: 0.06rem;
+  text-align: center;
 }
 
 /* .im-fell-english-regular-italic {
@@ -494,3 +495,9 @@ img {
 .dec-frame2.comic-map::after {
     content: none !important;
 }
+
+.maergin {margin-top: 2rem;}
+
+
+figure, figcaption{
+  text-align: center; }
