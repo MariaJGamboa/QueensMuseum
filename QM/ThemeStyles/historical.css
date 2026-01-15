@@ -260,6 +260,19 @@ ol{
     box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
 }
 
+/*Style documentation*/
+figure, figcaption{
+    text-align: center;
+    font-family: "garamond", serif;
+    color: #8c5826;
+}
+
+.vboard-pop{
+    border: 3px solid #990000 !important;  
+    border-radius: 15px 
+
+}
+
 /*Style Footer*/
 .footer{
     font-family: "garamond", serif;
