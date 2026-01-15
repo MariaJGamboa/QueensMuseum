@@ -88,7 +88,7 @@ const items = [
   {
     id: 2,
       title: "Chequers Ring",
-      image: ["images/chequers_ring.jpg"],
+      image: ["images/chequers_ring.jpg", "images/Elizabeth_I_Locket_Ring.jpg"],
       metadata: {
         fullName: "Chequers Ring",
         date: "1570",
@@ -215,7 +215,7 @@ const items = [
     {
     id: 5,
     title: "Queen Victoria's Wedding Dress",
-    image: ["images/qVictoria_wedding-dress.jpg" ],
+    image: ["images/qVictoria_wedding-dress.jpg", "images/WDVic.jpg" ],
     metadata: {
       fullName: "Wedding Dress",
       date: "1840",
