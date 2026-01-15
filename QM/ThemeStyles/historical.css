@@ -268,7 +268,7 @@ figure, figcaption{
 }
 
 .vboard-pop{
-    border: 3px solid #990000 !important;  
+    border: 3px solid #990000;  
     border-radius: 15px 
 
 }
@@ -281,7 +281,5 @@ figure, figcaption{
     padding-left: 50px !important;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-
-
 }
 
