@@ -304,6 +304,27 @@ ul > li {
     text-shadow: none;
   }
 
+/*Style documentation*/
+figure, figcaption{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.header-inline {
+  display: flex;     
+  align-items: center;   
+  gap: 15px;             
+  margin-bottom: 10px;   
+}
+.vboard-print {
+  max-width: 45%;      
+  height: auto;
+  
+}
+
+
+
 /*Style Footer*/
 .footer{
     font-family: "Cascadia Code", sans-serif;

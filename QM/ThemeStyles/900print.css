@@ -501,3 +501,14 @@ img {
 
 figure, figcaption{
   text-align: center; }
+
+.header-inline {
+  display: flex;         
+  align-items: center;   /* Allinea verticalmente il testo e l'immagine */
+  gap: 15px;             
+  margin-bottom: 10px;  
+}
+.vboard-print {
+  max-width: 45%;      
+  height: auto;
+}

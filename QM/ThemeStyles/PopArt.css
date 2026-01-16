@@ -749,7 +749,16 @@ table#table {
   box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
 }
 
-
-
 figure, figcaption{
   text-align: center; }
+
+.header-inline {
+  display: flex;         /* Attiva il layout in linea */
+  align-items: center;   /* Allinea verticalmente il testo e l'immagine */
+  gap: 15px;             
+  margin-bottom: 10px;   
+}
+.vboard-print {
+  max-width: 45%;      /* Cambia questa misura in base alle tue esigenze */
+  height: auto;
+}
