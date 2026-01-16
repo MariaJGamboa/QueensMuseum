@@ -38,12 +38,12 @@ p {
 }
 
 p.dropcap-paragraph::first-letter {
-  float: left; /* Makes text wrap around the letter */
-  font-size: 70px; /* Adjust size as needed */
+  float: left; 
+  font-size: 70px; 
   line-height: 60%; /* Aligns the baseline with the text lines */
-  padding-right: 8px; /* Adds space between the cap and the text */
-  font-family: garamond, serif; /* Use a distinct font if desired */
-  /* Add other styling like color, background, etc. */
+  padding-right: 8px; 
+  font-family: garamond, serif; 
+  
 }
 
 h1, h2, h4 {
@@ -287,8 +287,8 @@ figure, figcaption{
 }
 
 .header-inline {
-  display: flex;         /* Attiva il layout in linea */
-  align-items: center;   /* Allinea verticalmente il testo e l'immagine */
+  display: flex;         
+  align-items: center;  
   gap: 15px;             
   margin-bottom: 10px;   
 }
