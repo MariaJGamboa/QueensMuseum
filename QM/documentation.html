@@ -98,7 +98,7 @@
           After the &lt;body&gt;, all information about the creators of the application, the GitHub repository to access the HTML, CSS and JS files, and the copyright statement is enclosed in the footer.</p>
           <h4 class="special-txt">2.1 Home page</h4>
           <div class="header-inline">
-            <img src="images/index.jpg" alt="index-img" class="vboard-print">
+            <img src="images/index.jpg" alt="index-img" class="img-bozz">
             <p>The Home page is the first thing that the visitor sees while opening the application. It provides a general overview of the content of the app. There are four main sections that summarise the scope of the museum and the collection. First, we decided to insert a carousel of pictures to introduce the main characters of the museum and the title, to immediately communicate the project’s intentions. 
             A brief introduction is then provided in the <i>About the Museum</i> section. Here we present the scope of the project, the intentions behind this application, and a short biography of every important woman involved in the exhibition. 
             The <i>Items</i> section focuses on the actual content of the virtual exhibition and describes the criteria followed to organize it. Each royal presented in the card corresponds to one room. 
@@ -107,7 +107,7 @@
           </div>
           <h4 class="special-txt">2.2 Map page</h4>
           <div class="header-inline">
-            <img src="images/Map.jpg" alt="index-img" class="vboard-print">
+            <img src="images/maps.jpg" alt="map-img" class="img-bozz">
             <p>After the general overview provided by the <i>Home page</i>, it is possible to access the map of the museum by clicking on the <i>Map</i> link in the navigation bar. The museum's physical structure is divided into four main rooms, two on each side, separated by a corridor. The rooms are named after the Queen or Princess to whom they are dedicated. The rooms highlight or change colour when the visitor points at them with the cursor. This behaviour is achieved through the :hover pseudo-class applied to each room, signaling that they are clickable.
             Next to the map, a section called <i>Explore the museum</i> lists all the items contained in each room. By default, the items are listed following the chronological order also used in the <i>Home page</i> timeline, but their order changes when clicking on the Queens in popular culture button above the map. This section is important because it presents the two narratives used to tell the story of the royals through their items. By changing the narrative, the order of the exhibition is also modified to better fit the narrative arc. The list under the <i>Explore the museum</i> section is populated by the buildList function in the main.js. To inform the user which narrative is selected,  we created buttons that change their appearance while clicked with the .active selector. 
             By clicking on a specific room, the user will be redirected to the <i>Exhibition page</i>, specifically to the first item in the list, which varies according to the selected narrative. Each item listed in the <i>Explore the museum</i> section, when clicked, redirects the user to the corresponding item page, where the metadata and the descriptive text can be viewed.
@@ -115,7 +115,7 @@
           </div>
           <h4 class="special-txt">2.3 Exhibition page</h4>
           <div class="header-inline">
-            <img src="images/exhibition.jpg" alt="index-img" class="vboard-print">
+            <img src="images/exhibition-item.jpg" alt="item-img" class="img-bozz">
             <p>The <i>Exhibition page</i> is the section of the application where each item is presented with detailed information about its characteristics. The entire page content is populated by the updateContent function in main.js, which retrieves all information about the items stored in the constant variable defined at the beginning of the JavaScript file. The function takes into account the different positions of the items depending on the selected narrative. This behavior is implemented through the updateOrderedItems function, which reorganizes the exhibition by accessing the order specified in the const item array.
             The layout consists of a title section, a carousel below it, and a metadata table positioned on the right. The carousel displays multiple images of the item to provide a more comprehensive overview. The metadata table briefly describes each item using the following attributes: Full Name, Date, Place, Materiality, and Room.
             Below this section, the visitor can find a complete and in-depth description of the object. The showLess and showMore functions, together with their corresponding buttons, allow users to control the amount of text displayed. Each item is described through three levels of text: a short description with essential information, a medium-length text that expands on the basic description, and a long text that provides additional details and curiosities about the objects in the catalogue. This structure applies to both narratives, with variations in focus depending on the selected one.
