@@ -33,7 +33,7 @@ p {
     box-shadow: 0 0 20px #00ff41; /* Bagliore più intenso */
     text-shadow: none;
 }
-  /* colore quando passi sopra */
+
 
 .carousel-inner img {
   width: 1550px !important;
@@ -95,10 +95,14 @@ ul > li {
     border-color: #00ffff !important;
     box-shadow: 0 0 20px #00ffff;
     border-width: 4px !important;
-    color: #00e600;
+    color: black !important;
     background-color: #262626;
     border-radius: 0px;
 }
+.card-body{
+    color: #000 !important;
+}
+
 
 
 
@@ -109,9 +113,7 @@ ul > li {
     border-style: solid !important; 
     border-radius: 2px !important;
     border-color: #00ffff!important;
-    border-width: 4px !important;
-    
-    
+    border-width: 4px !important;    
 }
 
 .card-header {
@@ -160,7 +162,7 @@ ul > li {
 }
 
 #ChildrenDifficulty{
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 3px solid;
     border-color: #cc00ff;
@@ -176,7 +178,7 @@ ul > li {
 }
 
 #AdultDifficulty{
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 3px solid;
     border-color: #cc00ff;
@@ -192,7 +194,7 @@ ul > li {
 }
 
 #showLess{
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 3px solid;
     border-color: #cc00ff;
@@ -206,7 +208,7 @@ ul > li {
 }
 
 #showMore{
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 3px solid;
     border-color: #cc00ff;
@@ -219,8 +221,13 @@ ul > li {
     box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
 }
 
+.container-pulsanti{
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
+}
 #previousButton{
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 3px solid;
     border-color: #cc00ff;
@@ -234,18 +241,18 @@ ul > li {
 }
 
 #nextButton{
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 3px solid;
     border-color: #cc00ff;
     box-shadow: 0 0 5px #cc00ff;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 2% !important;
+    
 }
 #nextButton:hover{
     background-color: #cc00ff;
     color: #000;
-    box-shadow: 0 0 20px #cc00ff; /* Bagliore più intenso */
+    box-shadow: 0 0 20px #cc00ff; 
 }
 
 

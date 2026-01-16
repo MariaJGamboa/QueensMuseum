@@ -75,7 +75,6 @@ h1{
     padding-top: 6%;
     font-weight: 900;
 }
-
 .btn-group{
     padding-bottom: 5%;
 }
@@ -152,58 +151,85 @@ ol{
     
 }
 #difficulty {
-  display: flex; /* Rende il contenitore un flex container */
+  display: flex;
   gap: 10px;
 }
 
-#ChildrenDifficulty {
-    font-family: "garamond", serif;
+#ChildrenDifficulty{
     background-color: #000066;
     color: #fcf4e9;
+    font-family: "garamond", serif;
     font-size: 100%;
     padding: 7px;
+}
+#ChildrenDifficulty:hover {
+    background-color: #990000;
+    color: #fcf4e9;
     
-   
 }
 
-#AdultDifficulty {
-    font-family: "garamond", serif;
+#AdultDifficulty{
     background-color: #000066;
     color: #fcf4e9;
+    font-family: "garamond", serif;
     font-size: 100%;
     padding: 7px;
 }
+#AdultDifficulty:hover {
+    background-color: #990000;
+    color: #fcf4e9;
+}
+
 
 #showLess{
-    font-family: "garamond", serif !important;
-    border-color: #000066;
-    color: #000066;
-    
-    
+    background-color: #000066;
+    color: #fcf4e9;
+    border: none;
+    font-family: "garamond", serif;
+}
+#showLess:hover {
+    background-color: #990000;
+    color: #fcf4e9;
 }
 
+
 #showMore{
-    font-family: "garamond", serif !important;
-    border-color: #000066;
-    color: #000066;
-    
+    background-color: #000066;
+    color: #fcf4e9;
+    border: none;
+    font-family: "garamond", serif;  
+}
+#showMore:hover {
+    background-color: #990000;
+    color: #fcf4e9;
+}
+
+.container-pulsanti{
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
 }
 
 #previousButton {
     background-color: #000066;
-    border-color: #000066;
-    font-family: "garamond", serif !important;
     color: #fcf4e9;
-    margin-top: 5% !important;
+    border: none;
+    font-family: "garamond", serif;  
+}
+#previousButton:hover {
+    background-color: #990000;
+    color: #fcf4e9;
 }
 
 #nextButton {
     background-color: #000066;
-    border-color: #000066;
-    font-family: "garamond", serif !important;
     color: #fcf4e9;
-    margin-left: 83%;
-    
+    border: none;
+    font-family: "garamond", serif;  
+}
+#nextButton:hover {
+    background-color: #990000;
+    color: #fcf4e9;
 }
 
 
@@ -211,21 +237,15 @@ ol{
 #hist{
   background: #f4e4bc;
   background: linear-gradient(135deg, #f4e4bc 0%, #d2b48c 100%);
-  
-  /* Bordo decorato */
-  border: 4px double #5d4037;
+  border: 4px #5d4037;
   border-radius: 4px;
-  
-  /* Testo e font */
   color: #3e2723;
   font-family: 'garamond', serif; 
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  
   padding: 10px 25px;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  
 }
 
 #hist:hover {
@@ -237,21 +257,14 @@ ol{
 #pop-cult{
   background: #f4e4bc;
   background: linear-gradient(135deg, #f4e4bc 0%, #d2b48c 100%);
-  
-  /* Bordo decorato */
-  border: 4px double #5d4037;
+  border: 4px  #5d4037;
   border-radius: 4px;
-  
-  /* Testo e font */
   color: #3e2723;
   font-family: 'garamond', serif; 
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  
   padding: 10px 25px;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
 #pop-cult:hover{
