@@ -770,7 +770,7 @@ figure, figcaption{
   gap: 15px;             
   margin-bottom: 10px;   
 }
-.vboard-print {
-  max-width: 45%;      /* Cambia questa misura in base alle tue esigenze */
-  height: auto;
+.img-bozz{
+    max-width: 25%;  
+    height: auto;
 }

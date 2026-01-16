@@ -515,7 +515,7 @@ figure, figcaption{
   gap: 15px;             
   margin-bottom: 10px;  
 }
-.vboard-print {
-  max-width: 45%;      
-  height: auto;
+.img-bozz{
+    max-width: 25%;  
+    height: auto;
 }
