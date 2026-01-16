@@ -250,18 +250,23 @@ img {
 }
 
 .margin {
+  margin-top: 2.5rem;
+}
+
+.margin-ex {
   margin-top: 2.5rem !important;
 }
 
 .ex-black-frame {
   background-color: #2C2D2D;
-  padding: 1.25rem;
+  padding: 1rem;
   color: ivory;
-  margin-right: 2.5rem;
-  width: 100%;
-  max-width: 27rem;
   border: 0.2rem dotted ivory;
+  width: 28rem !important; /* distacco dal bordo della colonna */
+  box-sizing: border-box;
 }
+
+
 
 @media (max-width: 70rem) {
   .ex-black-frame {
@@ -270,6 +275,8 @@ img {
     margin-top: 2rem;
   }
 }
+
+
 
 .ex-black-frame a {
   color: ivory;
