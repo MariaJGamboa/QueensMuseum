@@ -276,14 +276,14 @@ figure, figcaption{
 .header-inline {
   display: flex;         /* Attiva il layout in linea */
   align-items: center;   /* Allinea verticalmente il testo e l'immagine */
-  gap: 15px;             /* Aggiunge spazio tra il titolo e l'immagine */
-  margin-bottom: 10px;   /* Spazio tra questa riga e il paragrafo sotto */
+  gap: 15px;             
+  margin-bottom: 10px;   
 }
 .vboard-print {
-  max-width: 40%;      /* Cambia questa misura in base alle tue esigenze */
+  max-width: 40%;      
   height: auto;
   border-radius: 15px;  
-  border: 3px solid #990000;  /* Opzionale: arrotonda gli angoli */
+  border: 3px solid #990000;  
 }
 
 /*Style Footer*/
