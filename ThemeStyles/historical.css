@@ -180,7 +180,6 @@ ol{
     color: #fcf4e9;
 }
 
-
 #showLess{
     background-color: #000066;
     color: #fcf4e9;
@@ -237,7 +236,7 @@ ol{
 #hist{
   background: #f4e4bc;
   background: linear-gradient(135deg, #f4e4bc 0%, #d2b48c 100%);
-  border: 4px #5d4037;
+  border: 4px double #990000;
   border-radius: 4px;
   color: #3e2723;
   font-family: 'garamond', serif; 
@@ -254,10 +253,17 @@ ol{
   box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
 }
 
+#hist.active {
+  background: #e2d2a9;
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+}
+
+
 #pop-cult{
   background: #f4e4bc;
   background: linear-gradient(135deg, #f4e4bc 0%, #d2b48c 100%);
-  border: 4px  #5d4037;
+  border: 4px double #990000;
   border-radius: 4px;
   color: #3e2723;
   font-family: 'garamond', serif; 
@@ -272,6 +278,12 @@ ol{
     transform: translateY(-2px);
     box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
 }
+#pop-cult.active {
+  background: #e2d2a9;
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+}
+
 
 /*Style documentation*/
 figure, figcaption{
