@@ -316,6 +316,17 @@ figure, figcaption{
     border: 3px solid #990000; 
 }
 
+#items-location{
+    font-family: "garamond", serif;
+    color: #8c5826;
+}
+
+#team{
+    font-family: "garamond", serif;
+    color: #8c5826;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
 
 /*Style Footer*/
 .footer{

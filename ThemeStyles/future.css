@@ -340,6 +340,17 @@ figure, figcaption{
     height: auto;
 }
 
+#items-location{
+    font-family: "Cascadia Code", sans-serif;
+    color: white;
+}
+
+#team{
+    font-family: "Cascadia Code", sans-serif;
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
 
 
 /*Style Footer*/
