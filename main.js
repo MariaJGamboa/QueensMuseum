@@ -172,7 +172,7 @@ const items = [
   {
     id: 4,
     title: "First Folio",
-    image: ["images/First_folio_VA.jpg","images/shake-FF.jpg"],
+    image: ["images/FF.png","images/shake-FF.jpg"],
     metadata: {
       fullName: "First Folio",
       date: "1623",
@@ -303,7 +303,7 @@ const items = [
     metadata: {
       fullName: "Love letters between Albert and Victoria",
       date: "1836",
-      place: "Royal Archives, Windsor Castle",
+      place: "Goethe Insitute, UK",
       materiality: "Ink on Paper",
       room: "Queen Victoria's Room"
     },
@@ -345,7 +345,7 @@ const items = [
     metadata: {
       fullName: "The Royal Family in 1846",
       date: "1846",
-      place: "East Gallery, Buckingham Palace, London",
+      place: "Royal Collection, Buckingham Palace",
       materiality: "Oil on canvas",
       room: "Queen Victoria's Room"
     },
@@ -387,7 +387,7 @@ const items = [
     metadata: {
       fullName: "Queen Victoria Tea set",
       date: "1851",
-      place: "Royal Collection Trust",
+      place: "Royal Collection Trust Shop",
       materiality: "English bone china tea set",
       room: "Queen Victoria's Room"
     },
