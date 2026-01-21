@@ -9,19 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const link = document.getElementById("theme-css");
   if (!link) return;
 
-  // Prendi tema salvato o random
+  // Either selected theme or random
   let savedTheme = sessionStorage.getItem("selectedTheme");
   if (!savedTheme) {
     savedTheme = themes[Math.floor(Math.random() * themes.length)];
     sessionStorage.setItem("selectedTheme", savedTheme);
   }
 
-  // Applica subito il tema
+  // Applies theme
   link.href = savedTheme;
-  document.body.style.visibility = "visible"; // mostra il body ora che il tema è applicato
+  document.body.style.visibility = "visible"; 
 });
 
-// Funzione per cambiare tema al click
+
+// Changer theme on click
 function changeTheme(cssFile) {
   const link = document.getElementById("theme-css");
   if (!link) return;
@@ -29,18 +30,18 @@ function changeTheme(cssFile) {
   const currentTheme = sessionStorage.getItem("selectedTheme");
 
   if (currentTheme === cssFile) {
-    // Forza ricaricamento aggiungendo timestamp per query string
+    // reload
     link.href = cssFile + '?v=' + new Date().getTime();
   } else {
     link.href = cssFile;
     sessionStorage.setItem("selectedTheme", cssFile);
   }
 
-  document.body.style.visibility = "visible"; // assicura che il body sia visibile
+  document.body.style.visibility = "visible"; 
 }
 
-// dati items 
 
+// items data
 const items = [
   {
     id: 1,
@@ -843,14 +844,10 @@ const items = [
       popculture: 2
     }
   }
-
-
-
-
-  
-
-
 ]
+
+
+
 
 let currentItemIndex = 0;
 let currentImageIndex = 0;
@@ -859,7 +856,9 @@ let currentTextLevel = 0;       // 0=short, 1=medium, 2=long
 let currentNarrative = "historical"; // default
 let orderedItems = [];
 
-// Mappa stanze: classi SVG -> nome stanza
+
+
+// Room map -> svg ids
 const roomMap = {
     'queen-elizabeth-i': "Queen Elizabeth I's Room",
     'queen-victoria': "Queen Victoria's Room",
@@ -867,9 +866,8 @@ const roomMap = {
     'princess-diana': "Princess Diana's Room"
 };
 
-// ==============================
-// Ordina items in base alla narrativa
-// ==============================
+
+// Orders items according to the narrative
 function updateOrderedItems() {
   
     const roomsOrder = [
@@ -880,7 +878,6 @@ function updateOrderedItems() {
     ];
 
     orderedItems = [];
-
     roomsOrder.forEach(roomName => {
         const roomItems = items
             .filter(item => item.metadata.room === roomName)
@@ -889,9 +886,8 @@ function updateOrderedItems() {
     });
 }
 
-// ==============================
-// Mostra contenuto Exhibition
-// ==============================
+
+// Shows content in the exhibition.html
 function updateContent() {
     const item = orderedItems[currentItemIndex];
     if (!item) return;
@@ -911,9 +907,51 @@ function updateContent() {
     document.getElementById("longTextArea").textContent = (currentTextLevel === 2) ? textData.long : "";
 }
 
-// ==============================
-// Carousel immagini
-// ==============================
+//NEW FUNCTION
+function handleNarrativeSwitch(newNarrative) {
+    if (currentNarrative === newNarrative) return;
+    currentNarrative = newNarrative;
+    sessionStorage.setItem('selectedNarrative', newNarrative);
+
+    // Update UI Buttons
+    document.querySelectorAll('.button').forEach(btn => btn.classList.remove('active'));
+    const activeBtnId = (newNarrative === 'historical') ? "hist" : "pop-cult";
+    document.getElementById(activeBtnId)?.classList.add('active');
+
+    const currentId = orderedItems[currentItemIndex]?.id;
+    updateOrderedItems();
+
+    if (window.location.pathname.includes("Map.html")) {
+        buildList();
+    } else {
+        const newIndex = orderedItems.findIndex(i => i.id === currentId);
+        currentItemIndex = (newIndex >= 0) ? newIndex : 0;
+        currentImageIndex = 0;
+        currentTextLevel = 0;
+        updateContent();
+    }
+}
+
+//NEWWWW
+function nextItem() {
+    currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
+    resetItemView();
+}
+
+function previousItem() {
+    currentItemIndex = (currentItemIndex - 1 + orderedItems.length) % orderedItems.length;
+    resetItemView();
+}
+
+function resetItemView() {
+    currentImageIndex = 0;
+    currentTextLevel = 0;
+    updateContent();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+// Carousel images in exhibition.html
 function showImage(index) {
     const item = orderedItems[currentItemIndex];
     const imgElement = document.querySelector('.item-img');
@@ -927,7 +965,7 @@ function showImage(index) {
 }
 
 
-
+// To change image
 function nextImage() {
     const item = orderedItems[currentItemIndex];
     if (!item.image || item.image.length === 0) return;
@@ -944,87 +982,83 @@ function prevImage() {
 
 setInterval(nextImage, 4000);
 
-// ==============================
-// Next/Previous Items
-// ==============================
-function previousItem() {
-    currentItemIndex = (currentItemIndex - 1 + orderedItems.length) % orderedItems.length;
-    currentImageIndex = 0;
-    currentTextLevel = 0;
-    updateContent();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
 
-function nextItem() {
-    currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
-    currentImageIndex = 0;
-    currentTextLevel = 0;
-    updateContent();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+// To change item
+//function previousItem() {
+  //  currentItemIndex = (currentItemIndex - 1 + orderedItems.length) % orderedItems.length;
+ //   currentImageIndex = 0;
+ //   currentTextLevel = 0;
+ //   updateContent();
+ //   window.scrollTo({ top: 0, behavior: 'smooth' });
+//}
 
-// ==============================
-// Cambia narrativa
-// ==============================
-function setNarrative(narrative) {
+//function nextItem() {
+ //   currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
+ //   currentImageIndex = 0;
+  //  currentTextLevel = 0;
+ //   updateContent();
+ //   window.scrollTo({ top: 0, behavior: 'smooth' });
+//}
+
+
+// To set the narrative through the buttons
+//function setNarrative(narrative) {
    
-    if (currentNarrative === narrative) return;
+  //  if (currentNarrative === narrative) return;
 
-    currentNarrative = narrative
+  //  currentNarrative = narrative
 
-    document.querySelectorAll('.button').forEach(btn => {
-        btn.classList.remove('active');
-    });
+  //  document.querySelectorAll('.button').forEach(btn => {
+  //      btn.classList.remove('active');
+  //  });
 
-    const btn = document.getElementById(narrative); // id dei bottoni = 'hist', 'pop-cult'
-    if(btn) btn.classList.add('active');
+  //  const btn = document.getElementById(narrative);
+  //  if(btn) btn.classList.add('active');
     
-    sessionStorage.setItem('selectedNarrative', narrative);
-    // salva l'id dell'item corrente
-    const currentId = orderedItems[currentItemIndex]?.id;
-    // riordina gli items
-    updateOrderedItems();
+  //  sessionStorage.setItem('selectedNarrative', narrative);
+    // saves id of the current item
+   // const currentId = orderedItems[currentItemIndex]?.id;
+    // orders the items
+  //  updateOrderedItems();
 
-    // trova l'indice dell'item corrente nel nuovo ordine
-    const newIndex = orderedItems.findIndex(i => i.id === currentId);
-    if (newIndex >= 0) {
-        currentItemIndex = newIndex;
-    } else {
-        // fallback, se per qualche motivo l'item non esiste più
-        currentItemIndex = 0;
-    }
+    // finds index of the item in the new order
+  //  const newIndex = orderedItems.findIndex(i => i.id === currentId);
+  //  if (newIndex >= 0) {
+    //    currentItemIndex = newIndex;
+  //  } else {
+    //    currentItemIndex = 0;
+   // }
 
-    // reset immagini e testo
-    currentImageIndex = 0;
-    currentTextLevel = 0;
+    // reset
+  //  currentImageIndex = 0;
+  //  currentTextLevel = 0;
 
-    updateContent()
-}
+  //  updateContent()
+//}
 
-// ==============================
-// Click su stanze
-// ==============================
+
+// To clock on rooms
 function setupRoomClicks(isExhibition=false) {
     Object.keys(roomMap).forEach(roomClass => {
         const roomEl = document.querySelector(`.${roomClass}`);
         if (roomEl) {
             roomEl.style.cursor = 'pointer';
             roomEl.addEventListener('click', () => {
-                // Primo item della stanza secondo narrativa
+                // First item in the room according to narrative
                 const roomItems = orderedItems.filter(i => i.metadata.room === roomMap[roomClass]);
                 if (roomItems.length === 0) return;
 
                 const firstItem = roomItems[0];
               
                 if(isExhibition){
-                    // Exhibition.html → mostra item
+                    // Exhibition.html → shows item
                     currentItemIndex = orderedItems.indexOf(firstItem);
                     currentImageIndex = 0;
                     currentTextLevel = 0;
                     updateContent();
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 } else {
-                    // Map.html → vai a exhibition
+                    // Map.html → go to exhibition
                     const url = `exhibition.html?item=${firstItem.id}&narrative=${currentNarrative}`;
                     window.location.href = url;
                 }
@@ -1033,9 +1067,8 @@ function setupRoomClicks(isExhibition=false) {
     });
 }
 
-// ==============================
-// Testi / difficoltà
-// ==============================
+
+// Text difficulties
 function changeTextChildren() {
     currentDifficulty = "children";
     currentTextLevel = 0;
@@ -1066,9 +1099,8 @@ function showMore() {
     }
 }
 
-// ==============================
-// Costruzione lista Map.html
-// ==============================
+
+// Build list in Map.html
 function buildList() {
     const container = document.querySelector('#items-container');
     if (!container) return;
@@ -1104,7 +1136,7 @@ function buildList() {
         container.appendChild(ol);
     });
 
-    // Click sui link items
+    // Click on links
     container.querySelectorAll('.map-link').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -1114,65 +1146,44 @@ function buildList() {
     });
 }
 
-// ==============================
-// INIT
-// ==============================
+
+
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.visibility = "visible";
+    document.body.style.opacity = "1";
     const params = new URLSearchParams(window.location.search);
-    const itemId = parseInt(params.get('item'));
-    currentNarrative = params.get('narrative') || 'historical';
-    currentImageIndex = 0;
-    currentTextLevel = 0;
-    currentDifficulty = "adult";
+    
+    // 1. Determine Narrative
+    currentNarrative = params.get('narrative') || sessionStorage.getItem('selectedNarrative') || 'historical';
+    updateOrderedItems();
 
-    const histBtn = document.getElementById("hist");
-    const popBtn = document.getElementById("pop-cult");
+    // 2. Setup Buttons
+    document.getElementById("hist")?.addEventListener('click', () => handleNarrativeSwitch("historical"));
+    document.getElementById("pop-cult")?.addEventListener('click', () => handleNarrativeSwitch("popculture"));
+    
+    const initialBtnId = (currentNarrative === 'historical') ? "hist" : "pop-cult";
+    document.getElementById(initialBtnId)?.classList.add("active");
 
-    const setActiveButton = (btn) => {
-        histBtn?.classList.remove("active");
-        popBtn?.classList.remove("active");
-        if(btn) btn.classList.add("active");
-    };
-
-    // ===================== MAP.HTML =====================
-    if(window.location.pathname.includes("Map.html")){
-        const buildForNarrative = (narrative) => {
-            currentNarrative = narrative;
-            updateOrderedItems();
-            buildList();
-        };
-
-        histBtn?.addEventListener('click', () => { buildForNarrative("historical"); setActiveButton(histBtn); });
-        popBtn?.addEventListener('click', () => { buildForNarrative("popculture"); setActiveButton(popBtn); });
-
-        buildForNarrative(currentNarrative);
-        setActiveButton(histBtn);
-
+    // 3. Page Logic
+    if (window.location.pathname.includes("Map.html")) {
+        buildList();
         setupRoomClicks(false);
     }
 
-    // ===================== EXHIBITION.HTML =====================
-    if(window.location.pathname.includes("exhibition.html")){
-        updateOrderedItems();
-        setupRoomClicks(true);
-
-        if(!isNaN(itemId)){
+    if (window.location.pathname.includes("exhibition.html")) {
+        const itemId = parseInt(params.get('item'));
+        if (!isNaN(itemId)) {
             const index = orderedItems.findIndex(i => i.id === itemId);
-            if(index >=0) currentItemIndex = index;
+            if (index >= 0) currentItemIndex = index;
         }
 
-        currentDifficulty = "adult"; // default
+        currentDifficulty = "adult"; 
         currentTextLevel = 0; 
-
-        updateContent();
-
-        const adultBtn = document.getElementById("AdultDifficulty");
-        const childrenBtn = document.getElementById("ChildrenDifficulty");
-        adultBtn?.classList.add("active");
-        childrenBtn?.classList.remove("active");
         
-        histBtn?.addEventListener('click', () => { setNarrative("historical"); setActiveButton(histBtn); });
-        popBtn?.addEventListener('click', () => { setNarrative("popculture"); setActiveButton(popBtn); });
-        setActiveButton(histBtn);
+        // Rendi il bottone Adult visivamente attivo
+        document.getElementById('AdultDifficulty')?.classList.add('active');
+        document.getElementById('ChildrenDifficulty')?.classList.remove('active');
+        updateContent();
+        setupRoomClicks(true);
     }
 });
