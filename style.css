@@ -1,15 +1,15 @@
 html {
-  font-size: 16px;
+  /*font-size: 16px;*/
   overflow-x: hidden; 
 }
 
 
 
-.bangers-regular {
+/*.bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
-}
+}*/
 
 
 
@@ -29,18 +29,18 @@ svg {
     
   }
 .room {
-  fill: #cce5ff;
-  stroke: #333;
+  /*fill: #cce5ff;*/
+  stroke: white;
   stroke-width: 0.1em;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
   }
-.room:hover {
+/*.room:hover {
   fill: #66b3ff;
     
-  }
+  }*/
 .corridor {
-  fill: #e6e6e6;
+  /*fill: #e6e6e6;*/
   stroke: #333;
   stroke-width: 0.1em;
   }
@@ -60,7 +60,7 @@ svg {
 
 .button {
   border: none;
-  color: white;
+ /* color: white;*/
   padding: 1em 4em;
   text-align: center;
   font-size: 1.25em;
@@ -69,12 +69,12 @@ svg {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  border:1em black;
+  /*border:1em black;*/
   margin: 10px;
 }
-#hist{background-color: white;}
+/*#hist{background-color: white;}
 #pop-cult{background-color: white;}
-#narrative {padding-bottom: 5em}
+#narrative {padding-bottom: 5em}*/
 .button:hover {opacity: 1}
 
 
