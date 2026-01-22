@@ -393,23 +393,23 @@ const items = [
       room: "Queen Victoria's Room"
     },
     text: {
-      hisorical: {
-        children: {
-          short: "This tea set is inspired by one made for Queen Victoria in 1851. Queen Victoria loved drinking tea and helped make afternoon tea a popular tradition in England. She was also crowned Empress of India during her reign, when England ruled over India.",
-          medium: "This tea set was inspired by the one Queen Victoria had for the Great Exhibition in 1851. It is made of English bone china and decorated with the Queen’s initials and pretty floral designs. Queen Victoria became Empress of India during her reign, when England controlled the country. Tea was an important export from India to England, and the Queen loved drinking it. She helped make afternoon tea a popular tradition, turning tea time into a special social occasion.",
+      hisorical:{
+        children:{
+          short:"This tea set is inspired by one made for Queen Victoria in 1851. Queen Victoria loved drinking tea and helped make afternoon tea a popular tradition in England. She was also crowned Empress of India during her reign, when England ruled over India.",
+          medium:"This tea set was inspired by the one Queen Victoria had for the Great Exhibition in 1851. It is made of English bone china and decorated with the Queen’s initials and pretty floral designs. Queen Victoria became Empress of India during her reign, when England controlled the country. Tea was an important export from India to England, and the Queen loved drinking it. She helped make afternoon tea a popular tradition, turning tea time into a special social occasion.",
           long: "This tea set is inspired by the one Queen Victoria commissioned for the Great Exhibition in 1851. It is made of fine English bone china, decorated with Queen Victoria’s initials surrounded by delicate flowers, and finished with gold details. Today, sets like this are still sold by the Royal Collection. During Queen Victoria’s reign, India was controlled by England. After the Indian Rebellion of 1857, England took full control of India, and in 1876, Victoria was crowned Empress of India. Tea became a very popular drink, exported from India to England and around the world. Queen Victoria enjoyed drinking tea herself, and she helped make afternoon tea a formal and elegant tradition. Her favorite was said to be Earl Grey, and she often wrote about tea in her journal. Thanks to the Industrial Revolution, tea became more affordable and available to many people, not just the wealthy. Today, afternoon tea is still a classic British tradition, and Queen Victoria is remembered as one of the people who made it famous."
         },
-        adult: {
+        adult:{
           short:"This tea set is inspired by the set commissioned by Queen Victoria for the Great Exhibition in 1851. During her reign she was crowned empress of India, and is famously associated with drinking tea and popularizing the British tradition of afternoon tea.",
           medium:"This tea set is inspired by the set commissioned by Queen Victoria for the Great Exhibition in 1851. It is an english bone china tea set that features the cypher of Queen Victoria surrounded by decorative floral borders. During Queen Victoria’s reign India was under in-direct control of England with the East India company, after the Indian Rebellion of 1857, the UK took direct control of India. After this the territory of India became part of the English Kingdom, therefore Queen Victoria was crowned as Empress of India. During this year England exported a great amount of tea around the world, making it a famous beverage. Victoria was associated with drinking tea; it's said that she popularized the British tradition of afternoon tea.",
           long:"This tea set is inspired by the set commissioned by Queen Victoria for the Great Exhibition in 1851. It is an english bone china tea set that features the cypher of Queen Victoria surrounded by intricate decorative florals borders, the pieces are finished with 22-carat gold. The tea set is sold by the Royal Collection Trust Shop for £ 300. During Queen Victoria’s reign India was under the indirect control of England with the monopolistic control of the East India Company. After the Indian Rebellion of 1857, due to the British exploitation and cultural insensitivity made the UK dissolve the company and assume direct control over India. By 1876 India became fully part of the British empire and Queen Victoria was officially crowned Empress of India. The Imperial expansion facilitated the mass export of goods, including Tea, transforming it into a famous, global beverage. Meanwhile in England, Queen Victoria expressed her personal preference for tea, making it a social ritual, the afternoon tea. Though this practice was not introduced by Victoria but by the Duchess of Bedford, the Queen enthusiastically adopted the ritual, making it become a formal, glamorous social occasion.  It is said that her favourite tea was the Earl Grey and her taste in tea is recorded in her journal where the word tea is written several times.  iDuring the same years the industrial revolution allowed the production and transportation of tea affordable and accessible to all classes and not just for the elite. Later on Tea became a symbol of the Victorian era and a national staple still maintained today for the English afternoon tea."
         }
       },
       popculture: {
-        children: {
+        children:{
           short:"Queen Victoria loved drinking tea. This tea set shows how tea became part of everyday life and British culture.",
           medium:"This tea set is inspired by one owned by Queen Victoria. During her reign, tea became very popular in Britain. Because the queen enjoyed tea, people copied her habits. Drinking tea became a social tradition, especially the afternoon tea that many people still enjoy today.",
-          long: "This tea set is inspired by one connected to Queen Victoria. During her reign, tea became an important part of British daily life. Queen Victoria was often linked to drinking tea, and many people followed her example. Tea became something people shared with family and friends, especially in the afternoon. Thanks to the queen’s influence and new ways of producing tea, this habit spread to all levels of society. Today, tea is still a symbol of British culture, showing how the queen’s personal tastes became part of everyday life."
+          long:"This tea set is inspired by one connected to Queen Victoria. During her reign, tea became an important part of British daily life. Queen Victoria was often linked to drinking tea, and many people followed her example. Tea became something people shared with family and friends, especially in the afternoon. Thanks to the queen’s influence and new ways of producing tea, this habit spread to all levels of society. Today, tea is still a symbol of British culture, showing how the queen’s personal tastes became part of everyday life."
         },
         adult:{
           short:"This tea set reflects Queen Victoria’s association with tea drinking, a personal habit that helped turn tea into a defining symbol of British culture.",
@@ -901,7 +901,7 @@ function updateContent() {
 
     showImage(currentImageIndex);
 
-    const textData = item.text[currentNarrative][currentDifficulty];
+    const textData = item.text?.[currentNarrative]?.[currentDifficulty];
     document.getElementById("shortTextArea").textContent = (currentTextLevel === 0) ? textData.short : "";
     document.getElementById("mediumTextArea").textContent = (currentTextLevel === 1) ? textData.medium : "";
     document.getElementById("longTextArea").textContent = (currentTextLevel === 2) ? textData.long : "";
