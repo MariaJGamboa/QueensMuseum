@@ -164,8 +164,12 @@ ol{
 }
 #ChildrenDifficulty:hover {
     background-color: #990000;
-    color: #fcf4e9;
-    
+    color: #fcf4e9;   
+}
+
+#ChildrenDifficulty.active {
+    background-color: #990000;
+    color: #fcf4e9;   
 }
 
 #AdultDifficulty{
@@ -180,6 +184,11 @@ ol{
     color: #fcf4e9;
 }
 
+#AdultDifficulty.active {
+    background-color: #990000;
+    color: #fcf4e9;
+}
+
 #showLess{
     background-color: #000066;
     color: #fcf4e9;
@@ -190,7 +199,6 @@ ol{
     background-color: #990000;
     color: #fcf4e9;
 }
-
 
 #showMore{
     background-color: #000066;
@@ -244,7 +252,6 @@ ol{
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 25px;
-  
 }
 
 #hist:hover {
@@ -258,7 +265,6 @@ ol{
   transform: translateY(-2px);
   box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
 }
-
 
 #pop-cult{
   background: #f4e4bc;
@@ -295,7 +301,6 @@ figure, figcaption{
 .vboard-pop{
     border: 3px solid #990000;  
     border-radius: 15px 
-
 }
 
 .header-inline {

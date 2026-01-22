@@ -36,11 +36,17 @@ p {
 
 
 .carousel-inner img {
-  width: 1550px !important;
+  width: 100%;
   height: 710px !important;
   object-fit: cover;   /* scala senza deformare */
   display: block;
 }
+@media screen and (max-width: 600px){
+    .carousel-inner img{ 
+        height: 400px;
+    }
+ } 
+
 .carousel-caption h2{
     font-size: 70px !important;
 }
@@ -177,6 +183,12 @@ ul > li {
     box-shadow: 0 0 20px #cc00ff; 
 }
 
+#ChildrenDifficulty.active{
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; 
+}
+
 #AdultDifficulty{
     background-color: black;
     color: white;
@@ -188,6 +200,12 @@ ul > li {
     padding: 7px;
 }
 #AdultDifficulty:hover {
+    background-color: #cc00ff;
+    color: #000;
+    box-shadow: 0 0 20px #cc00ff; 
+}
+
+#AdultDifficulty.active{
     background-color: #cc00ff;
     color: #000;
     box-shadow: 0 0 20px #cc00ff; 
@@ -255,11 +273,11 @@ ul > li {
     box-shadow: 0 0 20px #cc00ff; 
 }
 
+ @media screen and (max-width: 600px){
+ }    
 
 .card-footer {
     padding: 8px !important;
-    border-top-style: solid !important;
-    border-color: #00ffff !important;
     font-family: "Cascadia Code", sans-serif !important;
 }
 
