@@ -80,16 +80,19 @@ h1{
 }
 
 .room {
-    fill:#800000;
+    fill:#e9af63;
 }
 
 .room:hover {
-    fill:#4d0000;
+    fill: #800000;
+}
+.corridor {
+  fill: transparent;
+  
 }
 
 .label-txt {
-    font-family: "garamond", serif !important;
-    color: white !important;
+    font-family: "garamond", serif !important;  
 }
 
 #map{
@@ -221,7 +224,8 @@ ol{
     background-color: #000066;
     color: #fcf4e9;
     border: none;
-    font-family: "garamond", serif;  
+    font-family: "garamond", serif; 
+    margin-top: 3%; 
 }
 #previousButton:hover {
     background-color: #990000;
@@ -232,7 +236,8 @@ ol{
     background-color: #000066;
     color: #fcf4e9;
     border: none;
-    font-family: "garamond", serif;  
+    font-family: "garamond", serif; 
+    margin-top: 3%;  
 }
 #nextButton:hover {
     background-color: #990000;

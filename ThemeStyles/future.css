@@ -67,9 +67,14 @@ h1{
 }
 .room { 
     fill:#cc00ff;
+    
 }
 .room:hover {
     fill: #00ff41;
+}
+.corridor {
+  fill: transparent;
+  
 }
 
 .label-txt {
@@ -105,8 +110,8 @@ ul > li {
     background-color: #262626;
     border-radius: 0px;
 }
-.card-body{
-    color: #000 !important;
+.card-body .card-text{
+    color: black !important;
 }
 
 
@@ -251,6 +256,7 @@ ul > li {
     border-color: #cc00ff;
     box-shadow: 0 0 5px #cc00ff;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 3%; 
 }
 #previousButton:hover {
     background-color: #cc00ff;
@@ -265,16 +271,14 @@ ul > li {
     border-color: #cc00ff;
     box-shadow: 0 0 5px #cc00ff;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 3%; 
     
 }
 #nextButton:hover{
     background-color: #cc00ff;
     color: #000;
     box-shadow: 0 0 20px #cc00ff; 
-}
-
- @media screen and (max-width: 600px){
- }    
+}  
 
 .card-footer {
     padding: 8px !important;
