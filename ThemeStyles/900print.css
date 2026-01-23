@@ -16,22 +16,10 @@
   font-family: "Pinyon Script", cursive;
   font-weight: 600;
   font-style: normal;
-  font-size: 6rem;
+  font-size: 4rem;
   letter-spacing: 0.06rem;
   text-align: center;
 }
-
-/* .im-fell-english-regular-italic {
-  font-family: "IM Fell English", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.im-fell-english-sc-regular {
-  font-family: "IM Fell English SC", serif;
-  font-weight: 400;
-  font-style: normal;
-}*/
 
 .playfair {
   font-family: "Playfair", serif;
@@ -87,7 +75,7 @@ h2 {
   margin-bottom: 3.75rem;
 }
 
-.frame::after {
+/*.frame::after {
   content: "";
   position: absolute;
   left: 0;
@@ -99,18 +87,18 @@ h2 {
   width: 90vw;
   left: 50%;
   transform: translateX(-50%);
-}
+}*/
 
 .frame > .text {
   padding-top: 0 !important;
 }
 
 .black-frame {
-  margin-top: 8rem;
+  margin-top: 2rem;
   background-color: #2C2D2D;
-  padding-bottom: 2rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-bottom: 2rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
   color: ivory;
   border: 0.25rem dotted ivory;
 }
@@ -164,8 +152,6 @@ img {
   background-color: #2C2D2D;
 }
 
-
-
 .dec-frame2 {
   overflow: visible;
   border: 1.25rem solid transparent;
@@ -181,8 +167,6 @@ img {
   
 }
 
-
-
 .footer-cl {
   margin-top: 5rem;
   font-family: "IM Fell English SC";
@@ -193,6 +177,11 @@ img {
   color:ivory;
 }
 
+
+.link {
+  color:white;
+
+}
 #hist {
   background-color: ivory;
   color: #2C2D2D;
@@ -217,11 +206,13 @@ img {
   border: 0.2rem dashed black;
 }
 
-.button.active {background-color: black !important;
-  color:ivory !important;}
+.button.active {
+  background-color: black !important;
+  color:ivory !important;
+}
 
 .button:not(.active):hover {
-  background-color: black I !important;
+  background-color: black  !important;
   color: ivory !important;
 }
 
@@ -397,6 +388,14 @@ img {
   vertical-align: middle;
 }
 
+#carousel-container {
+  position: relative;
+  width: 34.5rem;
+  max-width: 34.5rem;
+  margin: 0 auto;
+  
+}
+
 #table {
   border-collapse: separate;
   border-spacing: 0;
@@ -416,20 +415,6 @@ img {
   background-color: ivory !important;
 }
 
-/* #ChildrenDifficulty,
-#AdultDifficulty {
-  background-color: ivory;
-  color: black;
-}
-
- #ChildrenDifficulty.active,
-#AdultDifficulty.active {
-  background-color: black !important;
-  color: ivory !important;
-} 
-#difficulty {
-  text-align: center;
-}*/
 
 .meta-comic {
   padding-top: 0.3rem;
@@ -441,9 +426,6 @@ img {
   box-sizing: border-box;
   border: 0.2rem dotted #2C2D2D;
 }
-
-
-
 
 .button-diff{
   display: inline-block;
@@ -503,19 +485,41 @@ img {
     content: none !important;
 }
 
-.maergin {margin-top: 2rem;}
-
-
 figure, figcaption{
   text-align: center; }
 
 .header-inline {
   display: flex;         
-  align-items: center;   /* Allinea verticalmente il testo e l'immagine */
+  align-items: center;   
   gap: 15px;             
   margin-bottom: 10px;  
 }
 .img-bozz{
     max-width: 25%;  
     height: auto;
+}
+
+#items-location a {
+  color:#2C2D2D;
+}
+
+#items-location a:hover {
+  color:grey;
+}
+
+#git-maria {
+  color:#2C2D2D;
+}
+
+#git-maria:hover {
+  color:grey;
+}
+
+
+#git-alice {
+  color:#2C2D2D;
+}
+
+#git-:hover {
+  color:grey;
 }

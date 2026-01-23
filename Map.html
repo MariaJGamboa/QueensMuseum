@@ -69,7 +69,7 @@
           </div>
         </div>
       </nav>
-        <div class="comic-map im-fell-english-regular">  <!-- ho tolto container/container-fluid-->
+        <div class="comic-map im-fell-english-regular"> 
           <h1 class="map-title text-center">Queens Museum Map</h1>
             <!-- chose the narrative-->
           <div class="text-center">
@@ -83,11 +83,10 @@
               </div>
           </div>
         </div>
-            <!--colonna con mappa-->
+            <!--map-->
             <div class="row d-flex align-items-start section-divider im-fell-english-regular margin-ex" id="path">
                 <div class="svg-container col-lg-8 margin-ex">
                     <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet" class="building">
-                        <!-- Stanze sopra il corridoio -->
                     
                         <rect x="30" y="60" width="270" height="120" class="room room1 queen-elizabeth-i" data-name="room1"/>
                         <text x="90" y="130" class="label label-txt lab1">Queen Elizabeth I's Room</text>
@@ -95,39 +94,28 @@
                         <rect x="300" y="60" width="260" height="120" class="room room2 queen-victoria" data-name="room2"/>
                         <text x="355" y="130" class="label label-txt lab2">Queen Victoria's Room</text>
 
-                            
-                        <!-- Porte stanze sopra -->
-                      
-
-                        <!-- Stanze sotto il corridoio -->
                         <rect x="30" y="220" width="270" height="120" class="room room3 queen-elizabeth-ii" data-name="room3"/>
                         <rect x="300" y="220" width="260" height="120" class="room room4 princess-diana" data-name="room4"/>
                         <text x="90" y="285" class="label label-txt lab3">Queen Elizabeth II's Room</text>
                         <text x="355" y="285" class="label label-txt lab4">Princess Diana's Room</text>
 
-                        <!-- Corridoio centrale -->
                         <rect x="30" y="180" width="530" height="40" class="corridor corr-pop"/> 
-                        <!--porte -->
+                       
                         <line x1="150" y1="180" x2="190" y2="180" class="door"/>
                         <line x1="430" y1="180" x2="470" y2="180" class="door"/>
                             
-                        <!-- Porte corridoio -> stanze sotto -->
                         <line x1="150" y1="220" x2="190" y2="220" class="door"/>
                         <line x1="430" y1="220" x2="470" y2="220" class="door"/>
 
-                        <!-- Porta sopra tra stanze -->
                         <line x1="300" y1="100" x2="300" y2="140" class="door"/>
 
-                        <!-- Porta sotto tra stanze -->
                         <line x1="300" y1="260" x2="300" y2="300" class="door"/>
-                            
-                        <!-- Porta ingresso corridoio -->
+                        
                         <line x1="30" y1="190" x2="30" y2="210" class="door"/>
                     </svg>
                 </div>
             
-                <div class="col-lg-4 ex-comic ex-black-frame margin-ex">
-                <!--colonna con legenda-->
+              <!--  <div class="col-lg-4 ex-comic ex-black-frame margin-ex">
                   <div class="ex-bubble">
                     <h4 class="text playfair-sm">Explore the museum</h4>
                   </div>
@@ -167,37 +155,40 @@
                 </div>
                 
             </div>
-        </div>
-        
-            
+        </div>-->
 
-
-    <footer>
-       <div class="container-fluid footer footer-cl">
-            <div class="row">
-              <div class="col-md-6 text-center">
-                  <h5 class="text margin">Creators</h5>
-                      <strong class="foot-text">Maria Juliana Gamboa</strong><br>
-                        mariajuliana.gamboa@studio.unibo.it</br>
-                        <strong class="foot-text">Alice Spadavecchia</strong><br>
-                       alice.spadavecchia2@studio.unibo.it</br>
-              </div>
-              <div class="col-md-6 text-center">       
-                    <address><br>
-                      </br><strong class="foot-text2">Alma Mater Studiorum Università di Bologna</strong><br>
-                        Via Zamboni 33<br>
-                        40126 BO Bologna<br>
-                    </address>      
-              </div>
-              <div class="col-12 text-center foot-git">
-                <p class="mb-0">To access the Github repository follow this <a class="external-link link" href="https://github.com/MariaJGamboa/QueensMuseum.git">link</a>.</p>
-                <p class="mb-0 foot-copy">All copyrights and related rights on the content remain with their original owners.  All copyright on the typographic and layout choices are 2025 © Queens Museum</p>
-              </div>
+            <div class="col-lg-4 ex-comic ex-black-frame margin-ex">
+                <div class="ex-bubble">
+                    <h4 class="text playfair-sm">Explore the museum</h4>
+                </div>
+                
+                <ul id="items-container"></ul>
             </div>
+          </div>
+        
+          
+    <footer>
+      <div class="container-fluid footer footer-cl">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <h5 class="text margin">Creators</h5>
+              <strong class="foot-text">Maria Juliana Gamboa</strong><br>mariajuliana.gamboa@studio.unibo.it</br>
+              <strong class="foot-text">Alice Spadavecchia</strong><br>alice.spadavecchia2@studio.unibo.it</br>
+          </div>
+          <div class="col-md-6 text-center">       
+            <address><br>
+            </br><strong class="foot-text2">Alma Mater Studiorum Università di Bologna</strong><br>Via Zamboni 33<br>40126 BO Bologna<br>
+            </address>      
+          </div>
+          <div class="col-12 text-center foot-git">
+            <p class="mb-0">To access the Github repository follow this <a class="external-link link" href="https://github.com/MariaJGamboa/QueensMuseum.git">link</a>.</p>
+            <p class="mb-0 foot-copy">All copyrights and related rights on the content remain with their original owners.  All copyright on the typographic and layout choices are 2025 © Queens Museum</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!--link JS di bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- javascript per cambiare gli stili-->
-
   </body>
 </html>

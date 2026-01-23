@@ -31,13 +31,13 @@ html {
     display: flex;
     justify-content: center;
     align-items:center;
-    padding-top: 1.8em;
+    padding-top: 1.8rem;
     }
     
 svg {
-    width: 37em;
-    height: 25em;
-    border: 0.1em solid #333;
+    width: 37rem;
+    height: 25rem;
+    border: 0.1rem solid #333;
     width: 80%; 
     height: auto;
     
@@ -45,7 +45,7 @@ svg {
 .room {
   /*fill: #cce5ff;*/
   stroke: white;
-  stroke-width: 0.1em;
+  stroke-width: 0.1rem;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
   }
@@ -56,25 +56,27 @@ svg {
 .corridor {
   /*fill: #e6e6e6;*/
   stroke: #333;
-  stroke-width: 0.1em;
+  stroke-width: 0.1rem;
   }
 
 .door {
   stroke: white;
-  stroke-width: 0.1em;
+  stroke-width: 0.1rem;
 }
 
 .title-container {
   display: block; 
   text-align: center;
-  padding-top:2.5em;
-  padding-bottom: 5em}
+  padding-top:2.5rem;
+  padding-bottom: 5rem
+}
 
-#map {padding-bottom: 5em}
+#map {
+  padding-bottom: 5rem
+}
 
 .button {
   border: none;
- /* color: white;*/
   padding: 1em 4em;
   text-align: center;
   font-size: 1.25em;
@@ -83,7 +85,6 @@ svg {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  /*border:1em black;*/
   margin: 10px;
 }
 /*#hist{background-color: white;}

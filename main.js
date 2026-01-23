@@ -936,8 +936,6 @@ function handleNarrativeSwitch(newNarrative) {
     }
 }
 
-
-
 function nextItem() {
     currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
     resetItemView();
@@ -985,60 +983,6 @@ function prevImage() {
 }
 
 setInterval(nextImage, 4000);
-
-
-// To change item
-//function previousItem() {
-  //  currentItemIndex = (currentItemIndex - 1 + orderedItems.length) % orderedItems.length;
- //   currentImageIndex = 0;
- //   currentTextLevel = 0;
- //   updateContent();
- //   window.scrollTo({ top: 0, behavior: 'smooth' });
-//}
-
-//function nextItem() {
- //   currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
- //   currentImageIndex = 0;
-  //  currentTextLevel = 0;
- //   updateContent();
- //   window.scrollTo({ top: 0, behavior: 'smooth' });
-//}
-
-
-// To set the narrative through the buttons
-//function setNarrative(narrative) {
-   
-  //  if (currentNarrative === narrative) return;
-
-  //  currentNarrative = narrative
-
-  //  document.querySelectorAll('.button').forEach(btn => {
-  //      btn.classList.remove('active');
-  //  });
-
-  //  const btn = document.getElementById(narrative);
-  //  if(btn) btn.classList.add('active');
-    
-  //  sessionStorage.setItem('selectedNarrative', narrative);
-    // saves id of the current item
-   // const currentId = orderedItems[currentItemIndex]?.id;
-    // orders the items
-  //  updateOrderedItems();
-
-    // finds index of the item in the new order
-  //  const newIndex = orderedItems.findIndex(i => i.id === currentId);
-  //  if (newIndex >= 0) {
-    //    currentItemIndex = newIndex;
-  //  } else {
-    //    currentItemIndex = 0;
-   // }
-
-    // reset
-  //  currentImageIndex = 0;
-  //  currentTextLevel = 0;
-
-  //  updateContent()
-//}
 
 
 // To clock on rooms
@@ -1152,8 +1096,6 @@ function buildList() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    //document.body.style.visibility = "visible";
-   // document.body.style.opacity = "1";
     const params = new URLSearchParams(window.location.search);
    
     // 1. Determine Narrative
@@ -1188,7 +1130,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentDifficulty = "adult";
         currentTextLevel = 0;
        
-        // Rendi il bottone Adult visivamente attivo
         document.getElementById('AdultDifficulty')?.classList.add('active');
         document.getElementById('ChildrenDifficulty')?.classList.remove('active');
         updateContent();
