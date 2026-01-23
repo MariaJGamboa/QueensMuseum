@@ -19,10 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Applies theme
   link.href = savedTheme;
   document.body.style.visibility = "visible"; 
-});
+});;
 
 
-// Changer theme on click
+
+// Change theme on click
 function changeTheme(cssFile) {
   const link = document.getElementById("theme-css");
   if (!link) return;
@@ -914,10 +915,13 @@ function handleNarrativeSwitch(newNarrative) {
     sessionStorage.setItem('selectedNarrative', newNarrative);
 
     // Update UI Buttons
-    document.querySelectorAll('.button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById("hist")?.classList.remove('active');
+    document.getElementById("pop-cult")?.classList.remove('active');
+    
     const activeBtnId = (newNarrative === 'historical') ? "hist" : "pop-cult";
     document.getElementById(activeBtnId)?.classList.add('active');
 
+    // 2. LOGICA DI AGGIORNAMENTO DATI
     const currentId = orderedItems[currentItemIndex]?.id;
     updateOrderedItems();
 
@@ -932,7 +936,8 @@ function handleNarrativeSwitch(newNarrative) {
     }
 }
 
-//NEWWWW
+
+
 function nextItem() {
     currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
     resetItemView();
@@ -945,7 +950,6 @@ function previousItem() {
 
 function resetItemView() {
     currentImageIndex = 0;
-    currentTextLevel = 0;
     updateContent();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -1071,7 +1075,7 @@ function setupRoomClicks(isExhibition=false) {
 // Text difficulties
 function changeTextChildren() {
     currentDifficulty = "children";
-    currentTextLevel = 0;
+    //currentTextLevel = 0;
     updateContent();
     document.querySelectorAll('.button-diff').forEach(btn => btn.classList.remove('active'));
     document.getElementById('ChildrenDifficulty').classList.add('active');
@@ -1079,7 +1083,7 @@ function changeTextChildren() {
 
 function changeTextAdult() {
     currentDifficulty = "adult";
-    currentTextLevel = 0;
+    //currentTextLevel = 0;
     updateContent();
     document.querySelectorAll('.button-diff').forEach(btn => btn.classList.remove('active'));
     document.getElementById('AdultDifficulty').classList.add('active');
@@ -1147,28 +1151,31 @@ function buildList() {
 }
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     //document.body.style.visibility = "visible";
    // document.body.style.opacity = "1";
     const params = new URLSearchParams(window.location.search);
-    
+   
     // 1. Determine Narrative
     currentNarrative = params.get('narrative') || sessionStorage.getItem('selectedNarrative') || 'historical';
     updateOrderedItems();
 
+
     // 2. Setup Buttons
     document.getElementById("hist")?.addEventListener('click', () => handleNarrativeSwitch("historical"));
     document.getElementById("pop-cult")?.addEventListener('click', () => handleNarrativeSwitch("popculture"));
-    
+   
+
     const initialBtnId = (currentNarrative === 'historical') ? "hist" : "pop-cult";
     document.getElementById(initialBtnId)?.classList.add("active");
+
 
     // 3. Page Logic
     if (window.location.pathname.includes("Map.html")) {
         buildList();
         setupRoomClicks(false);
     }
+
 
     if (window.location.pathname.includes("exhibition.html")) {
         const itemId = parseInt(params.get('item'));
@@ -1177,9 +1184,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index >= 0) currentItemIndex = index;
         }
 
-        currentDifficulty = "adult"; 
-        currentTextLevel = 0; 
-        
+
+        currentDifficulty = "adult";
+        currentTextLevel = 0;
+       
         // Rendi il bottone Adult visivamente attivo
         document.getElementById('AdultDifficulty')?.classList.add('active');
         document.getElementById('ChildrenDifficulty')?.classList.remove('active');
@@ -1187,3 +1195,5 @@ document.addEventListener('DOMContentLoaded', () => {
         setupRoomClicks(true);
     }
 });
+
+ 

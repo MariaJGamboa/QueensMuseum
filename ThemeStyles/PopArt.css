@@ -1,3 +1,5 @@
+/* INDEX */
+
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
@@ -45,9 +47,9 @@ body {
   background-color: dodgerblue !important;
 }
 
-/* TITLE */
-h2 {
-  color: yellow;
+
+.carousel-caption {
+  color: yellow !important;
   text-shadow:
     -0.125rem 0.125rem 0 black,
      0.125rem 0.125rem 0 black;
@@ -82,9 +84,9 @@ p {
      0.125rem 0.125rem 0 black;
 }
 
-.clearfix {
+/*.clearfix {
   clear: both;
-}
+}*/
 
 .items-bubble {
   background-image: url('../images/comic.png');
@@ -132,9 +134,9 @@ p {
 .pop-style .carousel-item {
   width: 100%;
   height: 90vh;
-  max-height: none;
+  /*max-height: none;*/
   object-fit: cover;
-  ;
+  
 }
 
 
@@ -146,7 +148,7 @@ p {
 }
 
 .carousel-wrapper.pop-style {
-  border: 0.1875rem solid white;
+  border: 0.1875rem solid black;
   border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
   box-shadow: 0 0.375rem 1rem rgba(0,0,0);
   overflow: hidden;
@@ -249,6 +251,7 @@ p {
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
+
 .timeline-link {
   color: blue;
   text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
@@ -264,14 +267,24 @@ p {
 .link {
   color: blue;
   text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
-  font-size: x-large;
+  font-size: 1.15rem;
 }
 
 .link:hover {
   color: yellow;
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
-  font-size: x-large;
+  font-size: 1.15rem;
 }
+
+
+/* MAP.HTML */
+
+/*special-txt-2 {
+  color: darkblue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  font-size: larger;
+  letter-spacing: 0.05rem;
+}*/
 
 .map-link {
   color: blue;
@@ -289,6 +302,11 @@ ol li::marker {
   color: blue;
   font-weight: bold;
   text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+}
+
+ul > li {
+  color:black;
+  font-size: larger;
 }
 
 ul > li::marker {
@@ -338,7 +356,15 @@ ul > li::marker {
   opacity: 1;
 }
 
+.button:active {
+  box-shadow: 0 0.2125rem #666;
+  transform: translateY(0.25rem);
+}
 
+.button.active {
+  box-shadow: 0 0.2125rem black; 
+  transform: translateY(0.25rem); 
+}
 
 #hist {
   background-color: red;
@@ -346,25 +372,10 @@ ul > li::marker {
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
-
-
-
 #pop-cult {
   background-color: purple;
   color: yellow;
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
-}
-
-
-
-.button:active {
-  box-shadow: 0 0.3125rem #666;
-  transform: translateY(0.25rem);
-}
-
-.button.active {
-  box-shadow: 0 0.3125rem black; /* riduce l’altezza come quando clicchi */
-  transform: translateY(0.25rem); /* lo abbassa */
 }
 
 .comic-nar {
@@ -405,11 +416,19 @@ ul > li::marker {
 #hist-nar {
   text-decoration: underline;
   text-decoration-thickness: 0.1875rem;
+  color: darkblue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  font-size: larger;
+  letter-spacing: 0.05rem;
 }
 
 #pop-nar {
   text-decoration: underline;
   text-decoration-thickness: 0.1875rem;
+  color: darkblue;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
+  font-size: larger;
+  letter-spacing: 0.05rem;
 }
 
 .footer-cl {
@@ -450,9 +469,9 @@ ul > li::marker {
   margin: 0 auto;
 }
 
-#path {
+/*#path {
   margin-top: 3.125rem;
-}
+}*/
 
 .ex-bubble {
   background-image: url('../images/comic.png');
@@ -483,8 +502,16 @@ ul > li::marker {
   margin-top: 2.5rem !important;
   width: 28rem !important;
   margin: 0 auto;
-  margin-left:0 !important;
+  margin-left:0;
 
+}
+
+@media (max-width: 70rem) {
+  .ex-comic {
+    align-items: center !important;
+    margin: auto;
+    margin-top: 2rem;
+  }
 }
 
 .map-title {
@@ -562,11 +589,14 @@ ul > li::marker {
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
 }
 
+
+/* EXHIBITION.HTML */
+
 .img-comic {
   position: relative;
   text-align: center;
   margin-top: 1.875rem;
-  overflow: visible;
+  /*overflow: hidden;*/
 }
 
 .img-comic img.item-img {
@@ -600,7 +630,7 @@ table#table {
   border-spacing: 0;
   border-radius: 0.75rem;
   overflow: hidden;
-  border: 0.125rem solid yellow;
+  border: 0.125rem solid black !important;
   margin-top: 2.5rem !important;
   margin: auto;
   min-height: 18.75rem;
@@ -609,18 +639,21 @@ table#table {
 
 #table th,
 #table td {
-  border: 0.0625rem solid yellow;
+  border: 0.0825rem solid black;
   padding-top: 1.875rem !important;
 }
 
 .table-txt {
-  letter-spacing: 0.0625rem;
+  font-size: large;
+  letter-spacing: 0.1rem;
+  color: darkblue !important;
+  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
 }
 
 #metadataTable td,
 #metadataTable th {
-  background-color: rgba(30, 169, 255, 0.797) !important;
-}
+  background-color: rgb(245, 222, 179) !important;
+}/*rgba(30, 169, 255, 0.374)*/
 
 .button-diff {
   display: inline-block;
@@ -638,7 +671,7 @@ table#table {
 }
 
 .button-diff:active {
-  box-shadow: 0 0.3125rem #666;
+  box-shadow: 0 0.2125rem #666;
   transform: translateY(0.25rem);
 }
 
@@ -699,7 +732,7 @@ table#table {
 }
 
 .button-diff-n:active {
-  box-shadow: 0 0.3125rem #666;
+  box-shadow: 0 0.2125rem #666;
   transform: translateY(0.25rem);
 }
 
@@ -756,7 +789,7 @@ table#table {
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
   padding: 1.875rem;
-  border-radius: 2.5rem 2.5rem 1.25rem 1.25rem;
+  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
   border: 0.125rem solid black;
   box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.5);
 }
@@ -765,12 +798,21 @@ figure, figcaption{
   text-align: center; }
 
 .header-inline {
-  display: flex;         /* Attiva il layout in linea */
-  align-items: center;   /* Allinea verticalmente il testo e l'immagine */
+  display: flex;        
+  align-items: center; 
   gap: 15px;             
   margin-bottom: 10px;   
 }
+
 .img-bozz{
     max-width: 25%;  
     height: auto;
+    border: 0.01rem solid black;
+    border-radius:  0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.text-doc {
+  color: yellow;
+  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
+  font-size: xx-large;
 }

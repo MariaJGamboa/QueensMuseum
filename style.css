@@ -11,7 +11,21 @@ html {
   font-style: normal;
 }*/
 
+/* card */
+.card{
+    width: 18.75rem;
+    height: 31.25rem !important;
+    border: 0,125 solid #333;
 
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+}
+
+.card img {
+    width: 18.75rem;
+    height: 26.875rem;
+}
 
 .svg-container {
     display: flex;
