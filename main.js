@@ -393,7 +393,7 @@ const items = [
       room: "Queen Victoria's Room"
     },
     text: {
-      hisorical:{
+      historical:{
         children:{
           short:"This tea set is inspired by one made for Queen Victoria in 1851. Queen Victoria loved drinking tea and helped make afternoon tea a popular tradition in England. She was also crowned Empress of India during her reign, when England ruled over India.",
           medium:"This tea set was inspired by the one Queen Victoria had for the Great Exhibition in 1851. It is made of English bone china and decorated with the Queen’s initials and pretty floral designs. Queen Victoria became Empress of India during her reign, when England controlled the country. Tea was an important export from India to England, and the Queen loved drinking it. She helped make afternoon tea a popular tradition, turning tea time into a special social occasion.",
