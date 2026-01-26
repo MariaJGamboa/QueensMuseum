@@ -887,6 +887,19 @@ function updateOrderedItems() {
     });
 }
 
+// Carousel images in exhibition.html
+function showImage(index) {
+    const item = orderedItems[currentItemIndex];
+    const imgElement = document.querySelector('.item-img');
+    if (item.image && item.image.length > 0) {
+        imgElement.src = item.image[index];
+        imgElement.alt = item.title;
+    } else {
+        imgElement.src = '';
+        imgElement.alt = '';
+    }
+}
+
 
 // Shows content in the exhibition.html
 function updateContent() {
@@ -908,20 +921,67 @@ function updateContent() {
     document.getElementById("longTextArea").textContent = (currentTextLevel === 2) ? textData.long : "";
 }
 
-//NEW FUNCTION
+
+// Build list in Map.html
+function buildList() {
+    const container = document.querySelector('#items-container');
+    if (!container) return;
+
+    container.innerHTML = '';
+
+    const roomsOrder = [
+        "Queen Elizabeth I's Room",
+        "Queen Victoria's Room",
+        "Queen Elizabeth II's Room",
+        "Princess Diana's Room"
+    ];
+
+    roomsOrder.forEach(roomName => {
+        const liRoom = document.createElement('li');
+        liRoom.classList.add('room-title');
+        liRoom.textContent = roomName;
+        container.appendChild(liRoom);
+
+        const ol = document.createElement('ol');
+        ol.type = 'a';
+
+        const roomItems = items
+            .filter(item => item.metadata.room === roomName)
+            .sort((a,b) => (a.order?.[currentNarrative]||0) - (b.order?.[currentNarrative]||0));
+
+        roomItems.forEach(item => {
+            const liItem = document.createElement('li');
+            liItem.innerHTML = `<a href="#" class="map-link" data-id="${item.id}">${item.text[currentNarrative]?.short || item.title}</a>`;
+            ol.appendChild(liItem);
+        });
+
+        container.appendChild(ol);
+    });
+
+    // Click on links
+    container.querySelectorAll('.map-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = parseInt(link.dataset.id);
+            window.location.href = `exhibition.html?item=${id}&narrative=${currentNarrative}`;
+        });
+    });
+}
+
+
 function handleNarrativeSwitch(newNarrative) {
     if (currentNarrative === newNarrative) return;
     currentNarrative = newNarrative;
     sessionStorage.setItem('selectedNarrative', newNarrative);
 
-    // Update UI Buttons
+  
     document.getElementById("hist")?.classList.remove('active');
     document.getElementById("pop-cult")?.classList.remove('active');
     
     const activeBtnId = (newNarrative === 'historical') ? "hist" : "pop-cult";
     document.getElementById(activeBtnId)?.classList.add('active');
 
-    // 2. LOGICA DI AGGIORNAMENTO DATI
+  
     const currentId = orderedItems[currentItemIndex]?.id;
     updateOrderedItems();
 
@@ -950,20 +1010,6 @@ function resetItemView() {
     currentImageIndex = 0;
     updateContent();
     window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-
-// Carousel images in exhibition.html
-function showImage(index) {
-    const item = orderedItems[currentItemIndex];
-    const imgElement = document.querySelector('.item-img');
-    if (item.image && item.image.length > 0) {
-        imgElement.src = item.image[index];
-        imgElement.alt = item.title;
-    } else {
-        imgElement.src = '';
-        imgElement.alt = '';
-    }
 }
 
 
@@ -1045,53 +1091,6 @@ function showMore() {
         currentTextLevel++;
         updateContent();
     }
-}
-
-
-// Build list in Map.html
-function buildList() {
-    const container = document.querySelector('#items-container');
-    if (!container) return;
-
-    container.innerHTML = '';
-
-    const roomsOrder = [
-        "Queen Elizabeth I's Room",
-        "Queen Victoria's Room",
-        "Queen Elizabeth II's Room",
-        "Princess Diana's Room"
-    ];
-
-    roomsOrder.forEach(roomName => {
-        const liRoom = document.createElement('li');
-        liRoom.classList.add('room-title');
-        liRoom.textContent = roomName;
-        container.appendChild(liRoom);
-
-        const ol = document.createElement('ol');
-        ol.type = 'a';
-
-        const roomItems = items
-            .filter(item => item.metadata.room === roomName)
-            .sort((a,b) => (a.order?.[currentNarrative]||0) - (b.order?.[currentNarrative]||0));
-
-        roomItems.forEach(item => {
-            const liItem = document.createElement('li');
-            liItem.innerHTML = `<a href="#" class="map-link" data-id="${item.id}">${item.text[currentNarrative]?.short || item.title}</a>`;
-            ol.appendChild(liItem);
-        });
-
-        container.appendChild(ol);
-    });
-
-    // Click on links
-    container.querySelectorAll('.map-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const id = parseInt(link.dataset.id);
-            window.location.href = `exhibition.html?item=${id}&narrative=${currentNarrative}`;
-        });
-    });
 }
 
 
