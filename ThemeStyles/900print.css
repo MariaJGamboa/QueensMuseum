@@ -75,19 +75,6 @@ h2 {
   margin-bottom: 3.75rem;
 }
 
-/*.frame::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -4.5rem;
-  height: 0.0625rem;
-  background-color: #2C2D2D;
-  display: block;
-  width: 90vw;
-  left: 50%;
-  transform: translateX(-50%);
-}*/
 
 .frame > .text {
   padding-top: 0 !important;
@@ -253,11 +240,9 @@ img {
   padding: 1rem;
   color: ivory;
   border: 0.2rem dotted ivory;
-  width: 28rem !important; /* distacco dal bordo della colonna */
+  width: 28rem !important;
   box-sizing: border-box;
 }
-
-
 
 @media (max-width: 70rem) {
   .ex-black-frame {

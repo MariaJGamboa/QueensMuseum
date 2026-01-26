@@ -1,5 +1,3 @@
-/* INDEX */
-
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
@@ -276,16 +274,6 @@ p {
   text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
   font-size: 1.15rem;
 }
-
-
-/* MAP.HTML */
-
-/*special-txt-2 {
-  color: darkblue;
-  text-shadow: -0.125rem 0.125rem 0 yellow, 0.125rem 0.125rem 0 yellow;
-  font-size: larger;
-  letter-spacing: 0.05rem;
-}*/
 
 .map-link {
   color: blue;
@@ -759,7 +747,6 @@ table#table {
   max-width: 74rem;
   box-sizing: border-box;
 }
-
 
 /* documentation page */
 

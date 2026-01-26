@@ -1,26 +1,9 @@
 html {
-  /*font-size: 16px;*/
   overflow-x: hidden; 
 }
 
-
-
-/*.bangers-regular {
-  font-family: "Bangers", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}*/
-
-/* card */
 .card{
-  width: 100%;
-  /*  width: 18.75rem;
-    height: 31.25rem !important;
-    border: 0,125 solid #333;
-
-    display: block;              
-    justify-content: center;     
-    align-items: center; */        
+  width: 100%;       
 }
 
 .card img {
@@ -29,14 +12,10 @@ html {
     object-fit: cover
 }
 
-
 @media (max-width: 70rem){
   .card img {
     height: auto;}
 }
-
-
-
 
 .svg-container {
     display: flex;
@@ -54,18 +33,13 @@ svg {
     
   }
 .room {
-  /*fill: #cce5ff;*/
   stroke: white;
   stroke-width: 0.1rem;
   cursor: pointer;
   transition: fill 0.2s, transform 0.2s;
   }
-/*.room:hover {
-  fill: #66b3ff;
-    
-  }*/
+
 .corridor {
-  /*fill: #e6e6e6;*/
   stroke: #333;
   stroke-width: 0.1rem;
   }
@@ -98,11 +72,8 @@ svg {
   cursor: pointer;
   margin: 10px;
 }
-/*#hist{background-color: white;}
-#pop-cult{background-color: white;}
-#narrative {padding-bottom: 5em}*/
-.button:hover {opacity: 1}
 
+.button:hover {opacity: 1}
 
 .vboard-print {
   width: 100%;
