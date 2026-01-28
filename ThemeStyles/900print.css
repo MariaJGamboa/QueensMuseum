@@ -348,7 +348,6 @@ img {
 
 .img-comic img.item-img {
   display: block;
-  max-width: 100%;
   margin-top: 2.5rem;
   height: auto;
   box-sizing: border-box;
@@ -385,6 +384,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 4 / 3.5;
+  object-fit: cover;
 }
 
 #table {
