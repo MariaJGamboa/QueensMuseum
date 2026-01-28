@@ -381,6 +381,12 @@ img {
   
 }
 
+#carousel-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 #table {
   border-collapse: separate;
   border-spacing: 0;
