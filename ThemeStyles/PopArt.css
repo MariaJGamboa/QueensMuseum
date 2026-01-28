@@ -623,7 +623,8 @@ table#table {
   margin-top: 2.5rem !important;
   margin: auto;
   min-height: 18.75rem;
-  width: 30rem;
+  max-width: 30rem;
+  width: 100%;
 }
 
 #table th,
@@ -658,6 +659,13 @@ table#table {
   margin: auto;
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .button-diff {
+    display: block;
+    margin: 0.75rem auto; /* spazio sopra e sotto */
+  }
+}
+
 
 .button-diff:active {
   box-shadow: 0 0.2125rem #666;

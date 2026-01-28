@@ -375,7 +375,7 @@ img {
 
 #carousel-container {
   position: relative;
-  width: 34.5rem;
+  width: 100%;
   max-width: 34.5rem;
   margin: 0 auto;
   
