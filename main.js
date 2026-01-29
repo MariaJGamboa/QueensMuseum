@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });;
 
 
-
 // Change theme on click
 function changeTheme(cssFile) {
   const link = document.getElementById("theme-css");
@@ -996,6 +995,7 @@ function handleNarrativeSwitch(newNarrative) {
     }
 }
 
+
 function nextItem() {
     currentItemIndex = (currentItemIndex + 1) % orderedItems.length;
     resetItemView();
@@ -1031,30 +1031,21 @@ function prevImage() {
 setInterval(nextImage, 4000);
 
 
-// To clock on rooms
-function setupRoomClicks(isExhibition=false) {
+// To click on rooms
+function setupRoomClicks() {
     Object.keys(roomMap).forEach(roomClass => {
         const roomEl = document.querySelector(`.${roomClass}`);
+        
         if (roomEl) {
             roomEl.style.cursor = 'pointer';
             roomEl.addEventListener('click', () => {
-                // First item in the room according to narrative
+                
                 const roomItems = orderedItems.filter(i => i.metadata.room === roomMap[roomClass]);
-                if (roomItems.length === 0) return;
-
-                const firstItem = roomItems[0];
-              
-                if(isExhibition){
-                    // Exhibition.html → shows item
-                    currentItemIndex = orderedItems.indexOf(firstItem);
-                    currentImageIndex = 0;
-                    currentTextLevel = 0;
-                    updateContent();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                } else {
-                    // Map.html → go to exhibition
-                    const url = `exhibition.html?item=${firstItem.id}&narrative=${currentNarrative}`;
-                    window.location.href = url;
+                
+                if (roomItems.length > 0) {
+                    const firstItem = roomItems[0];
+                  
+                    window.location.href = `exhibition.html?item=${firstItem.id}&narrative=${currentNarrative}`;
                 }
             });
         }
@@ -1114,7 +1105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Page Logic
     if (window.location.pathname.includes("Map.html")) {
         buildList();
-        setupRoomClicks(false);
+        setupRoomClicks();
     }
 
 
@@ -1132,7 +1123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('AdultDifficulty')?.classList.add('active');
         document.getElementById('ChildrenDifficulty')?.classList.remove('active');
         updateContent();
-        setupRoomClicks(true);
+        
     }
 });
 
