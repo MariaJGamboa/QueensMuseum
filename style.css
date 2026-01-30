@@ -25,8 +25,6 @@ html {
     }
     
 svg {
-    width: 37rem;
-    height: 25rem;
     border: 0.1rem solid #333;
     width: 80%; 
     height: auto;
@@ -36,7 +34,6 @@ svg {
   stroke: white;
   stroke-width: 0.1rem;
   cursor: pointer;
-  transition: fill 0.2s, transform 0.2s;
   }
 
 .corridor {

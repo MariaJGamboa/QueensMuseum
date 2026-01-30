@@ -142,8 +142,6 @@ img {
 .dec-frame2 {
   overflow: visible;
   border: 1.25rem solid transparent;
-  
-  
   border-image-source: url('../images/frame-giusto.png');
   border-image-slice: 30;
   border-image-repeat: round;
@@ -235,6 +233,7 @@ img {
   margin-top: 2.5rem !important;
 }
 
+
 .ex-black-frame {
   background-color: #2C2D2D;
   padding: 1rem;
@@ -244,14 +243,13 @@ img {
   box-sizing: border-box;
 }
 
-@media (max-width: 70rem) {
+@media (max-width: 90rem) {
   .ex-black-frame {
     align-items: center;
     margin: auto;
     margin-top: 2rem;
   }
 }
-
 
 
 .ex-black-frame a {
@@ -294,7 +292,7 @@ img {
   z-index: 10;
 }
 
-@media (max-width: 62rem) {
+@media (max-width: 90rem) {
   .comic-map::before,
   .comic-map::after {
     display: none;
@@ -314,7 +312,6 @@ img {
   stroke: black;
   stroke-width: 0.1em;
   cursor: pointer;
-  transition: fill 0.2s, transform 0.2s;
 }
 
 .room1:hover,
@@ -353,7 +350,6 @@ img {
   box-sizing: border-box;
   width: 100%;
   max-width: 34.5rem;
-  height: auto;
   aspect-ratio: 4 / 3.5;
   border: 0.2rem solid #2C2D2D;
   margin-bottom: 1.25rem;
@@ -512,6 +508,6 @@ figure, figcaption{
   color:#2C2D2D;
 }
 
-#git-:hover {
+#git-alice:hover {
   color:grey;
 }

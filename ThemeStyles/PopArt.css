@@ -82,9 +82,6 @@ p {
      0.125rem 0.125rem 0 black;
 }
 
-/*.clearfix {
-  clear: both;
-}*/
 
 .items-bubble {
   background-image: url('../images/comic.png');
@@ -119,7 +116,7 @@ p {
 .pop-style .carousel-inner::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 0; /*per allargarsi lungo tutto il perimetro*/
   background-image: url("../images/zoomeffect.png");
   background-size: cover;
   background-position: center;
@@ -132,7 +129,6 @@ p {
 .pop-style .carousel-item {
   width: 100%;
   height: 90vh;
-  /*max-height: none;*/
   object-fit: cover;
   
 }
@@ -303,33 +299,6 @@ ul > li::marker {
   font-size: 1.5625rem;
 }
 
-.elizI {
-  color: red;
-  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
-  font-size: x-large;
-  letter-spacing: 0.125rem;
-}
-
-.vict {
-  color: blue;
-  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
-  font-size: x-large;
-  letter-spacing: 0.125rem;
-}
-
-.elizII {
-  color: green;
-  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
-  font-size: x-large;
-  letter-spacing: 0.125rem;
-}
-
-.diana {
-  color: purple;
-  text-shadow: -0.125rem 0.125rem 0 black, 0.125rem 0.125rem 0 black;
-  font-size: x-large;
-  letter-spacing: 0.125rem;
-}
 
 .button {
   display: block;
@@ -458,9 +427,6 @@ ul > li::marker {
   margin: 0 auto;
 }
 
-/*#path {
-  margin-top: 3.125rem;
-}*/
 
 .ex-bubble {
   background-image: url('../images/comic.png');
@@ -510,13 +476,17 @@ ul > li::marker {
   letter-spacing: 0.1875rem;
 }
 
+
+svg {
+  margin-top: 4rem
+}
+
 .room1 {
   fill: red;
   fill-opacity: 0.5;
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
-  transition: fill 0.2s, transform 0.2s;
 }
 
 .room1:hover {
@@ -530,7 +500,6 @@ ul > li::marker {
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
-  transition: fill 0.2s, transform 0.2s;
 }
 
 .room2:hover {
@@ -544,7 +513,6 @@ ul > li::marker {
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
-  transition: fill 0.2s, transform 0.2s;
 }
 
 .room3:hover {
@@ -558,7 +526,6 @@ ul > li::marker {
   stroke: #333;
   stroke-width: 0.1em;
   cursor: pointer;
-  transition: fill 0.2s, transform 0.2s;
 }
 
 .room4:hover {
@@ -583,9 +550,9 @@ ul > li::marker {
 
 .img-comic {
   position: relative;
-  text-align: center;
+  /*text-align: center;*/
   margin-top: 1.875rem;
-  /*overflow: hidden;*/
+  
 }
 
 .img-comic img.item-img {
@@ -610,9 +577,9 @@ ul > li::marker {
 }
 
 
-table#table {
-  height: 100%;
-}
+/*table#table {
+  height: 200%;
+}*/
 
 #table {
   border-collapse: separate;
@@ -630,7 +597,7 @@ table#table {
 #table th,
 #table td {
   border: 0.0825rem solid black;
-  padding-top: 1.875rem !important;
+  padding-top: 0.975rem !important;
 }
 
 .table-txt {
@@ -643,7 +610,7 @@ table#table {
 #metadataTable td,
 #metadataTable th {
   background-color: rgb(245, 222, 179) !important;
-}/*rgba(30, 169, 255, 0.374)*/
+}
 
 .button-diff {
   display: inline-block;
@@ -662,7 +629,7 @@ table#table {
 @media (max-width: 768px) {
   .button-diff {
     display: block;
-    margin: 0.75rem auto; /* spazio sopra e sotto */
+    margin: 0.75rem auto; 
   }
 }
 
@@ -796,8 +763,8 @@ figure, figcaption{
 .header-inline {
   display: flex;        
   align-items: center; 
-  gap: 15px;             
-  margin-bottom: 10px;   
+  gap: 1rem;             
+  margin-bottom: 0.8rem;   
 }
 
 .img-bozz{
